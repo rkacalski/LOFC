@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &477350304823975490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6349438130134483022}
+  - component: {fileID: 7718282347748699425}
+  - component: {fileID: 7452048061601942913}
+  - component: {fileID: 729746299619512908}
+  m_Layer: 0
+  m_Name: stormtrooper_1Star_base
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6349438130134483022
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477350304823975490}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 7.2101, y: -211.4173}
+  m_SizeDelta: {x: 147.4536, y: 225.7017}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7718282347748699425
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477350304823975490}
+  m_CullTransparentMesh: 1
+--- !u!114 &7452048061601942913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477350304823975490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 26a774da7a9a34844b4d79ed06630d8e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &729746299619512908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477350304823975490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ea2ebc309dbe94da7ca1cc002f4390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardName: stormtrooper_1Star_base
+  displayName: Stormtrooper
+  cardArt: {fileID: 21300000, guid: d480366fbedaebe46ba7363ac5fa6cb4, type: 3}
+  rarity: 1
+  side: 68
+  range: M
+  atkFreq: 1
+  attack: 720
+  defense: 660
+  attack_mult: 97.7777778
+  defense_mult: 93.3
+  level: 1
+  HP: 500
+  atkPatern: 1 -on- 1
+  NumofATKs: 1 per turn
+  inForm: 0
+  accuracy: 100
+  evasion: 10
+  cost: 4
+  skill: None
+  cardDescript: A will of iron encased in hardened white armor, these Imperial shock
+    troops neutralized resistance to the New Order and remain totally loyal to the
+    Emperor, even in the face of certain death.

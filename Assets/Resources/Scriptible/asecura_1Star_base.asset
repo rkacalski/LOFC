@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf4ff2a8974a08498bce535b9264465, type: 3}
+  m_Name: asecura_1Star_base
+  m_EditorClassIdentifier: 
+  type: card
+  name: Aayla Secura
+  displayName: Aayla Secura
+  art: {fileID: 0}
+  rarity: 1
+  side: 76
+  range: S
+  atkFreq: 1
+  attack: 620
+  defense: 560
+  attack_mult: 181.1
+  defense_mult: 113.3
+  level: 1
+  HP: 400
+  atkPatern: 1 on 1
+  inForm: 0
+  accuracy: 110
+  evasion: 20
+  cost: 5
+  skill: None
+  skillLevel: 0
+  skillBase: 0
+  skillMult: 0
+  skillDescript: 
+  Descript: A Twi'lek Jedi Knight who uses her impressive lightsaber skills to swiftly
+    overcome her opponents.
+  X: 1
+  Y: 1
+  numPiolts: 
+  numCoPiolts: 
+  numParts: 0

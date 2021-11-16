@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf4ff2a8974a08498bce535b9264465, type: 3}
+  m_Name: gg[ae]_5star_base
+  m_EditorClassIdentifier: 
+  type: card
+  name: General Grievous [The Atrocious Executioner]
+  displayName: General Grievous
+  art: {fileID: 21300000, guid: 07dbe7c12438e10479193ede82b01fa7, type: 3}
+  rarity: 5
+  side: 68
+  range: S
+  atkFreq: 1
+  attack: 7100
+  defense: 6430
+  attack_mult: 788.888889
+  defense_mult: 694.444444
+  level: 1
+  HP: 2000
+  atkPatern: 1 on 1
+  inForm: 0
+  accuracy: 130
+  evasion: 70
+  cost: 35
+  skill: Counter Attack [Med]
+  skillLevel: 1
+  skillBase: 200
+  skillMult: 0.6
+  skillDescript: "A large chance to increase this unit\u2019s EVA by 200.0% during
+    battle. If this unit then dodges an attack, it will immediately counter attack
+    for that turn. However, an S-Range unit can only attack an adjacent enemy."
+  Descript: As the cyborg leader of the Droid Army, General Grievous is a superior
+    commander. His skills at wielding up to four Lightsabers at once make him a deadly
+    opponent. Many Jedi have fallen victim to his ruthless attacks. Whether they
+    be Masters, or merely Padawans, no Jedi is safe.
+  X: 1
+  Y: 1
+  numPiolts: 
+  numCoPiolts: 
+  numParts: 0

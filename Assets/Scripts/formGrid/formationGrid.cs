@@ -5,25 +5,29 @@ using UnityEngine;
 
 public class formationGrid : MonoBehaviour
 {
-    const float tileSizeWidth = 135;
-    const float tileSizeHeight = 135;
+    public const float tileSizeWidth = 135;
+    public const float tileSizeHeight = 135;
     public int gridSizeWidth = 6;
     public int gridSizeHeight = 3;
     formationItem[,] formSlots;
+
+    [SerializeField] GameObject itemPref;
+    [SerializeField] GameObject itemPref2;
 
     RectTransform rectTransform;
     Vector2 positionOnGrid = new Vector2();
     Vector2Int tileGridPosition = new Vector2Int();
 
-    [SerializeField] GameObject itemPref;
 
     public void Start()
     {
         rectTransform = GetComponent<RectTransform>();
         Init(gridSizeWidth, gridSizeHeight);
-
         formationItem testItem = Instantiate(itemPref).GetComponent<formationItem>();
         PlaceItem(testItem, 4, 2);
+
+        formationItem testItem2 = Instantiate(itemPref2).GetComponent<formationItem>();
+        PlaceItem(testItem2, 0, 0);
     }
 
     private void Init(int width, int height)

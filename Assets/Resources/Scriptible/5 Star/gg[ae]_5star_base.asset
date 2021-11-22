@@ -30,6 +30,9 @@ MonoBehaviour:
   inForm: 0
   accuracy: 130
   evasion: 70
+  cardTags:
+  - droid
+  - Separatist
   cost: 35
   skill: Counter Attack [Med]
   skillLevel: 1
@@ -47,3 +50,5 @@ MonoBehaviour:
   numPiolts: 
   numCoPiolts: 
   numParts: 0
+  onGridPositionX: 0
+  onGridPositionY: 0

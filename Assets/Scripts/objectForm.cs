@@ -6,7 +6,7 @@ using UnityEngine;
 public class objectForm : ScriptableObject
 {
     public string type;
-    public string name;
+    public string objectName;
     public string displayName;
     public Sprite art;
     public int rarity;
@@ -23,6 +23,7 @@ public class objectForm : ScriptableObject
     public bool inForm;
     public int accuracy;
     public int evasion;
+    public List<string> cardTags = new List<string>();
     public int cost;
     public string skill;
     public int skillLevel;

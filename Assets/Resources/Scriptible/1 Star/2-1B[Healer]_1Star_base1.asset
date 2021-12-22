@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c517c518f0e2b45b818b2d4f425f51, type: 3}
+  m_Name: 2-1B[Healer]_1Star_base1
+  m_EditorClassIdentifier: 
+  cardName: 2-1B[Healer]_1Star_base
+  displayName: 2-1B [Healer]
+  art: {fileID: 21300000, guid: 3841718abdc82b74b95d614fdd02d0a3, type: 3}
+  rarity: 1
+  side: 78
+  range: S
+  atkPatern: Healer
+  atkFreq: 1
+  attack: 160
+  defense: 200
+  accuracy: 110
+  evasion: 20
+  cost: 1
+  attack_mult: 21.1
+  defense_mult: 22.2
+  level: 1
+  HP: 400
+  inForm: 0
+  cardTags:
+  - droid
+  cardDescript: 2-1B medical droids have been in use since the time of the republic.
+  skill: Heal Non-Droid
+  skillLevel: 0
+  skillBase: 0
+  skillMult: 0
+  skillDescript: Heal the humanoid card positioned directly in front of, behind and
+    adjacent to this card by 10% of this cards ATK.
+  X: 1
+  Y: 1

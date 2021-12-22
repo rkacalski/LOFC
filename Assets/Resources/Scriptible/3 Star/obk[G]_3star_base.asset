@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c517c518f0e2b45b818b2d4f425f51, type: 3}
+  m_Name: obk[G]_3star_base
+  m_EditorClassIdentifier: 
+  cardName: Obi Wan Kenobi [General]
+  displayName: Obi Wan Kenobi [General]
+  art: {fileID: 21300000, guid: 6a76c8ee2f8a6ca42abfdf997e7a16c9, type: 3}
+  rarity: 3
+  side: 76
+  range: S
+  atkPatern: 1 on 1
+  atkFreq: 1
+  attack: 2340
+  defense: 2080
+  accuracy: 140
+  evasion: 50
+  cost: 11
+  attack_mult: 366.666667
+  defense_mult: 208.888889
+  level: 1
+  HP: 1200
+  inForm: 0
+  cardTags:
+  - male
+  - Jedi
+  - Galactic Republic
+  cardDescript: Obi-Wan Kenobi is a member of the Jedi High Council respected for
+    his skills in negotiation as well as with a Lightsaber. During the Clone Wars,
+    Kenobi along with his apprentice Anakin Skywalker, led victory after victory
+    becoming a widely renowned pair.
+  skill: none
+  skillLevel: 0
+  skillBase: 0
+  skillMult: 0
+  skillDescript: 
+  X: 1
+  Y: 1

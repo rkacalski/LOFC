@@ -676,6 +676,75 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3329902761444989119, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 242a3dd34fc25cd4eb9bfe04127363c5, type: 3}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: X
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: Y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: HP
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: cost
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: side
+      value: 78
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: skill
+      value: None
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: attack
+      value: 510
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: rarity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: cardArt
+      value: 
+      objectReference: {fileID: 21300000, guid: 242a3dd34fc25cd4eb9bfe04127363c5, type: 3}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: defense
+      value: 420
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: evasion
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: accuracy
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: cardName
+      value: rancor_1star_base
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: attack_mult
+      value: 75.7894736
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: cardDescript
+      value: This giant, horrifying monster lives underneath Jabba's palace. Jabba
+        and his guests often enjoy watching it kill its prey for sport.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862861432642029426, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
+      propertyPath: defense_mult
+      value: 43.6842105
+      objectReference: {fileID: 0}
     - target: {fileID: 5747487316316539772, guid: e75b1762678dc84498ac903d38ae20bf, type: 3}
       propertyPath: m_Name
       value: Card

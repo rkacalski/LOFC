@@ -1,0 +1,660 @@
+fileFormatVersion: 2
+guid: 634b097b6d436d749809fa1e2c6a5cdf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8618701510820311879
+    second: seismiccharge_hit_efe_0
+  - first:
+      213: 3295231759256795626
+    second: seismiccharge_hit_efe_1
+  - first:
+      213: 4833101242283130459
+    second: seismiccharge_hit_efe_2
+  - first:
+      213: -8786536493938670691
+    second: seismiccharge_hit_efe_3
+  - first:
+      213: 7896937015997001030
+    second: seismiccharge_hit_efe_4
+  - first:
+      213: 1535246561657548268
+    second: seismiccharge_hit_efe_5
+  - first:
+      213: 9036078900233732003
+    second: seismiccharge_hit_efe_6
+  - first:
+      213: 5198996839727453509
+    second: seismiccharge_hit_efe_7
+  - first:
+      213: 7143650663397505127
+    second: seismiccharge_hit_efe_8
+  - first:
+      213: 3712355504240335238
+    second: seismiccharge_hit_efe_9
+  - first:
+      213: 52622611970283396
+    second: seismiccharge_hit_efe_10
+  - first:
+      213: 4807152103957868679
+    second: seismiccharge_hit_efe_11
+  - first:
+      213: 9218039899723557455
+    second: seismiccharge_hit_efe_12
+  - first:
+      213: 1646225579414595687
+    second: seismiccharge_hit_efe_13
+  - first:
+      213: -727005344310578783
+    second: seismiccharge_hit_efe_14
+  - first:
+      213: -1443612440031243602
+    second: seismiccharge_hit_efe_15
+  - first:
+      213: 217238178787517817
+    second: seismiccharge_hit_efe_16
+  - first:
+      213: 7112783677820204897
+    second: seismiccharge_hit_efe_17
+  - first:
+      213: -7073812515518444624
+    second: seismiccharge_hit_efe_18
+  - first:
+      213: -1073079732626818682
+    second: seismiccharge_hit_efe_19
+  - first:
+      213: 3264439345553785629
+    second: seismiccharge_hit_efe_20
+  - first:
+      213: -3124893010883200719
+    second: seismiccharge_hit_efe_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 818
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcce66c3a8346880800000000000000
+      internalID: -8618701510820311879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 818
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9361f73d30bbd20800000000000000
+      internalID: 3295231759256795626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 818
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ef8c519ff921340800000000000000
+      internalID: 4833101242283130459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 818
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9387c0ac93ff0680800000000000000
+      internalID: -8786536493938670691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 818
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d6224506e879d60800000000000000
+      internalID: 7896937015997001030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 614
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedec3e1d9a4e4510800000000000000
+      internalID: 1535246561657548268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 614
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af75d272e9966d70800000000000000
+      internalID: 9036078900233732003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 614
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545555c841c862840800000000000000
+      internalID: 5198996839727453509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_8
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 614
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768ba4ffd68532360800000000000000
+      internalID: 7143650663397505127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 614
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689163689afe48330800000000000000
+      internalID: 3712355504240335238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 410
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48754ad9cf3fab000800000000000000
+      internalID: 52622611970283396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 410
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7803ea18e5f66b240800000000000000
+      internalID: 4807152103957868679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_12
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 410
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a6664137e0def70800000000000000
+      internalID: 9218039899723557455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_13
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 410
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7682b21417198d610800000000000000
+      internalID: 1646225579414595687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_14
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 410
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1be8ebd7829e5f0800000000000000
+      internalID: -727005344310578783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 206
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea25a96622247fbe0800000000000000
+      internalID: -1443612440031243602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 206
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975684ef8f8c30300800000000000000
+      internalID: 217238178787517817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_17
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 206
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1677ba0e11fa5b260800000000000000
+      internalID: 7112783677820204897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_18
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 206
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb8fcceef4c4dd90800000000000000
+      internalID: -7073812515518444624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_19
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 206
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6897b192ba7ab11f0800000000000000
+      internalID: -1073079732626818682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13ca8ef94e9d4d20800000000000000
+      internalID: 3264439345553785629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seismiccharge_hit_efe_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2
+        width: 144
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139b43dec5622a4d0800000000000000
+      internalID: -3124893010883200719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

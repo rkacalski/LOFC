@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class questButtonUp : MonoBehaviour
 {
+    //UI
+    public Text EP;
+    public Text XP;
+
     private bool isMoving;
     private Vector3 origPosition;
     private Vector3 targetPosition;
@@ -39,11 +44,14 @@ public class questButtonUp : MonoBehaviour
         {
             transform.position = Vector3.Lerp(origPosition, targetPosition, (elapsedTime/timeToMove));
             elapsedTime += Time.deltaTime;
+            EP.gameObject.SetActive(true);
+            XP.gameObject.SetActive(true);
             yield return null;
         }
-
         transform.position = targetPosition;
         isMoving = false;
+        EP.gameObject.SetActive(false);
+        XP.gameObject.SetActive(false);
     }
 
     public void moveUpArrow()

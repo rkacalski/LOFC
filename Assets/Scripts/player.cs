@@ -20,4 +20,10 @@ public class player : MonoBehaviour
     public static int training_remotes;
     public static int crystals;
     public static int allyPoints;
+
+    //Quest
+    public static int numBronzeContainers;
+    public static int numSilverContainers;
+    public static int numGoldContainers;
+
 }

@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public Text EP;
     public Text XP;
 
+    public AudioSource playerMove;
+
     public float moveSpeed = 5f;
     public Transform movePoint;
 
@@ -17,6 +19,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         movePoint.parent = null;
+        playerMove = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -60,14 +63,13 @@ public class PlayerController : MonoBehaviour
         {
             if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, 1f, 0f), .2f, whatStopsMovement))
             {
+                playerMove.Play();
                 movePoint.position += new Vector3(0f, 1f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
             }
 
         }
-        //EP.gameObject.SetActive(false);
-        //XP.gameObject.SetActive(false);
     }
     public void downButton()
     {
@@ -76,6 +78,7 @@ public class PlayerController : MonoBehaviour
         {
             if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -1f, 0f), .2f, whatStopsMovement))
             {
+                playerMove.Play();
                 movePoint.position += new Vector3(0f, -1f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
@@ -90,6 +93,7 @@ public class PlayerController : MonoBehaviour
         {
             if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-1f, 0f, 0f), .2f, whatStopsMovement))
             {
+                playerMove.Play();
                 movePoint.position += new Vector3(-1f, 0f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
@@ -105,6 +109,7 @@ public class PlayerController : MonoBehaviour
         {
             if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(1f, 0f, 0f), .2f, whatStopsMovement))
             {
+                playerMove.Play();
                 movePoint.position += new Vector3(1f, 0f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));

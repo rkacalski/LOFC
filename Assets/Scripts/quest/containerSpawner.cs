@@ -20,15 +20,15 @@ public class containerSpawner : MonoBehaviour
     private void spawn()
     {
         float value = randomInt(0, 1);
-        if (value <= 0.1)
+        if (value <= 0.07)
         {
             Instantiate(goldContainer, new Vector3(posX, posY, 0), Quaternion.identity);
         }
-        if (value > 0.1 && value <= 0.4)
+        if (value > 0.07 && value <= 0.37)
         {
             Instantiate(silverContainer, new Vector3(posX, posY, 0), Quaternion.identity);
         }
-        if (value > 0.41)
+        if (value > 0.37)
         {
             Instantiate(bronzeContainer, new Vector3(posX, posY, 0), Quaternion.identity);
         }

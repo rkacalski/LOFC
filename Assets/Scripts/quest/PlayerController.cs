@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public Text EP;
     public Text XP;
+    public Text creditsLabel;
 
     public AudioSource playerMove;
 
@@ -67,6 +68,10 @@ public class PlayerController : MonoBehaviour
                 movePoint.position += new Vector3(0f, 1f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
+                float creditValue = randomInt(35, 78);
+                creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
+                player.credits += (int)creditValue;
+                StartCoroutine(textAppear(creditsLabel, 0.2f));
             }
 
         }
@@ -82,6 +87,10 @@ public class PlayerController : MonoBehaviour
                 movePoint.position += new Vector3(0f, -1f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
+                float creditValue = randomInt(35, 78);
+                creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
+                player.credits += (int)creditValue;
+                StartCoroutine(textAppear(creditsLabel, 0.2f));
             }
 
         }
@@ -97,6 +106,10 @@ public class PlayerController : MonoBehaviour
                 movePoint.position += new Vector3(-1f, 0f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
+                float creditValue = randomInt(35, 78);
+                creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
+                player.credits += (int)creditValue;
+                StartCoroutine(textAppear(creditsLabel, 0.2f));
             }
 
         }
@@ -113,8 +126,18 @@ public class PlayerController : MonoBehaviour
                 movePoint.position += new Vector3(1f, 0f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
+                float creditValue = randomInt(35, 78);
+                creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
+                player.credits += (int)creditValue;
+                StartCoroutine(textAppear(creditsLabel, 0.2f));
             }
 
         }
+    }
+
+    float randomInt(float min, float max)
+    {
+        float numContainers = Random.Range(min, max);
+        return numContainers;
     }
 }

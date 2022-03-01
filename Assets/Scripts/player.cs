@@ -25,5 +25,8 @@ public class player : MonoBehaviour
     public static int numBronzeContainers;
     public static int numSilverContainers;
     public static int numGoldContainers;
+    public static string currentQuestMap;
+
+
 
 }

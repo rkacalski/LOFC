@@ -1955,6 +1955,9 @@ MonoBehaviour:
   - AP
   - Credits
   - Crystals
+  - 1 Star Jedi Holocron
+  - 1 Star Sith Holocron
+  - 1 Star Great Holocron
   silverPossibleRewards:
   - AP
   - Credits
@@ -1962,12 +1965,21 @@ MonoBehaviour:
   - Training Remotes
   - Silver Card Pack
   - Vehicle Blue Print
+  - 2 Star Jedi Holocron
+  - 2 Star Sith Holocron
+  - 2 Star Great Holocron
+  - 3 Star Jedi Holocron
+  - 3 Star Sith Holocron
+  - 3 Star Great Holocron
   goldPossibleRewards:
   - Credits
   - Crystals
   - Training Remotes
   - Vehicle Blue Print
   - Gold Card Pack
+  - 4 Star Jedi Holocron
+  - 4 Star Sith Holocron
+  - 4 Star Great Holocron
 --- !u!4 &818240021
 Transform:
   m_ObjectHideFlags: 0

@@ -12,18 +12,13 @@ public class crateRewards : MonoBehaviour
     public string[,] rewards4 = new string[3, 1];
     public string[,] rewards3 = new string[2, 1];
     public string[,] rewards2 = new string[1, 1];
+    //public string[,] array2Da;
 
     // Start is called before the first frame update
     void Start()
     {
         string[,] test = rewards("bronzeContainer");
-        for (int x = 0; x < test.GetLength(0); x++)
-        {
-            for (int y = 0; y < test.GetLength(1); y++)
-            {
-                print(test[x, y]);
-            }
-        }
+        print(test[0, 0] + " , " + test[0,1]);
     }
     // Update is called once per frame
     void Update()
@@ -36,62 +31,52 @@ public class crateRewards : MonoBehaviour
         //string item1;
         if (typeOfContainer == "bronzeContainer")
         {
-            float value = randomInt(0, 1);
-            if (value > 0.02)
+            float value = 1;//randomInt(0, 1);
+            if (value == 1)
             {
                 //rewards = 4
 
-                //    1/4
-                rewards4[0,0] = ("50");
-               // rewards4[0, 1] = bronzePossibleRewards[Random.Range(0,bronzePossibleRewards.Length)];
+                //item1
+                string item1 = bronzePossibleRewards[(int)randomInt(0, bronzePossibleRewards.Length - 1)];
+                int item1Quantity = itemQuantity(item1, "bronzeContainer");
 
-                //    2/4
-                rewards4[1, 0] = ("50");
-                //rewards4[1, 1] = bronzePossibleRewards[(int)randomInt(0, bronzePossibleRewards.Length)];
+                //item2
 
-                //    3/4
-                rewards4[2, 0] = ("50");
-               // rewards4[2, 1] = bronzePossibleRewards[(int)randomInt(0, bronzePossibleRewards.Length)];
+                //item3
 
-                //    4/4
-                rewards4[3, 0] = ("50");
-                //rewards4[3, 1] = bronzePossibleRewards[(int)randomInt(0, bronzePossibleRewards.Length)];
-            }
-            else
-            {
-                //rewards = 3
+                //item4
+                string[,] rewards4 = new string[4, 2] { { item1, item1Quantity.ToString() }, { "3", "4" }, { "5", "6" }, { "7", "8" } };
+                return rewards4;
             }
         }
-        if (typeOfContainer == "goldContainer")
+        return null;
+    }
+
+    int itemQuantity(string item, string containerType)
+    {
+        int itemQuant;
+
+        if(containerType.Equals("bronzeContainer"))
         {
-            float value = randomInt(0, 1);
-            if (value <= 0.2)
-            {
-                //rewards = 4
-            }
-            else
-            {
-                //rewards = 3
-            }
-        }
-        if (typeOfContainer == "goldContainer")
-        {
-            float value = randomInt(0, 1);
-            if (value <= 0.2)
-            {
-                //rewards = 4
-            }
-            if(value > 0.2 && value < 0.9)
-            {
-                //rewards = 3
-            }
-            else
-            {
-                //rewards = 2
-            }
-        }
+            int[] bronzeCredits = new int[] { 3000, 4000, 5000, 6000 };
+            int[] bronzeAP = new int[] { 25, 50, 75, 100 };
 
-        return rewards4;
+            if (item.Equals("Credits"))
+            {
+                itemQuant = bronzeCredits[(int)randomInt(0, bronzeCredits.Length - 1)];
+                return itemQuant;
+            }
+            if (item.Equals("AP"))
+            {
+                itemQuant = bronzeAP[(int)randomInt(0, bronzeCredits.Length - 1)];
+                return itemQuant;
+            }
+
+            //bronze t remotes range 1-8
+            //Bronze crystals range 1-10
+            //Bronze holocrons range 1-5
+        }
+        return 0;
     }
 
     float randomInt(float min, float max)

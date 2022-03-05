@@ -131,7 +131,6 @@ public class PlayerController : MonoBehaviour
                 player.credits += (int)creditValue;
                 StartCoroutine(textAppear(creditsLabel, 0.2f));
             }
-
         }
     }
 

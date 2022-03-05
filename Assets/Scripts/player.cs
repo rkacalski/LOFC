@@ -26,7 +26,10 @@ public class player : MonoBehaviour
     public static int numSilverContainers;
     public static int numGoldContainers;
     public static string currentQuestMap;
-
-
-
+    public static float questPosX = 0;
+    public static float questPosY = 0;
+    public static bool cont1found = false;
+    public static bool cont2found = false;
+    public static bool cont3found = false;
+    public static bool cont4found = false;
 }

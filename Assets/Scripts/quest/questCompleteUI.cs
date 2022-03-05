@@ -18,9 +18,9 @@ public class questCompleteUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player.numBronzeContainers = 3;
-        player.numSilverContainers = 2;
-        player.numGoldContainers = 1;
+        //player.numBronzeContainers = player.numBronzeContainers;
+        //player.numSilverContainers = player.numSilverContainers;
+        //player.numGoldContainers = player.numGoldContainers;
         bronzeContainer.text = player.numBronzeContainers.ToString();
         silverContainer.text = player.numSilverContainers.ToString();
         goldContainer.text = player.numGoldContainers.ToString();

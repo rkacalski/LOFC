@@ -8,12 +8,14 @@ public class leaderCard : MonoBehaviour
     public Text numBronzeContainers;
     public Text numSilverContainers;
     public Text numGoldContainers;
+    public GameObject goalPoint;
 
     public AudioSource chestObtained;
 
     void Start()
     {
         chestObtained = GetComponent<AudioSource>();
+        goalPoint.transform.localScale = Vector2.zero;
     }
 
     void Update()
@@ -50,6 +52,17 @@ public class leaderCard : MonoBehaviour
             player.numGoldContainers += 1;
             numGoldContainers.text = player.numGoldContainers.ToString();
             Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+        }
+        if (col.gameObject.tag == "endPoint")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            goalPoint.transform.LeanScale(Vector2.one, 0.9f).setEaseOutQuart();
+        }
+        if (col.gameObject.tag == "questSpawn1")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            player.cont1found = true;
+            print("found");
         }
     }
 }

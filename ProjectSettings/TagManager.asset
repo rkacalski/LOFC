@@ -8,6 +8,8 @@ TagManager:
   - bronzeContainer
   - silverContainer
   - goldContainer
+  - endPoint
+  - questSpawn1
   layers:
   - Default
   - TransparentFX

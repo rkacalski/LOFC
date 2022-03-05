@@ -4,13 +4,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class homeUI : MonoBehaviour
 {
     public GameObject Image;
     public int check;
     public int playerInv;
-    
+
+    public void questButton()
+    {
+        SceneManager.LoadScene("questTest");
+    }
 
     public void cardButton()
     {

@@ -10,6 +10,17 @@ TagManager:
   - goldContainer
   - endPoint
   - questSpawn1
+  - questSpawn2
+  - questSpawn3
+  - questSpawn4
+  - questSpawn5
+  - questSpawn6
+  - questSpawn7
+  - questSpawn8
+  - questSpawn9
+  - questSpawn10
+  - questSpawn11
+  - questSpawn12
   layers:
   - Default
   - TransparentFX

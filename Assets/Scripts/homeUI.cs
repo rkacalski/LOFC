@@ -17,6 +17,11 @@ public class homeUI : MonoBehaviour
         SceneManager.LoadScene("questTest");
     }
 
+    public void battleButton()
+    {
+        SceneManager.LoadScene("endor_6.6_N");
+    }
+
     public void cardButton()
     {
         print(check);

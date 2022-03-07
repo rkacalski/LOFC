@@ -62,7 +62,61 @@ public class leaderCard : MonoBehaviour
         {
             Destroy(col.gameObject.GetComponent<BoxCollider2D>());
             player.cont1found = true;
-            print("found");
+        }
+        if (col.gameObject.tag == "questSpawn2")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            player.cont2found = true;
+        }
+        if (col.gameObject.tag == "questSpawn3")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            player.cont3found = true;
+        }
+        if (col.gameObject.tag == "questSpawn4")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            player.cont4found = true;
+        }
+        if (col.gameObject.tag == "questSpawn5")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            player.cont5found = true;
+        }
+        if (col.gameObject.tag == "questSpawn6")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            player.cont6found = true;
+        }
+        if (col.gameObject.tag == "questSpawn7")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            player.cont7found = true;
+        }
+        if (col.gameObject.tag == "questSpawn8")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            player.cont8found = true;
+        }
+        if (col.gameObject.tag == "questSpawn9")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            player.cont9found = true;
+        }
+        if (col.gameObject.tag == "questSpawn10")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            player.cont10found = true;
+        }
+        if (col.gameObject.tag == "questSpawn11")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            player.cont11found = true;
+        }
+        if (col.gameObject.tag == "questSpawn12")
+        {
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            player.cont12found = true;
         }
     }
 }

@@ -26,6 +26,12 @@ TextureImporter:
   - first:
       213: -1153714752397755617
     second: questTileSet_7
+  - first:
+      213: 4342031517519904824
+    second: questTileSet_8
+  - first:
+      213: -233799446327124132
+    second: questTileSet_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -302,6 +308,48 @@ TextureImporter:
       bones: []
       spriteID: f1b343b9b8e2dffe0800000000000000
       internalID: -1153714752397755617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: questTileSet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830035df8aef14c30800000000000000
+      internalID: 4342031517519904824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: questTileSet_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f1dfc64a061ccf0800000000000000
+      internalID: -233799446327124132
       vertices: []
       indices: 
       edges: []

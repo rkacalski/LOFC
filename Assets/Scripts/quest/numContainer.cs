@@ -6,25 +6,42 @@ public class numContainer : MonoBehaviour
 {
     public float minContainers;
     public float maxContainers;
-    public GameObject highRollSpawner;
+    public int highrolls;
+    public static int currentNumContainers;
+    public GameObject[] highRollSpawners;
 
     // Start is called before the first frame update
     void Start()
     {
-        //float test = Mathf.Round(randomInt(0, 1));
-        float test = randomInt(0, 1);
-        print(test);
-        if (test <= 0.2)
+        if (player.mapInProgress == false)
         {
-            test = maxContainers;
-            highRollSpawner.SetActive(true);
+            float test = randomInt(0, 1);
+            if (test <= 0.2)
+            {
+                //test = maxContainers;
+                for (int i = 0; i < highRollSpawners.Length; i++)
+                {
+                    if (highRollSpawners.Length.Equals(1))
+                    {
+                        highrolls = 1;
+                    }
+                    else
+                    {
+                        float highRoll = randomInt(0, 1);
+                        if (highRoll <= 0.5)
+                        {
+                            highRollSpawners[i].SetActive(true);
+                        }
+                        highrolls += 1;
+                    }
+                }
+                currentNumContainers = (int)minContainers + highrolls;
+            }
+            else
+            {
+                currentNumContainers = (int)minContainers;
+            }
         }
-        else
-        {
-            test = minContainers;
-
-        }
-        print(test);
     }
 
     float randomInt(float min, float max)

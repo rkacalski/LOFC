@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public Text creditsLabel;
 
     public AudioSource playerMove;
+    public questCredits credits;
 
     public float moveSpeed = 5f;
     public Transform movePoint;
@@ -68,10 +69,11 @@ public class PlayerController : MonoBehaviour
                 movePoint.position += new Vector3(0f, 1f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
-                float creditValue = randomInt(35, 78);
+                float creditValue = credits.creditsMaps1();
                 creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
                 player.credits += (int)creditValue;
                 StartCoroutine(textAppear(creditsLabel, 0.2f));
+                player.mapInProgress = true;
             }
 
         }
@@ -87,10 +89,11 @@ public class PlayerController : MonoBehaviour
                 movePoint.position += new Vector3(0f, -1f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
-                float creditValue = randomInt(35, 78);
-                creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
-                player.credits += (int)creditValue;
+                //float creditValue = randomInt(35, 78);
+                //creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
+                //player.credits += (int)creditValue;
                 StartCoroutine(textAppear(creditsLabel, 0.2f));
+                player.mapInProgress = true;
             }
 
         }
@@ -106,10 +109,11 @@ public class PlayerController : MonoBehaviour
                 movePoint.position += new Vector3(-1f, 0f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
-                float creditValue = randomInt(35, 78);
-                creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
-                player.credits += (int)creditValue;
+                //float creditValue = randomInt(35, 78);
+                //creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
+                //player.credits += (int)creditValue;
                 StartCoroutine(textAppear(creditsLabel, 0.2f));
+                player.mapInProgress = true;
             }
 
         }
@@ -126,17 +130,12 @@ public class PlayerController : MonoBehaviour
                 movePoint.position += new Vector3(1f, 0f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
-                float creditValue = randomInt(35, 78);
-                creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
-                player.credits += (int)creditValue;
+                ///float creditValue = randomInt(35, 78);
+               // creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
+                //player.credits += (int)creditValue;
                 StartCoroutine(textAppear(creditsLabel, 0.2f));
+                player.mapInProgress = true;
             }
         }
-    }
-
-    float randomInt(float min, float max)
-    {
-        float numContainers = Random.Range(min, max);
-        return numContainers;
     }
 }

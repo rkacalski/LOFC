@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Home Screen.unity
     guid: d1717c2c7abcb754697fb23086fa3b40
   - enabled: 1
+    path: Assets/Scenes/Card Upgrades/enhanceCardMain.unity
+    guid: f3edbe9a4f9107a4db1bc9082381f1ba
+  - enabled: 1
     path: Assets/Scenes/Questing/Normal/Endor/endor_6.6_N.unity
     guid: 67061a6a932381546b40396a5cebca0f
+  - enabled: 1
+    path: Assets/Scenes/Card Upgrades/enhanceCardSelect.unity
+    guid: ce26b0e9657b5a04bb3a70f13ec02dbe
   m_configObjects: {}

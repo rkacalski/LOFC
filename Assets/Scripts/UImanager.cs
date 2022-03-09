@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class UImanager : MonoBehaviour
 {
-    public CardBinder binder;
+    //public CardBinder binder;
     public GameObject[] cardSlots;
 
     public int cardCount;
@@ -22,9 +22,10 @@ public class UImanager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerCards.userCards = Resources.LoadAll<Card>("Prefabs/1Star/Base").ToList();
         DisplayCards();
         pageNum = 1;
-        cardAmount.text = binder.playerCards.Count.ToString();
+        cardAmount.text = playerCards.userCards.Count.ToString();
     }
 
     public void updatePage()
@@ -59,10 +60,10 @@ public class UImanager : MonoBehaviour
 
     private void DisplayCards()
     {
-        cardCount = binder.playerCards.Count;
-        pageMax = Mathf.Ceil(binder.playerCards.Count / 10f);
+        cardCount = playerCards.userCards.Count;
+        pageMax = Mathf.Ceil(playerCards.userCards.Count / 10f);
 
-        sortedBinder = binder.playerCards.OrderBy(x => x.rarity).ToList();
+        sortedBinder = playerCards.userCards.OrderBy(x => x.rarity).ToList();
         sortedBinder.Reverse();
 
         for (int i = 0; i <= 9; i++)
@@ -150,13 +151,22 @@ public class UImanager : MonoBehaviour
             //Display Type Tags
 
             //Display in form?
-            cardSlots[i].transform.GetChild(13).transform.GetChild(0).GetComponent<Text>().text = sortedBinder[i].inForm.ToString();
+            cardSlots[i].transform.GetChild(15).transform.GetChild(0).GetComponent<Text>().text = sortedBinder[i].inForm.ToString();
+
+            //Set Array Pos
+            cardSlots[i].transform.GetChild(16).transform.GetChild(1).GetComponent<Text>().text = i.ToString();
+
+            //get card rarity
+            cardSlots[i].transform.GetChild(16).transform.GetChild(2).GetComponent<Text>().text = sortedBinder[i].rarity.ToString();
+
+            //get card rarity
+            cardSlots[i].transform.GetChild(16).transform.GetChild(3).GetComponent<Text>().text = sortedBinder[i].cardName;
         }
     }
 
     private void updateCards()
     {
-        cardCount = binder.playerCards.Count;
+        cardCount = playerCards.userCards.Count;
 
         if(pageNum == 1)
         {
@@ -269,8 +279,17 @@ public class UImanager : MonoBehaviour
                     //Display Type Tags
 
                     //Display in form?
-                    cardSlots[i].transform.GetChild(13).transform.GetChild(0).GetComponent<Text>().text = sortedBinder[i + loopCounter].inForm.ToString();
-                }
+                    //cardSlots[i].transform.GetChild(13).transform.GetChild(0).GetComponent<Text>().text = sortedBinder[i + loopCounter].inForm.ToString();
+
+                    //Set Array Pos
+                    cardSlots[i].transform.GetChild(16).transform.GetChild(1).GetComponent<Text>().text = i.ToString();
+
+                    //get card rarity
+                    cardSlots[i].transform.GetChild(16).transform.GetChild(2).GetComponent<Text>().text = sortedBinder[i].rarity.ToString();
+
+                    //get card rarity
+                    cardSlots[i].transform.GetChild(16).transform.GetChild(3).GetComponent<Text>().text = sortedBinder[i].cardName;
+                }  
 
                 for (int i = 0; i <= 9; i++)
                 {

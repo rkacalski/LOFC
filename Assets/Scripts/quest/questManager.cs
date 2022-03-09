@@ -49,7 +49,7 @@ public class questManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        print(player.mapInProgress);
+        //print(player.mapInProgress);
         StartCoroutine(getCrateInfo(0.2f));
         if (player.mapInProgress == true)
         {
@@ -249,27 +249,6 @@ public class questManager : MonoBehaviour
                 }
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        print(player.mapInProgress);
-        print(numContainer.currentNumContainers);
-        /*
-        crate1 = spawn1.typeContSpawned;
-        crate2 = spawn2.typeContSpawned;
-        crate3 = spawn3.typeContSpawned;
-        crate4 = spawn4.typeContSpawned;
-        crate5 = spawn5.typeContSpawned;
-        crate6 = spawn6.typeContSpawned;
-        crate7 = spawn7.typeContSpawned;
-        crate8 = spawn8.typeContSpawned;
-        crate9 = spawn9.typeContSpawned;
-        crate10 = spawn10.typeContSpawned;
-        crate11 = spawn11.typeContSpawned;
-        crate12 = spawn12.typeContSpawned;
-        */
     }
 
     IEnumerator getCrateInfo(float delay)

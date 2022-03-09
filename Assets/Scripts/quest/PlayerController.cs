@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,12 +17,14 @@ public class PlayerController : MonoBehaviour
     public Transform movePoint;
 
     public LayerMask whatStopsMovement;
+    public string mapName;
 
     // Start is called before the first frame update
     void Start()
     {
         movePoint.parent = null;
         playerMove = GetComponent<AudioSource>();
+        mapName = SceneManager.GetActiveScene().name;
     }
 
     void Update()
@@ -69,7 +72,7 @@ public class PlayerController : MonoBehaviour
                 movePoint.position += new Vector3(0f, 1f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
-                float creditValue = credits.creditsMaps1();
+                float creditValue = credits.creditsEarned(mapName);
                 creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
                 player.credits += (int)creditValue;
                 StartCoroutine(textAppear(creditsLabel, 0.2f));
@@ -89,9 +92,9 @@ public class PlayerController : MonoBehaviour
                 movePoint.position += new Vector3(0f, -1f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
-                //float creditValue = randomInt(35, 78);
-                //creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
-                //player.credits += (int)creditValue;
+                float creditValue = credits.creditsEarned(mapName);
+                creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
+                player.credits += (int)creditValue;
                 StartCoroutine(textAppear(creditsLabel, 0.2f));
                 player.mapInProgress = true;
             }
@@ -109,9 +112,9 @@ public class PlayerController : MonoBehaviour
                 movePoint.position += new Vector3(-1f, 0f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
-                //float creditValue = randomInt(35, 78);
-                //creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
-                //player.credits += (int)creditValue;
+                float creditValue = credits.creditsEarned(mapName);
+                creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
+                player.credits += (int)creditValue;
                 StartCoroutine(textAppear(creditsLabel, 0.2f));
                 player.mapInProgress = true;
             }
@@ -130,9 +133,9 @@ public class PlayerController : MonoBehaviour
                 movePoint.position += new Vector3(1f, 0f, 0f);
                 StartCoroutine(textAppear(EP, 0.2f));
                 StartCoroutine(textAppear(XP, 0.2f));
-                ///float creditValue = randomInt(35, 78);
-               // creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
-                //player.credits += (int)creditValue;
+                float creditValue = credits.creditsEarned(mapName);
+                creditsLabel.text = "+" + Mathf.Round(creditValue).ToString();
+                player.credits += (int)creditValue;
                 StartCoroutine(textAppear(creditsLabel, 0.2f));
                 player.mapInProgress = true;
             }

@@ -11517,6 +11517,272 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815250953}
   m_CullTransparentMesh: 1
+--- !u!1 &851416148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851416150}
+  - component: {fileID: 851416149}
+  m_Layer: 0
+  m_Name: questCredits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &851416149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851416148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083ae7aa4e87e314fb2ad831092cc053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maps1:
+  - questTest
+  - tat_1.2_N
+  - tat_1.3_N
+  - tat_1.4_N
+  - tat_1.5_N
+  - tat_1.6_N
+  - tat_2.1_N
+  - tat_2.2_N
+  - tat_2.3_N
+  - tat_2.4_N
+  - tat_2.5_N
+  - tat_2.6_N
+  - tat_3.1_N
+  - tat_3.2_N
+  - tat_3.3_N
+  - tat_3.4_N
+  - tat_3.5_N
+  - tat_3.6_N
+  maps2:
+  - tat_4.1_N
+  - tat_4.2_N
+  - tat_4.3_N
+  - tat_4.4_N
+  - tat_4.5_N
+  - tat_4.6_N
+  - tat_5.1_N
+  - tat_5.2_N
+  - tat_5.3_N
+  - tat_5.4_N
+  - tat_5.5_N
+  - tat_5.6_N
+  - tat_6.1_N
+  - tat_6.2_N
+  - tat_6.3_N
+  - tat_6.4_N
+  - tat_6.5_N
+  - tat_6.6_N
+  - ds_1.1_N
+  - ds_1.2_N
+  - ds_1.3_N
+  - ds_1.4_N
+  - ds_1.5_N
+  - ds_1.6_N
+  - ds_2.1_N
+  - ds_2.2_N
+  - ds_2.3_N
+  - ds_2.4_N
+  - ds_2.5_N
+  - ds_2.6_N
+  - ds_3.1_N
+  - ds_3.2_N
+  - ds_3.3_N
+  - ds_3.4_N
+  - ds_3.5_N
+  - ds_3.6_N
+  maps3:
+  - ds_4.1_N
+  - ds_4.2_N
+  - ds_4.3_N
+  - ds_4.4_N
+  - ds_4.5_N
+  - ds_4.6_N
+  - ds_5.1_N
+  - ds_5.2_N
+  - ds_5.3_N
+  - ds_5.4_N
+  - ds_5.5_N
+  - ds_5.6_N
+  - ds_6.1_N
+  - ds_6.2_N
+  - ds_6.3_N
+  - ds_6.4_N
+  - ds_6.5_N
+  - ds_6.6_N
+  - y4_1.1_N
+  - y4_1.2_N
+  - y4_1.3_N
+  - y4_1.4_N
+  - y4_1.5_N
+  - y4_1.6_N
+  - y4_2.1_N
+  - y4_2.2_N
+  - y4_2.3_N
+  - y4_2.4_N
+  - y4_2.5_N
+  - y4_2.6_N
+  - y4_3.1_N
+  - y4_3.2_N
+  - y4_3.3_N
+  - y4_3.4_N
+  - y4_3.5_N
+  - y4_3.6_N
+  maps4:
+  - y4_4.1_N
+  - y4_4.2_N
+  - y4_4.3_N
+  - y4_4.4_N
+  - y4_4.5_N
+  - y4_4.6_N
+  - y4_5.1_N
+  - y4_5.2_N
+  - y4_5.3_N
+  - y4_5.4_N
+  - y4_5.5_N
+  - y4_5.6_N
+  - y4_6.1_N
+  - y4_6.2_N
+  - y4_6.3_N
+  - y4_6.4_N
+  - y4_6.5_N
+  - y4_6.6_N
+  - hth_1.1_N
+  - hth_1.2_N
+  - hth_1.3_N
+  - hth_1.4_N
+  - hth_1.5_N
+  - hth_1.6_N
+  - hth_2.1_N
+  - hth_2.2_N
+  - hth_2.3_N
+  - hth_2.4_N
+  - hth_2.5_N
+  - hth_2.6_N
+  - hth_3.1_N
+  - hth_3.2_N
+  - hth_3.3_N
+  - hth_3.4_N
+  - hth_3.5_N
+  - hth_3.6_N
+  maps5:
+  - hth_4.1_N
+  - hth_4.2_N
+  - hth_4.3_N
+  - hth_4.4_N
+  - hth_4.5_N
+  - hth_4.6_N
+  - hth_5.1_N
+  - hth_5.2_N
+  - hth_5.3_N
+  - hth_5.4_N
+  - hth_5.5_N
+  - hth_5.6_N
+  - hth_6.1_N
+  - hth_6.2_N
+  - hth_6.3_N
+  - hth_6.4_N
+  - hth_6.5_N
+  - hth_6.6_N
+  - bsp_1.1_N
+  - bsp_1.2_N
+  - bsp_1.3_N
+  - bsp_1.4_N
+  - bsp_1.5_N
+  - bsp_1.6_N
+  - bsp_2.1_N
+  - bsp_2.2_N
+  - bsp_2.3_N
+  - bsp_2.4_N
+  - bsp_2.5_N
+  - bsp_2.6_N
+  - bsp_3.1_N
+  - bsp_3.2_N
+  - bsp_3.3_N
+  - bsp_3.4_N
+  - bsp_3.5_N
+  - bsp_3.6_N
+  maps6:
+  - bsp_4.1_N
+  - bsp_4.2_N
+  - bsp_4.3_N
+  - bsp_4.4_N
+  - bsp_4.5_N
+  - bsp_4.6_N
+  - bsp_5.1_N
+  - bsp_5.2_N
+  - bsp_5.3_N
+  - bsp_5.4_N
+  - bsp_5.5_N
+  - bsp_5.6_N
+  - bsp_6.1_N
+  - bsp_6.2_N
+  - bsp_6.3_N
+  - bsp_6.4_N
+  - bsp_6.5_N
+  - bsp_6.6_N
+  - end_1.1_N
+  - end_1.2_N
+  - end_1.3_N
+  - end_1.4_N
+  - end_1.5_N
+  - end_1.6_N
+  - end_2.1_N
+  - end_2.2_N
+  - end_2.3_N
+  - end_2.4_N
+  - end_2.5_N
+  - end_2.6_N
+  - end_3.1_N
+  - end_3.2_N
+  - end_3.3_N
+  - end_3.4_N
+  - end_3.5_N
+  - end_3.6_N
+  maps7:
+  - end_4.1_N
+  - end_4.2_N
+  - end_4.3_N
+  - end_4.4_N
+  - end_4.5_N
+  - end_4.6_N
+  - end_5.1_N
+  - end_5.2_N
+  - end_5.3_N
+  - end_5.4_N
+  - end_5.5_N
+  - end_5.6_N
+  - end_6.1_N
+  - end_6.2_N
+  - end_6.3_N
+  - end_6.4_N
+  - end_6.5_N
+  - end_6.6_N
+--- !u!4 &851416150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851416148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.1307857, y: 6.5362043, z: -1.3475413}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &862696273
 GameObject:
   m_ObjectHideFlags: 0
@@ -12584,11 +12850,13 @@ MonoBehaviour:
   XP: {fileID: 1157335548}
   creditsLabel: {fileID: 147744473}
   playerMove: {fileID: 0}
+  credits: {fileID: 851416149}
   moveSpeed: 5
   movePoint: {fileID: 712455375}
   whatStopsMovement:
     serializedVersion: 2
     m_Bits: 8
+  mapName: 
 --- !u!4 &1510960664
 Transform:
   m_ObjectHideFlags: 0

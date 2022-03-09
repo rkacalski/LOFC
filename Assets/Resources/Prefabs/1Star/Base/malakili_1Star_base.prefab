@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7048297519550761022
+--- !u!1 &1980101798644876030
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4562932041596704306}
-  - component: {fileID: 888245091793681245}
-  - component: {fileID: 10565104765377533}
-  - component: {fileID: 7885770744810439728}
+  - component: {fileID: 5042030318263901426}
+  - component: {fileID: 8573032263914664349}
+  - component: {fileID: 8831455172787835197}
+  - component: {fileID: 1712999457887882992}
   m_Layer: 0
-  m_Name: rancor_1star_base
+  m_Name: malakili_1Star_base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &4562932041596704306
+--- !u!224 &5042030318263901426
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7048297519550761022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 1980101798644876030}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9661836, y: 0.9661836, z: 0.9661836}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -242, y: 670}
+  m_AnchoredPosition: {x: 50.02177, y: 664.9815}
   m_SizeDelta: {x: 147.4536, y: 225.7017}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &888245091793681245
+--- !u!222 &8573032263914664349
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7048297519550761022}
+  m_GameObject: {fileID: 1980101798644876030}
   m_CullTransparentMesh: 1
---- !u!114 &10565104765377533
+--- !u!114 &8831455172787835197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7048297519550761022}
+  m_GameObject: {fileID: 1980101798644876030}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 242a3dd34fc25cd4eb9bfe04127363c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 154a5acbc5599ce46a58eaeb7d0847bd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -76,39 +76,38 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7885770744810439728
+--- !u!114 &1712999457887882992
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7048297519550761022}
+  m_GameObject: {fileID: 1980101798644876030}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54ea2ebc309dbe94da7ca1cc002f4390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardName: rancor_1star_base
-  displayName: Rancor
-  cardArt: {fileID: 21300000, guid: 242a3dd34fc25cd4eb9bfe04127363c5, type: 3}
+  cardName: malakili_1Star_base
+  displayName: Malakili
+  cardArt: {fileID: 21300000, guid: 154a5acbc5599ce46a58eaeb7d0847bd, type: 3}
   rarity: 1
   side: 78
   range: S
-  atkFreq: 1
-  attack: 510
-  defense: 420
-  attack_mult: 75.7894736
-  defense_mult: 43.6842105
+  atkFreq: 2
+  attack: 280
+  defense: 230
+  attack_mult: 32.631578
+  defense_mult: 19.473684
   level: 1
-  HP: 400
+  HP: 500
   atkPatern: 1 -on- 1
   NumofATKs: 1 per turn
   inForm: 0
   accuracy: 110
   evasion: 20
-  cost: 4
+  cost: 2
   skill: None
-  cardDescript: This giant, horrifying monster lives underneath Jabba's palace. Jabba
-    and his guests often enjoy watching it kill its prey for sport.
+  cardDescript: Malakili is the keeper of the rancor monster beneath Jabba's palace.
   X: 1
   Y: 1

@@ -60,6 +60,12 @@ public class homeUI : MonoBehaviour
         playerInv = 1;
     }
 
+    //Enhance Button
+    public void enhance()
+    {
+        SceneManager.LoadScene("enhanceCardMain");
+    }
+
     // Start is called before the first frame update
     void Start()
     {

@@ -27,6 +27,7 @@ public class enhanceManager : MonoBehaviour
     public void homeButton()
     {
         clearStuff();
+        updatePlayerCards();
         SceneManager.LoadScene("Home Screen");
     }
 
@@ -51,7 +52,7 @@ public class enhanceManager : MonoBehaviour
 
     void updatePlayerCards()
     {
-        //do stuff
+        playerCards.userCards = cardManager.sortedBinder;
     }
 
     void clearStuff()

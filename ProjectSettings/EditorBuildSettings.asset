@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Home Screen.unity
     guid: d1717c2c7abcb754697fb23086fa3b40
   - enabled: 1
+    path: Assets/Scenes/Card Upgrades/skillMastSelect.unity
+    guid: bc0826b5fabf93d468fd491318c730ae
+  - enabled: 1
     path: Assets/Scenes/Card Upgrades/enhanceCardMain.unity
     guid: f3edbe9a4f9107a4db1bc9082381f1ba
   - enabled: 1

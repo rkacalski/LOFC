@@ -25,6 +25,9 @@ public class Card : MonoBehaviour
     public int evasion;
     public int cost;
     public string skill;
+    public double skillLevel;
+    public int baseSkillLevel;
+    public double skillLevMult;
     public string cardDescript;
     public int X;
     public int Y;

@@ -685,7 +685,7 @@ MonoBehaviour:
   index2name: {fileID: 1481586309}
   index3name: {fileID: 39243724}
   index4name: {fileID: 1309291860}
-  index5name: {fileID: 0}
+  index5name: {fileID: 1037188720}
   index6name: {fileID: 1578747022}
   index7name: {fileID: 1632171476}
   index8name: {fileID: 2013992119}
@@ -3836,6 +3836,17 @@ RectTransform:
   m_AnchoredPosition: {x: 7.0002, y: -474}
   m_SizeDelta: {x: 249.9319, y: 87.4707}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1037188720 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 945537758514791464, guid: b09d713680c2099488cfcc1064f67082, type: 3}
+  m_PrefabInstance: {fileID: 1759486747}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1057566193 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6208985015791139474, guid: b09d713680c2099488cfcc1064f67082, type: 3}

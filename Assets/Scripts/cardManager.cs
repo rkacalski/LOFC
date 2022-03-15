@@ -14,7 +14,7 @@ public class cardManager : MonoBehaviour
     public static int card1newDEF;
     public static bool cardSelected;
 
-    List<Card> sortedBinder = new List<Card>();
+    public static List<Card> sortedBinder = new List<Card>();
     public Image cardart1;
     public Text cardLevel;
     public Text credits;

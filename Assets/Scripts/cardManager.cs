@@ -45,7 +45,7 @@ public class cardManager : MonoBehaviour
         player.credits = 1650;
         credits.text = "Credits: " + player.credits.ToString();
 
-        print(cardSelect.card1PosinList);
+        //print(cardSelect.card1PosinList);
         if (cardSelected != false)
         {
             cardName = cardSelect.card1Name;
@@ -154,8 +154,6 @@ public class cardManager : MonoBehaviour
         numLevels = startingCardLevel - origLevelValue;
         card1.attack = (int)(card1.attack_mult * numLevels) + card1OriginalATK;
         card1.defense = (int)(card1.defense_mult * numLevels) + card1OrigonalDEF;
-
-
     }
 
     IEnumerator textAppear(Text go, float delay, int amnt, string PorN)

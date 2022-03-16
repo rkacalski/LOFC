@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class enhanceManager : MonoBehaviour
+public class skillMastFinal_Manager : MonoBehaviour
 {
     public Image cardArt;
     public GameObject glow;
@@ -14,21 +14,31 @@ public class enhanceManager : MonoBehaviour
     public Text atk_Label;
     public Text def_Label;
 
-    // Start is called before the first frame update
     void Start()
     {
-        cardArt.sprite = cardManager.card1.cardArt;
-        atk_Label.text = " ATK: " + cardManager.card1OriginalATK.ToString() + " >> " + cardManager.card1.attack.ToString();
-        def_Label.text = " DEF: " + cardManager.card1OrigonalDEF.ToString() + " >> " + cardManager.card1.defense.ToString();
+        cardArt.sprite = skillManager.card1.cardArt;
+        atk_Label.text = skillManager.startingCardLevel.ToString() + " >> " + skillManager.card1.skillLevel.ToString("f1");
+        def_Label.text = " Lvl: " + skillManager.startingLvlValue.ToString() + " >> " + skillManager.card1.baseSkillLevel.ToString();
         StartCoroutine(itemsAppear(atk_Label, def_Label, glow, atkPanel, defPanel, 4));
     }
 
-    //button
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
     public void homeButton()
     {
         updatePlayerCards();
         clearStuff();
         SceneManager.LoadScene("Home Screen");
+    }
+
+    void updatePlayerCards()
+    {
+        skillManager.sortedBinder[skillMastSelect.cardPosinList] = skillManager.card1;
+        playerCards.userCards = skillManager.sortedBinder;
     }
 
     IEnumerator itemsAppear(Text atk, Text def, GameObject glw, GameObject aPanel, GameObject dPanel, float delay)
@@ -50,31 +60,18 @@ public class enhanceManager : MonoBehaviour
         button.SetActive(true);
     }
 
-    void updatePlayerCards()
-    {
-        cardManager.sortedBinder[cardSelect.card1PosinList] = cardManager.card1;
-        playerCards.userCards = cardManager.sortedBinder;
-    }
-
     void clearStuff()
     {
         //Manager
-        cardManager.card1 = null;
-        cardManager.card1OriginalATK = 0;
-        cardManager.card1OrigonalDEF = 0;
-        cardManager.sortedBinder = null;
-        cardManager.card1newATK = 0;
-        cardManager.card1newDEF = 0;
-        cardManager.cardSelected = false;
+        skillManager.card1 = null;
+        skillManager.card1Originalskill = 0;
+        skillManager.card1newskill = 0;
+        skillManager.cardSelected = false;
+        skillManager.sortedBinder = null;
+        skillManager.startingCardLevel = 0;
+        skillManager.startingLvlValue = 0;
 
         //Select
-        cardSelect.card1PosinList = -1;
-        cardSelect.card2PosinList = -1;
-        cardSelect.card1Level = null;
-        cardSelect.card2Level = null;
-        cardSelect.card1rarity = 0;
-        cardSelect.card2rarity = 0;
-        cardSelect.card1Name = null;
-        cardSelect.card2Name = null;
+        skillMastSelect.cardPosinList = 0;
     }
 }

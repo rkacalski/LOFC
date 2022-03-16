@@ -21,7 +21,6 @@ public class UImanager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerCards.userCards = Resources.LoadAll<Card>("Prefabs/1Star/Base").ToList();
         DisplayCards();
         pageNum = 1;
         cardAmount.text = playerCards.userCards.Count.ToString();
@@ -60,6 +59,7 @@ public class UImanager : MonoBehaviour
     private void DisplayCards()
     {
         cardCount = playerCards.userCards.Count;
+        print(cardCount);
         pageMax = Mathf.Ceil(playerCards.userCards.Count / 10f);
 
         sortedBinder = playerCards.userCards.OrderBy(x => x.rarity).ToList();

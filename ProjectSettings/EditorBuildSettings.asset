@@ -15,14 +15,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Questing/questComplete.unity
     guid: d33b663a897a7374d82e9d2b5b6fd60e
   - enabled: 1
+    path: Assets/Scenes/Card Binder.unity
+    guid: e8226d8f7f81fbe4389881f32e72a2e8
+  - enabled: 1
     path: Assets/Scenes/Card Upgrades/enhanceFinal.unity
     guid: e576c072b23ff4546acb90573f1959f1
   - enabled: 1
     path: Assets/Scenes/Home Screen.unity
     guid: d1717c2c7abcb754697fb23086fa3b40
   - enabled: 1
+    path: Assets/Scenes/Card Upgrades/skillMastMain.unity
+    guid: c487b4de1d244aa40beb83c0761d807f
+  - enabled: 1
     path: Assets/Scenes/Card Upgrades/skillMastSelect.unity
     guid: bc0826b5fabf93d468fd491318c730ae
+  - enabled: 1
+    path: Assets/Scenes/Card Upgrades/skillMastFinal.unity
+    guid: 783c9faa9da6c8b418b9b0ebe4d7314f
   - enabled: 1
     path: Assets/Scenes/Card Upgrades/enhanceCardMain.unity
     guid: f3edbe9a4f9107a4db1bc9082381f1ba

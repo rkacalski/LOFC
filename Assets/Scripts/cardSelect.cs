@@ -107,7 +107,7 @@ public class cardSelect : MonoBehaviour
         card1Level = index2Level.text;
         popUpImage.sprite = image2.sprite;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
-        print(index2.text);
+        //print(index2.text);
     }
     public void selectCardenhancePopup3()
     {
@@ -117,7 +117,7 @@ public class cardSelect : MonoBehaviour
         card1Level = index3Level.text;
         popUpImage.sprite = image3.sprite;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
-        print(index3.text);
+        //print(index3.text);
     }
     public void selectCardenhancePopup4()
     {
@@ -127,7 +127,7 @@ public class cardSelect : MonoBehaviour
         card1Level = index4Level.text;
         popUpImage.sprite = image4.sprite;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
-        print(index4.text);
+        //print(index4.text);
     }
     public void selectCardenhancePopup5()
     {
@@ -137,7 +137,7 @@ public class cardSelect : MonoBehaviour
         card1Level = index5Level.text;
         popUpImage.sprite = image5.sprite;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
-        print(index5.text);
+        //print(index5.text);
     }
     public void selectCardenhancePopup6()
     {
@@ -147,7 +147,7 @@ public class cardSelect : MonoBehaviour
         card1Level = index6Level.text;
         popUpImage.sprite = image6.sprite;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
-        print(index6.text);
+        //print(index6.text);
     }
     public void selectCardenhancePopup7()
     {
@@ -157,7 +157,7 @@ public class cardSelect : MonoBehaviour
         card1Level = index7Level.text;
         popUpImage.sprite = image7.sprite;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
-        print(index7.text);
+        //print(index7.text);
     }
     public void selectCardenhancePopup8()
     {
@@ -167,7 +167,7 @@ public class cardSelect : MonoBehaviour
         card1Level = index8Level.text;
         popUpImage.sprite = image8.sprite;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
-        print(index8.text);
+        //print(index8.text);
     }
     public void selectCardenhancePopup9()
     {
@@ -177,7 +177,7 @@ public class cardSelect : MonoBehaviour
         card1Level = index9Level.text;
         popUpImage.sprite = image9.sprite;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
-        print(index9.text);
+        //print(index9.text);
     }
     public void selectCardenhancePopup10()
     {
@@ -187,7 +187,7 @@ public class cardSelect : MonoBehaviour
         card1Level = index10Level.text;
         popUpImage.sprite = image10.sprite;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
-        print(index10.text);
+        //print(index10.text);
     }
 
     public void selectCardenhanceClose()

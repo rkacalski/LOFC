@@ -50,12 +50,33 @@ public class homeUI : MonoBehaviour
 
     public void addStarterCards()
     {
+        List<Card> tempBinder = new List<Card>();
         playerInv = playerCards.userCards.Count;
+
         if (playerInv == 0)
         {
-            playerCards.userCards = Resources.LoadAll<Card>("Prefabs/1Star/Base/nGunray_1Star_base").ToList();
+            tempBinder = Resources.LoadAll<Card>("Prefabs/1Star/Base").ToList();
+
+            for(int i = 0; i < tempBinder.Count; i++)
+            {
+                playerCards.userCards.Add(tempBinder[i]);
+            }
+
+            tempBinder = Resources.LoadAll<Card>("Prefabs/2 Star/Base").ToList();
+
+            for (int i = 0; i < tempBinder.Count; i++)
+            {
+                playerCards.userCards.Add(tempBinder[i]);
+            }
+
+            tempBinder = Resources.LoadAll<Card>("Prefabs/5 Star/Base").ToList();
+
+            for (int i = 0; i < tempBinder.Count; i++)
+            {
+                playerCards.userCards.Add(tempBinder[i]);
+            }
+
             print(playerCards.userCards.Count);
-            print(playerCards.userCards[0].displayName);
         }
         playerInv = 1;
     }
@@ -64,6 +85,21 @@ public class homeUI : MonoBehaviour
     public void enhance()
     {
         SceneManager.LoadScene("enhanceCardMain");
+    }
+
+    public void skillMast()
+    {
+        SceneManager.LoadScene("skillMastMain");
+    }
+
+    public void evolve()
+    {
+        SceneManager.LoadScene("evoHome");
+    }
+
+    public void cardBinder()
+    {
+        SceneManager.LoadScene("Card Binder");
     }
 
     // Start is called before the first frame update

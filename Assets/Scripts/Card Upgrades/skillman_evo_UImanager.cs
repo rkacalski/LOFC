@@ -20,7 +20,6 @@ public class skillman_evo_UImanager : MonoBehaviour
 
     void Start()
     {
-        playerCards.userCards = Resources.LoadAll<Card>("Prefabs/2 Star/Base").ToList();
         DisplayCards();
         pageNum = 1;
         cardAmount.text = playerCards.userCards.Count.ToString();

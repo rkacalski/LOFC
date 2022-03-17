@@ -108,6 +108,11 @@ MonoBehaviour:
   evasion: 20
   cost: 3
   skill: None
+  skillLevel: 0
+  baseSkillLevel: 0
+  skillLevMult: 0
   cardDescript: Nicanas Tassu was a Jedi Knight assigned to the Genonosis rescue
     mission. He, and fellow Jedi Knight Sephjet Josall, carried spare lightsabers
     for the captured Obi-Wan Kenobi and Anakin Skywalker.
+  X: 0
+  Y: 0

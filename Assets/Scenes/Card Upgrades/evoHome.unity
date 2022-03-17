@@ -3349,7 +3349,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enhance
+  m_Text: Evolve
 --- !u!222 &1582646421
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4422,6 +4422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1957441707}
+  - component: {fileID: 1957441708}
   m_Layer: 0
   m_Name: evoManager
   m_TagString: Untagged
@@ -4443,6 +4444,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1957441708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957441706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: febf993d93cbe4b4283cb7469c0eef37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardart1: {fileID: 1060210638}
+  cardart2: {fileID: 1923884362}
 --- !u!1 &1962702343
 GameObject:
   m_ObjectHideFlags: 0
@@ -4525,7 +4540,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1962702346}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1957441708}
+        m_TargetAssemblyTypeName: evoManager, Assembly-CSharp
+        m_MethodName: skillMastSelectCard1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1962702346
 MonoBehaviour:
   m_ObjectHideFlags: 0

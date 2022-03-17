@@ -108,6 +108,9 @@ MonoBehaviour:
   evasion: 20
   cost: 2
   skill: None
+  skillLevel: 0
+  baseSkillLevel: 0
+  skillLevMult: 0
   cardDescript: Malakili is the keeper of the rancor monster beneath Jabba's palace.
   X: 1
   Y: 1

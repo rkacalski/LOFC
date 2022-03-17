@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class skillman_evo_UImanager : MonoBehaviour
+public class evo1UI : MonoBehaviour
 {
     public GameObject[] cardSlots;
 
@@ -17,27 +17,57 @@ public class skillman_evo_UImanager : MonoBehaviour
     public Text pageText;
     public Text cardAmount;
 
+    string[] terms = { "gg[AE]", "nebit", "awakened", "awakened+"};
     List<Card> sortedBinder = new List<Card>();
     List<int> origLoc = new List<int>();
 
     void Start()
     {
-        DisplayCards();
         pageNum = 1;
+        DisplayCards();
         cardAmount.text = playerCards.userCards.Count.ToString();
     }
 
-    void update()
+    void Update()
     {
         updatePage();
-        updateCards();
+        //updateCards();
+    }
+
+    public void updatePage()
+    {
+        pageText.text = pageNum + "/" + pageMax;
+    }
+
+    public void nextPage()
+    {
+        if (pageNum >= pageMax)
+        {
+            pageNum = 1;
+        }
+        else
+        {
+            pageNum = pageNum + 1;
+        }
+    }
+
+    public void prevPage()
+    {
+        if (pageNum <= 1)
+        {
+            pageNum = (int)pageMax;
+        }
+        else
+        {
+            pageNum = pageNum - 1;
+        }
     }
 
     private void DisplayCards()
     {
-        for(int i = 0; i < playerCards.userCards.Count; i++)
+        for (int i = 0; i < playerCards.userCards.Count; i++)
         {
-            if (!playerCards.userCards[i].skill.Equals("None"))
+            if ((!playerCards.userCards[i].cardName.Contains("evomax")) && (!playerCards.userCards[i].cardName.Contains("evomax+")) && (!playerCards.userCards[i].cardName.Contains("awakened")) && (!playerCards.userCards[i].cardName.Contains("awakened+")))
             {
                 sortedBinder.Add(playerCards.userCards[i]);
                 origLoc.Add(i);
@@ -50,7 +80,17 @@ public class skillman_evo_UImanager : MonoBehaviour
         sortedBinder = sortedBinder.OrderBy(x => x.rarity).ToList();
         sortedBinder.Reverse();
 
-        print(cardCount);
+        //test
+        for (int i = 0; i < sortedBinder.Count; i++)
+        {
+            if(sortedBinder[i].cardName.Contains("awakened"))
+            {
+                print("Broke");
+            }
+        }
+
+        print("Orig Num: "+ playerCards.userCards.Count);
+        print("New Num: " + cardCount);
 
         for (int i = 0; i <= 9; i++)
         {
@@ -306,32 +346,4 @@ public class skillman_evo_UImanager : MonoBehaviour
 
     }
 
-    public void updatePage()
-    {
-        pageText.text = pageNum + "/" + pageMax;
-    }
-
-    public void nextPage()
-    {
-        if (pageNum >= pageMax)
-        {
-            pageNum = 1;
-        }
-        else
-        {
-            pageNum = pageNum + 1;
-        }
-    }
-
-    public void prevPage()
-    {
-        if (pageNum <= 1)
-        {
-            pageNum = (int)pageMax;
-        }
-        else
-        {
-            pageNum = pageNum - 1;
-        }
-    }
 }

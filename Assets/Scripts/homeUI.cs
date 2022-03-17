@@ -50,6 +50,7 @@ public class homeUI : MonoBehaviour
 
     public void addStarterCards()
     {
+        Card tempCard;
         List<Card> tempBinder = new List<Card>();
         playerInv = playerCards.userCards.Count;
 
@@ -59,24 +60,38 @@ public class homeUI : MonoBehaviour
 
             for(int i = 0; i < tempBinder.Count; i++)
             {
-                playerCards.userCards.Add(tempBinder[i]);
+                tempCard = GameObject.Instantiate(tempBinder[i]);
+                playerCards.userCards.Add(tempCard);
+            }
+
+            tempBinder = Resources.LoadAll<Card>("Prefabs/1Star/awakened").ToList();
+
+            for (int i = 0; i < tempBinder.Count; i++)
+            {
+                tempCard = GameObject.Instantiate(tempBinder[i]);
+                playerCards.userCards.Add(tempCard);
             }
 
             tempBinder = Resources.LoadAll<Card>("Prefabs/2 Star/Base").ToList();
 
             for (int i = 0; i < tempBinder.Count; i++)
             {
-                playerCards.userCards.Add(tempBinder[i]);
+                tempCard = GameObject.Instantiate(tempBinder[i]);
+                playerCards.userCards.Add(tempCard);
             }
 
             tempBinder = Resources.LoadAll<Card>("Prefabs/5 Star/Base").ToList();
 
             for (int i = 0; i < tempBinder.Count; i++)
             {
-                playerCards.userCards.Add(tempBinder[i]);
+                tempCard = GameObject.Instantiate(tempBinder[i]);
+                playerCards.userCards.Add(tempCard);
+                playerCards.userCards.Add(tempCard);
             }
 
-            print(playerCards.userCards.Count);
+            //print(playerCards.userCards.Count);
+            playerCards.userCards = playerCards.userCards.OrderBy(x => x.rarity).ToList();
+            playerCards.userCards.Reverse();
         }
         playerInv = 1;
     }

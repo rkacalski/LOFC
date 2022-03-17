@@ -108,5 +108,10 @@ MonoBehaviour:
   evasion: 10
   cost: 3
   skill: None
+  skillLevel: 0
+  baseSkillLevel: 0
+  skillLevMult: 0
   cardDescript: As the viceroy of the Trade Federation, Nute Gunray is powerful,
     deceitful, and willing to kill for his financial benefit.
+  X: 0
+  Y: 0

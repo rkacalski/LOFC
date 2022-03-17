@@ -108,5 +108,10 @@ MonoBehaviour:
   evasion: 20
   cost: 5
   skill: None
+  skillLevel: 0
+  baseSkillLevel: 0
+  skillLevMult: 0
   cardDescript: A Twi'lek Jedi Knight who uses her impressive lightsaber skills to
     swiftly overcome her opponents.
+  X: 0
+  Y: 0

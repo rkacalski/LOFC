@@ -108,6 +108,9 @@ MonoBehaviour:
   evasion: 10
   cost: 4
   skill: None
+  skillLevel: 0
+  baseSkillLevel: 0
+  skillLevMult: 0
   cardDescript: Nebit is a Jawa chief. His tribe trades droids and once sold C-3PO
     and R2-D2 to Owen Lars, Luke Skywalker's Uncle.
   X: 1

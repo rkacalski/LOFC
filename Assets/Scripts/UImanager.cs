@@ -26,6 +26,12 @@ public class UImanager : MonoBehaviour
         cardAmount.text = playerCards.userCards.Count.ToString();
     }
 
+    void update()
+    {
+        updatePage();
+        updateCards();
+    }
+
     public void updatePage()
     {
         pageText.text = pageNum + "/" + pageMax;
@@ -281,13 +287,13 @@ public class UImanager : MonoBehaviour
                 //cardSlots[i].transform.GetChild(13).transform.GetChild(0).GetComponent<Text>().text = sortedBinder[i + loopCounter].inForm.ToString();
 
                 //Set Array Pos
-                cardSlots[i].transform.GetChild(16).transform.GetChild(1).GetComponent<Text>().text = i.ToString();
+                cardSlots[i].transform.GetChild(16).transform.GetChild(1).GetComponent<Text>().text = (i + loopCounter).ToString();
 
                 //get card rarity
-                cardSlots[i].transform.GetChild(16).transform.GetChild(2).GetComponent<Text>().text = sortedBinder[i].rarity.ToString();
+                cardSlots[i].transform.GetChild(16).transform.GetChild(2).GetComponent<Text>().text = sortedBinder[i + loopCounter].rarity.ToString();
 
                 //get card rarity
-                cardSlots[i].transform.GetChild(16).transform.GetChild(3).GetComponent<Text>().text = sortedBinder[i].cardName;
+                cardSlots[i].transform.GetChild(16).transform.GetChild(3).GetComponent<Text>().text = sortedBinder[i + loopCounter].cardName;
             }
 
             for (int i = 0; i <= 9; i++)

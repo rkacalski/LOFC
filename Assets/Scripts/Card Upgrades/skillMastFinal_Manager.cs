@@ -37,8 +37,7 @@ public class skillMastFinal_Manager : MonoBehaviour
 
     void updatePlayerCards()
     {
-        skillManager.sortedBinder[skillMastSelect.cardPosinList] = skillManager.card1;
-        playerCards.userCards = skillManager.sortedBinder;
+        playerCards.userCards[skillMastSelect.origCardPos] = skillManager.card1;
     }
 
     IEnumerator itemsAppear(Text atk, Text def, GameObject glw, GameObject aPanel, GameObject dPanel, float delay)
@@ -72,6 +71,7 @@ public class skillMastFinal_Manager : MonoBehaviour
         skillManager.startingLvlValue = 0;
 
         //Select
-        skillMastSelect.cardPosinList = 0;
+        skillMastSelect.cardPosinList = -1;
+        skillMastSelect.origCardPos = -1;
     }
 }

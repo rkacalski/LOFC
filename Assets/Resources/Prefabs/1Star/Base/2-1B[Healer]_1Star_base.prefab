@@ -107,5 +107,10 @@ MonoBehaviour:
   accuracy: 110
   evasion: 20
   cost: 1
-  skill: Heal Non-Droid
+  skill: None
+  skillLevel: 0
+  baseSkillLevel: 0
+  skillLevMult: 0
   cardDescript: 2-1B medical droids have been in use since the time of the republic.
+  X: 0
+  Y: 0

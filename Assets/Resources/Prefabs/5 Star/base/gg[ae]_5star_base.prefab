@@ -108,7 +108,12 @@ MonoBehaviour:
   evasion: 70
   cost: 35
   skill: Counter Attack [Med]
+  skillLevel: 200
+  baseSkillLevel: 1
+  skillLevMult: 2
   cardDescript: As the cyborg leader of the Droid Army, General Grievous is a superior
     commander. His skills at wielding up to four Lightsabers at once make him a deadly
     opponent. Many Jedi have fallen victim to his ruthless attacks. Whether they
     be Masters, or merely Padawans, no Jedi is safe.
+  X: 0
+  Y: 0

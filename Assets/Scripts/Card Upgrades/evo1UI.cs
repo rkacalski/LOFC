@@ -17,21 +17,52 @@ public class evo1UI : MonoBehaviour
     public Text pageText;
     public Text cardAmount;
 
-    string[] terms = { "gg[AE]", "nebit", "awakened", "awakened+"};
+    List<Card> tempBinder = new List<Card>();
     List<Card> sortedBinder = new List<Card>();
     List<int> origLoc = new List<int>();
 
     void Start()
     {
+        //for final delete the not from 1 and 5 star
+        for (int i = 0; i < playerCards.userCards.Count; i++)
+        {
+            if ((!playerCards.userCards[i].cardName.Contains("evomax")) && (!playerCards.userCards[i].cardName.Contains("evomax+")) && (!playerCards.userCards[i].cardName.Contains("awakened")) && (!playerCards.userCards[i].cardName.Contains("awakened+")))
+            {
+                if(playerCards.userCards[i].rarity.Equals(1) && (!playerCards.userCards[i].level.Equals(20)))
+                {
+                    tempBinder.Add(playerCards.userCards[i]);
+                    origLoc.Add(i);
+                }
+                if (playerCards.userCards[i].rarity.Equals(2) && (playerCards.userCards[i].level.Equals(30)))
+                {
+                    tempBinder.Add(playerCards.userCards[i]);
+                    origLoc.Add(i);
+                }
+                if (playerCards.userCards[i].rarity.Equals(3) && (playerCards.userCards[i].level.Equals(40)))
+                {
+                    tempBinder.Add(playerCards.userCards[i]);
+                    origLoc.Add(i);
+                }
+                if (playerCards.userCards[i].rarity.Equals(4) && (playerCards.userCards[i].level.Equals(50)))
+                {
+                    tempBinder.Add(playerCards.userCards[i]);
+                    origLoc.Add(i);
+                }
+                if (playerCards.userCards[i].rarity.Equals(5) && (!playerCards.userCards[i].level.Equals(60)))
+                {
+                    tempBinder.Add(playerCards.userCards[i]);
+                    origLoc.Add(i);
+                }
+            }
+        }
         pageNum = 1;
         DisplayCards();
-        cardAmount.text = playerCards.userCards.Count.ToString();
     }
 
     void Update()
     {
         updatePage();
-        //updateCards();
+        updateCards();
     }
 
     public void updatePage()
@@ -65,32 +96,12 @@ public class evo1UI : MonoBehaviour
 
     private void DisplayCards()
     {
-        for (int i = 0; i < playerCards.userCards.Count; i++)
-        {
-            if ((!playerCards.userCards[i].cardName.Contains("evomax")) && (!playerCards.userCards[i].cardName.Contains("evomax+")) && (!playerCards.userCards[i].cardName.Contains("awakened")) && (!playerCards.userCards[i].cardName.Contains("awakened+")))
-            {
-                sortedBinder.Add(playerCards.userCards[i]);
-                origLoc.Add(i);
-            }
-        }
-
         cardCount = sortedBinder.Count;
-        pageMax = Mathf.Ceil(playerCards.userCards.Count / 10f);
+        cardAmount.text = sortedBinder.Count.ToString();
+        pageMax = Mathf.Ceil(sortedBinder.Count / 10f);
 
-        sortedBinder = sortedBinder.OrderBy(x => x.rarity).ToList();
+        sortedBinder = tempBinder.OrderBy(x => x.rarity).ToList();
         sortedBinder.Reverse();
-
-        //test
-        for (int i = 0; i < sortedBinder.Count; i++)
-        {
-            if(sortedBinder[i].cardName.Contains("awakened"))
-            {
-                print("Broke");
-            }
-        }
-
-        print("Orig Num: "+ playerCards.userCards.Count);
-        print("New Num: " + cardCount);
 
         for (int i = 0; i <= 9; i++)
         {
@@ -326,9 +337,6 @@ public class evo1UI : MonoBehaviour
 
                 //get card rarity
                 cardSlots[i].transform.GetChild(16).transform.GetChild(3).GetComponent<Text>().text = sortedBinder[i + loopCounter].cardName;
-
-                //set orig array pos
-                cardSlots[i].transform.GetChild(16).transform.GetChild(4).GetComponent<Text>().text = origLoc[i + loopCounter].ToString();
             }
 
             for (int i = 0; i <= 9; i++)

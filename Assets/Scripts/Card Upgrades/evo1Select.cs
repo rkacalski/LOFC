@@ -52,8 +52,13 @@ public class evo1Select : MonoBehaviour
 
     public void selectCard()
     {
-        evoManager.cardSelected = true;
-        SceneManager.LoadScene("evoMain");
+        evoManager.card1Selected = true;
+        SceneManager.LoadScene("evoHome");
+    }
+
+    public void selectCardenhanceClose()
+    {
+        selectedPopUpmenu.transform.LeanScale(Vector2.zero, 0.7f).setEaseOutQuart();
     }
 
     public void selectCardenhancePopup1()
@@ -61,6 +66,69 @@ public class evo1Select : MonoBehaviour
         origCard1Pos = int.Parse(Origpos1.text);
         popUpImage.sprite = image1.sprite;
         card1PosinList = int.Parse(pos1.text);
+        selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
+    }
+    public void selectCardenhancePopup2()
+    {
+        origCard1Pos = int.Parse(Origpos2.text);
+        popUpImage.sprite = image2.sprite;
+        card1PosinList = int.Parse(pos2.text);
+        selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
+    }
+    public void selectCardenhancePopup3()
+    {
+        origCard1Pos = int.Parse(Origpos3.text);
+        popUpImage.sprite = image3.sprite;
+        card1PosinList = int.Parse(pos3.text);
+        selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
+    }
+    public void selectCardenhancePopup4()
+    {
+        origCard1Pos = int.Parse(Origpos4.text);
+        popUpImage.sprite = image4.sprite;
+        card1PosinList = int.Parse(pos4.text);
+        selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
+    }
+    public void selectCardenhancePopup5()
+    {
+        origCard1Pos = int.Parse(Origpos5.text);
+        popUpImage.sprite = image5.sprite;
+        card1PosinList = int.Parse(pos5.text);
+        selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
+    }
+    public void selectCardenhancePopup6()
+    {
+        origCard1Pos = int.Parse(Origpos6.text);
+        popUpImage.sprite = image6.sprite;
+        card1PosinList = int.Parse(pos6.text);
+        selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
+    }
+    public void selectCardenhancePopup7()
+    {
+        origCard1Pos = int.Parse(Origpos7.text);
+        popUpImage.sprite = image7.sprite;
+        card1PosinList = int.Parse(pos7.text);
+        selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
+    }
+    public void selectCardenhancePopup8()
+    {
+        origCard1Pos = int.Parse(Origpos8.text);
+        popUpImage.sprite = image8.sprite;
+        card1PosinList = int.Parse(pos8.text);
+        selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
+    }
+    public void selectCardenhancePopup9()
+    {
+        origCard1Pos = int.Parse(Origpos9.text);
+        popUpImage.sprite = image9.sprite;
+        card1PosinList = int.Parse(pos9.text);
+        selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
+    }
+    public void selectCardenhancePopup10()
+    {
+        origCard1Pos = int.Parse(Origpos10.text);
+        popUpImage.sprite = image10.sprite;
+        card1PosinList = int.Parse(pos10.text);
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
 }

@@ -171,7 +171,7 @@ public class UImanager : MonoBehaviour
 
     private void updateCards()
     {
-        cardCount = playerCards.userCards.Count;
+        //cardCount = playerCards.userCards.Count;
 
         if (pageNum == 1)
         {

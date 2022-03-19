@@ -95,8 +95,8 @@ MonoBehaviour:
   side: 68
   range: S
   atkFreq: 1
-  attack: 7100
-  defense: 6430
+  attack: 8255
+  defense: 6852
   attack_mult: 788.888889
   defense_mult: 694.444444
   level: 1

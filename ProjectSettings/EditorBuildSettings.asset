@@ -24,11 +24,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Home Screen.unity
     guid: d1717c2c7abcb754697fb23086fa3b40
   - enabled: 1
+    path: Assets/Scenes/Card Upgrades/evoFinal.unity
+    guid: ebf460f7126d6454893f245ebfbcc20a
+  - enabled: 1
     path: Assets/Scenes/Card Upgrades/skillMastMain.unity
     guid: c487b4de1d244aa40beb83c0761d807f
   - enabled: 1
     path: Assets/Scenes/Card Upgrades/skillMastSelect.unity
     guid: bc0826b5fabf93d468fd491318c730ae
+  - enabled: 1
+    path: Assets/Scenes/Card Upgrades/evoSelect2.unity
+    guid: f2f459cba882b1243828f2d2fc8b8765
   - enabled: 1
     path: Assets/Scenes/Card Upgrades/skillMastFinal.unity
     guid: 783c9faa9da6c8b418b9b0ebe4d7314f

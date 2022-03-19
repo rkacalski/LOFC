@@ -39,25 +39,31 @@ public class UImanager : MonoBehaviour
 
     public void nextPage()
     {
-        if (pageNum >= pageMax)
+        if (cardCount > 0)
         {
-            pageNum = 1;
-        }
-        else
-        {
-            pageNum = pageNum + 1;
+            if (pageNum >= pageMax)
+            {
+                pageNum = 1;
+            }
+            else
+            {
+                pageNum = pageNum + 1;
+            }
         }
     }
 
     public void prevPage()
     {
-        if (pageNum <= 1)
+        if (cardCount > 0)
         {
-            pageNum = (int)pageMax;
-        }
-        else
-        {
-            pageNum = pageNum - 1;
+            if (pageNum <= 1)
+            {
+                pageNum = (int)pageMax;
+            }
+            else
+            {
+                pageNum = pageNum - 1;
+            }
         }
     }
 

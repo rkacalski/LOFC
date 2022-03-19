@@ -122,6 +122,15 @@ public class homeUI : MonoBehaviour
     {
         addStarterCards();
         check = 1;
+
+        //test
+        /*
+        string test1;
+        string trimmed;
+        test1 = "gg[AE]_5star_base";
+        trimmed = test1.Substring(0, test1.IndexOf("_"));
+        print(trimmed);
+        */
     }
 
     // Update is called once per frame

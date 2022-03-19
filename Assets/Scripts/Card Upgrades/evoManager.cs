@@ -56,6 +56,8 @@ public class evoManager : MonoBehaviour
         sortedBinder = tempBinder.OrderBy(x => x.rarity).ToList();
         sortedBinder.Reverse();
 
+        tempBinder.Clear();
+
         if (card1Selected != false)
         {
             card1 = sortedBinder[evo1Select.card1PosinList];
@@ -63,8 +65,7 @@ public class evoManager : MonoBehaviour
         }
         if (card2Selected != false)
         {
-            //change to evo2select
-            card2 = sortedBinder[evo1Select.card1PosinList];
+            card2 = sortedBinder[evo2Select.card2PosinList];
             cardart2.sprite = card2.cardArt;
         }
     }
@@ -77,14 +78,17 @@ public class evoManager : MonoBehaviour
 
     public void skillMastSelectCard2()
     {
-        SceneManager.LoadScene("evoSelect2");
+        if (card1Selected != false)
+        {
+            SceneManager.LoadScene("evoSelect2");
+        }
     }
 
     public void evoFinal()
     {
         if((card1Selected == true) && (card2Selected == true))
         {
-            //SceneManager.LoadScene("evoSelect2");
+            SceneManager.LoadScene("evoFinal");
         }
     }
 

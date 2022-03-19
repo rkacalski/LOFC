@@ -17,40 +17,69 @@ public class skillman_evo_UImanager : MonoBehaviour
     public Text pageText;
     public Text cardAmount;
 
+    List<Card> tempBinder = new List<Card>();
     List<Card> sortedBinder = new List<Card>();
     List<int> origLoc = new List<int>();
 
     void Start()
     {
-        DisplayCards();
+        
+        for (int i = 0; i < playerCards.userCards.Count; i++)
+        {
+            if (!playerCards.userCards[i].skill.Equals("None"))
+            {
+                tempBinder.Add(playerCards.userCards[i]);
+                origLoc.Add(i);
+            }
+        }
+
         pageNum = 1;
-        cardAmount.text = playerCards.userCards.Count.ToString();
+        DisplayCards();
     }
 
-    void update()
+    void Update()
     {
         updatePage();
         updateCards();
     }
 
+    public void updatePage()
+    {
+        pageText.text = pageNum + "/" + pageMax;
+    }
+
+    public void nextPage()
+    {
+        if (pageNum >= pageMax)
+        {
+            pageNum = 1;
+        }
+        else
+        {
+            pageNum = pageNum + 1;
+        }
+    }
+
+    public void prevPage()
+    {
+        if (pageNum <= 1)
+        {
+            pageNum = (int)pageMax;
+        }
+        else
+        {
+            pageNum = pageNum - 1;
+        }
+    }
+
     private void DisplayCards()
     {
-        for(int i = 0; i < playerCards.userCards.Count; i++)
-        {
-            if (!playerCards.userCards[i].skill.Equals("None"))
-            {
-                sortedBinder.Add(playerCards.userCards[i]);
-                origLoc.Add(i);
-            }
-        }
-
         cardCount = sortedBinder.Count;
-        pageMax = Mathf.Ceil(playerCards.userCards.Count / 10f);
+        cardAmount.text = sortedBinder.Count.ToString();
+        pageMax = Mathf.Ceil(sortedBinder.Count / 10f);
 
-        sortedBinder = sortedBinder.OrderBy(x => x.rarity).ToList();
+        sortedBinder = tempBinder.OrderBy(x => x.rarity).ToList();
         sortedBinder.Reverse();
-
-        print(cardCount);
 
         for (int i = 0; i <= 9; i++)
         {
@@ -286,9 +315,6 @@ public class skillman_evo_UImanager : MonoBehaviour
 
                 //get card rarity
                 cardSlots[i].transform.GetChild(16).transform.GetChild(3).GetComponent<Text>().text = sortedBinder[i + loopCounter].cardName;
-
-                //set orig array pos
-                cardSlots[i].transform.GetChild(16).transform.GetChild(4).GetComponent<Text>().text = origLoc[i + loopCounter].ToString();
             }
 
             for (int i = 0; i <= 9; i++)
@@ -306,32 +332,4 @@ public class skillman_evo_UImanager : MonoBehaviour
 
     }
 
-    public void updatePage()
-    {
-        pageText.text = pageNum + "/" + pageMax;
-    }
-
-    public void nextPage()
-    {
-        if (pageNum >= pageMax)
-        {
-            pageNum = 1;
-        }
-        else
-        {
-            pageNum = pageNum + 1;
-        }
-    }
-
-    public void prevPage()
-    {
-        if (pageNum <= 1)
-        {
-            pageNum = (int)pageMax;
-        }
-        else
-        {
-            pageNum = pageNum - 1;
-        }
-    }
 }

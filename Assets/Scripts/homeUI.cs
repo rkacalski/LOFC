@@ -64,11 +64,12 @@ public class homeUI : MonoBehaviour
                 playerCards.userCards.Add(tempCard);
             }
 
-            tempBinder = Resources.LoadAll<Card>("Prefabs/1Star/awakened").ToList();
+            tempBinder = Resources.LoadAll<Card>("Prefabs/1Star/evomax").ToList();
 
             for (int i = 0; i < tempBinder.Count; i++)
             {
                 tempCard = GameObject.Instantiate(tempBinder[i]);
+                playerCards.userCards.Add(tempCard);
                 playerCards.userCards.Add(tempCard);
             }
 
@@ -112,6 +113,11 @@ public class homeUI : MonoBehaviour
         SceneManager.LoadScene("evoHome");
     }
 
+    public void awaken()
+    {
+        SceneManager.LoadScene("awakenHome");
+    }
+
     public void cardBinder()
     {
         SceneManager.LoadScene("Card Binder");
@@ -124,13 +130,17 @@ public class homeUI : MonoBehaviour
         check = 1;
 
         //test
-        /*
         string test1;
-        string trimmed;
-        test1 = "gg[AE]_5star_base";
-        trimmed = test1.Substring(0, test1.IndexOf("_"));
-        print(trimmed);
-        */
+        test1 = "gg[AE]_5star_evo1";
+
+        for (int i = 0; i < playerCards.userCards.Count; i++)
+        {
+            if(playerCards.userCards[i].cardName.Equals(test1))
+            {
+                print(playerCards.userCards[i].cardName);
+                print(playerCards.userCards[i].baseSkillLevel);
+            }
+        }
     }
 
     // Update is called once per frame

@@ -20,6 +20,8 @@ public class evoFinal : MonoBehaviour
     public Card evoCard;
     int highestATK;
     int highestDEF;
+    double highestSkillLevel;
+    int highestbaseskillLvl;
 
     public List<Card> evo1 = new List<Card>();
     public List<Card> evo2 = new List<Card>();
@@ -29,6 +31,7 @@ public class evoFinal : MonoBehaviour
 
     void Start()
     {
+        //check for former Highest level;
         if(evoManager.card1.attack == evoManager.card2.attack)
         {
             highestATK = evoManager.card1.attack;
@@ -58,6 +61,7 @@ public class evoFinal : MonoBehaviour
         card1Art.sprite = evoManager.card1.cardArt;
         card2Art.sprite = evoManager.card2.cardArt;
         getEvoCard();
+        getEvoCardSkill(evoManager.card1, evoManager.card2);
         StartCoroutine(cardsMove(card1Art,card2Art,1.5f));
 
         atk_Label.text = " ATK: " + highestATK.ToString() + " >> " + evoCard.attack;
@@ -90,7 +94,6 @@ public class evoFinal : MonoBehaviour
         string cardname;
         cardname = evoManager.card1.cardName.Substring(0, evoManager.card1.cardName.IndexOf("_") + 6);
 
-        print(cardname);
 
         if(evoManager.card1.cardName.Contains("base") && evoManager.card2.cardName.Contains("base"))
         {
@@ -140,6 +143,30 @@ public class evoFinal : MonoBehaviour
             //get card from evomax list
         }
 
+    }
+
+    void getEvoCardSkill(Card card1, Card card2)
+    {
+        if (!card1.skill.Equals("None"))
+        {
+            if (card1.baseSkillLevel == card2.baseSkillLevel)
+            {
+                highestbaseskillLvl = card1.baseSkillLevel;
+                highestSkillLevel = card1.skillLevel;
+            }
+            if (card1.baseSkillLevel > card2.baseSkillLevel)
+            {
+                highestbaseskillLvl = card1.baseSkillLevel;
+                highestSkillLevel = card1.skillLevel;
+            }
+            else
+            {
+                highestbaseskillLvl = card2.baseSkillLevel;
+                highestSkillLevel = card2.skillLevel;
+            }
+            evoCard.skillLevel = highestSkillLevel;
+            evoCard.baseSkillLevel = highestbaseskillLvl;
+        }
     }
 
     IEnumerator itemsAppear(Text atk, Text def, GameObject glw, GameObject aPanel, GameObject dPanel, Image newCard, float delay)

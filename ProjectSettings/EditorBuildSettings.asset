@@ -18,6 +18,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Card Binder.unity
     guid: e8226d8f7f81fbe4389881f32e72a2e8
   - enabled: 1
+    path: Assets/Scenes/Card Upgrades/awakenHome.unity
+    guid: 389d4e9885300b940b08b4ebd5232cd5
+  - enabled: 1
+    path: Assets/Scenes/Card Upgrades/awakenFinal.unity
+    guid: 49a0540baaa85be418ea6d213ab6e944
+  - enabled: 1
+    path: Assets/Scenes/Card Upgrades/awakenSelect1.unity
+    guid: bd50394fa448bc64abede465c4a035e0
+  - enabled: 1
+    path: Assets/Scenes/Card Upgrades/awakenSelect2.unity
+    guid: ce620854e12a88445b0edd3e12a34cdd
+  - enabled: 1
     path: Assets/Scenes/Card Upgrades/enhanceFinal.unity
     guid: e576c072b23ff4546acb90573f1959f1
   - enabled: 1

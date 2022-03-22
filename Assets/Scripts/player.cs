@@ -20,6 +20,21 @@ public class player : MonoBehaviour
     public static int training_remotes;
     public static int crystals;
     public static int allyPoints;
+    public static int oneStarHoloLight;
+    public static int oneStarHoloDark;
+    public static int oneStarHoloNuet;
+    public static int twoStarHoloLight;
+    public static int twoStarHoloDark;
+    public static int twoStarHoloNuet;
+    public static int threeStarHoloLight;
+    public static int threeStarHoloDark;
+    public static int threeStarHoloNuet;
+    public static int fourStarHoloLight;
+    public static int fourStarHoloDark;
+    public static int fourStarHoloNuet;
+    public static int fiveStarHoloLight;
+    public static int fiveStarHoloDark;
+    public static int fiveStarHoloNuet;
 
     //Quest
     public static int numBronzeContainers;

@@ -19,6 +19,8 @@ public class vehicle : MonoBehaviour
     public int level;
     public int HP;
     public bool inForm;
+    public bool built;
+    public float buildTime;
     public string vehicleDescript;
     public int X;
     public int Y;

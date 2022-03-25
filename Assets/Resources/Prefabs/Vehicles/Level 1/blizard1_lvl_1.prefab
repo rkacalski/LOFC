@@ -99,7 +99,7 @@ MonoBehaviour:
   accuracy: 140
   evasion: 0
   cost: 23
-  level: 0
+  level: 1
   HP: 6000
   inForm: 0
   vehicleDescript: 

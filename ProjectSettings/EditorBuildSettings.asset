@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Card Binder.unity
     guid: e8226d8f7f81fbe4389881f32e72a2e8
   - enabled: 1
+    path: Assets/Scenes/Hanger.unity
+    guid: ed4db6abacb68454cb415dde6ea1192f
+  - enabled: 1
+    path: Assets/Scenes/Vehicle_Select.unity
+    guid: 9d38a65e73d99de44ae66efe8ff8f1e6
+  - enabled: 1
     path: Assets/Scenes/Card Upgrades/awakenHome.unity
     guid: 389d4e9885300b940b08b4ebd5232cd5
   - enabled: 1

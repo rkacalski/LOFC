@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class hangerManager : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class hangerManager : MonoBehaviour
     bool slot3Full;
     bool slot4Full;
 
+    public static float timer3;
+    public bool inHanger3;
+
+    public static int selectedHanger;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,16 +33,14 @@ public class hangerManager : MonoBehaviour
 
         for (int i = 0; i < tempBinder.Count; i++)
         {
-            tempBinder[i].built = true;
             tempCard = GameObject.Instantiate(tempBinder[i]);
+            tempCard.built = true;
             playerCards.hanger[i] = tempCard;
         }
-
-        /////////Time format///////////////////////////////////////////////////////
-
-        float totalSeconds = 228.10803f;
-        TimeSpan time = TimeSpan.FromSeconds(totalSeconds);
-        //print(time.ToString("hh':'mm':'ss"));
+        insertHanger1();
+        insertHanger2();
+        insertHanger3();
+        insertHanger4();
 
         //////////////////////////////////////////////////////////
 
@@ -44,19 +48,17 @@ public class hangerManager : MonoBehaviour
         {
             if(playerCards.hanger[i] != null)
             {
-                print(playerCards.hanger[i].vehicleName);
                 numSlotsUsed += 1;
             }
         }
 
         hangerPannelUI();
         slotsUsedLabel.text = "Slots Used: " + numSlotsUsed + "/4";
+    }
 
-        print(slot1Full);
-        print(slot2Full);
-        print(slot3Full);
-        print(slot4Full);
-
+    void Update()
+    {
+        buildTimer3();
     }
 
     void hangerPannelUI()
@@ -133,4 +135,115 @@ public class hangerManager : MonoBehaviour
         }
     }
 
+
+
+
+
+    public void buildTimer3()
+    {
+        if ((playerCards.hanger[2] != null) && (playerCards.hanger[2].built == false))
+        {
+            timer3 = playerCards.hanger[2].buildTime;
+            inHanger3 = true;
+        }
+        if (inHanger3 == true)
+        {
+            playerCards.hanger[2].built = false;
+            hangerSlots[2].transform.GetChild(4).gameObject.SetActive(true);
+
+            if (playerCards.hanger[2].built == false)
+            {
+                timer3 -= Time.deltaTime * 1f; 
+                TimeSpan time = TimeSpan.FromSeconds(timer3);
+                hangerSlots[2].transform.GetChild(4).GetComponent<Text>().text = time.ToString("hh':'mm':'ss");
+                print(timer3);
+
+                if (timer3 < 0)
+                {
+                    hangerSlots[2].transform.GetChild(4).gameObject.SetActive(false);
+                    playerCards.hanger[2].built = true;
+                }
+
+            }
+        }
+    }
+
+    //Buttons and add new vehicle
+    void insertHanger1()
+    {
+        if (vehicleSelect.selectedVehicle != null)
+        {
+            playerCards.hanger[selectedHanger] = vehicleSelect.selectedVehicle;
+        }
+        vehicleSelect.selectedVehicle = null;
+        selectedHanger = -1;
+    }
+
+    void insertHanger2()
+    {
+        if (vehicleSelect.selectedVehicle != null)
+        {
+            playerCards.hanger[selectedHanger] = vehicleSelect.selectedVehicle;
+        }
+        vehicleSelect.selectedVehicle = null;
+        selectedHanger = -1;
+    }
+
+    void insertHanger3()
+    {
+        if (vehicleSelect.selectedVehicle != null)
+        {
+            playerCards.hanger[selectedHanger] = vehicleSelect.selectedVehicle;
+            playerCards.hanger[selectedHanger].built = false;
+            print(playerCards.hanger[selectedHanger].built);
+        }
+        vehicleSelect.selectedVehicle = null;
+        selectedHanger = -1;
+    }
+
+    void insertHanger4()
+    {
+        if (vehicleSelect.selectedVehicle != null)
+        {
+            playerCards.hanger[selectedHanger] = vehicleSelect.selectedVehicle;
+        }
+        vehicleSelect.selectedVehicle = null;
+        selectedHanger = -1;
+    }
+
+    public void hanger1()
+    {
+        if (slot1Full == false)
+        {
+            SceneManager.LoadScene("Vehicle_Select");
+            selectedHanger = 0;
+        }
+    }
+
+    public void hanger2()
+    {
+        if (slot2Full == false)
+        {
+            SceneManager.LoadScene("Vehicle_Select");
+            selectedHanger = 1;
+        }
+    }
+
+    public void hanger3()
+    {
+        if(slot3Full == false)
+        {
+            SceneManager.LoadScene("Vehicle_Select");
+            selectedHanger = 2;
+        }
+    }
+
+    public void hanger4()
+    {
+        if (slot4Full == false)
+        {
+            SceneManager.LoadScene("Vehicle_Select");
+            selectedHanger = 3;
+        }
+    }
 }

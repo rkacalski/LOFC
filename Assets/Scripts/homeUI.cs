@@ -123,6 +123,11 @@ public class homeUI : MonoBehaviour
         SceneManager.LoadScene("Card Binder");
     }
 
+    public void hanger()
+    {
+        SceneManager.LoadScene("Hanger");
+    }
+
     // Start is called before the first frame update
     void Start()
     {

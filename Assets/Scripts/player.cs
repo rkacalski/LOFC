@@ -56,4 +56,33 @@ public class player : MonoBehaviour
     public static bool cont10found = false;
     public static bool cont11found = false;
     public static bool cont12found = false;
+
+    //Blueprints
+    public static int xwing1;
+    public static int xwing2;
+    public static int xwing3;
+    public static int xwing4;
+    public static int xwing5;
+    public static int xwing6;
+
+    public static int tieFighter1;
+    public static int tieFighter2;
+    public static int tieFighter3;
+    public static int tieFighter4;
+    public static int tieFighter5;
+    public static int tieFighter6;
+
+    public static int slaveOne1;
+    public static int slaveOne2;
+    public static int slaveOne3;
+    public static int slaveOne4;
+    public static int slaveOne5;
+    public static int slaveOne6;
+
+    public static int blizzardOne1;
+    public static int blizzardOne2;
+    public static int blizzardOne3;
+    public static int blizzardOne4;
+    public static int blizzardOne5;
+    public static int blizzardOne6;
 }

@@ -896,11 +896,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353963995}
   m_CullTransparentMesh: 1
---- !u!1 &382532440 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4154007327701578812, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
-  m_PrefabInstance: {fileID: 3049441877452598081}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &399354756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,6 +903,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1275308979}
     m_Modifications:
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1158236975}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: hanger2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: hangerManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3049441878895384418, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
       propertyPath: m_Name
       value: Hanger2
@@ -1097,7 +1120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 407645039}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1906071234}
+        m_TargetAssemblyTypeName: hangerButtons, Assembly-CSharp
+        m_MethodName: homeButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &407645039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1423,6 +1458,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1275308979}
     m_Modifications:
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1158236975}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: hanger4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: hangerManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3049441878895384418, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
       propertyPath: m_Name
       value: Hanger4
@@ -1929,11 +1992,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772057620}
   m_CullTransparentMesh: 1
---- !u!1 &804074323 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4154007327701578812, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
-  m_PrefabInstance: {fileID: 1267741930}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832824515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2091,8 +2149,8 @@ RectTransform:
   - {fileID: 2117290458}
   - {fileID: 1275308979}
   - {fileID: 51967277}
-  m_Father: {fileID: 1408190666}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2464,7 +2522,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1158236975
 MonoBehaviour:
@@ -2485,6 +2543,7 @@ MonoBehaviour:
   - {fileID: 596877328}
   numSlotsUsed: 0
   slotsUsedLabel: {fileID: 51967279}
+  inHanger3: 0
 --- !u!1 &1171841234
 GameObject:
   m_ObjectHideFlags: 0
@@ -2643,53 +2702,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174054390}
   m_CullTransparentMesh: 1
---- !u!1 &1185967474
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1185967476}
-  - component: {fileID: 1185967475}
-  m_Layer: 0
-  m_Name: Timer Holder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1185967475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185967474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c866de109dea348bd2dba858b4f1bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel1Time: {fileID: 382532440}
-  panel2Time: {fileID: 1724169224}
-  panel3Time: {fileID: 804074323}
-  panel4Time: {fileID: 1739347001}
---- !u!4 &1185967476
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185967474}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 404.35553, y: 994.38586, z: -63.117073}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1205754603
 GameObject:
   m_ObjectHideFlags: 0
@@ -2887,6 +2899,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1275308979}
     m_Modifications:
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1158236975}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: hanger3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: hangerManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3049441878895384418, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
       propertyPath: m_Name
       value: Hanger3
@@ -3490,7 +3530,6 @@ Transform:
   m_Children:
   - {fileID: 167479129}
   - {fileID: 1735605479}
-  - {fileID: 913040838}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3853,11 +3892,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3049441878895384418, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
   m_PrefabInstance: {fileID: 399354756}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1724169224 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4154007327701578812, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
-  m_PrefabInstance: {fileID: 399354756}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1735605478
 GameObject:
   m_ObjectHideFlags: 0
@@ -3924,11 +3958,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!1 &1739347001 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4154007327701578812, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
-  m_PrefabInstance: {fileID: 653025596}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1845591076 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3049441878895384421, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
@@ -4054,6 +4083,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856429926}
   m_CullTransparentMesh: 1
+--- !u!1 &1906071233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906071235}
+  - component: {fileID: 1906071234}
+  m_Layer: 0
+  m_Name: Buttons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1906071234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906071233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2866a84ac1866c4b9070cf28264a3a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1906071235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906071233}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 404.35553, y: 994.38586, z: -63.117073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1978505028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,6 +4366,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1275308979}
     m_Modifications:
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1158236975}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: hanger1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: hangerManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049441877651328514, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3049441878895384418, guid: 8f17ff67239912b47b4fe701f9e8d3af, type: 3}
       propertyPath: m_Name
       value: Hanger1

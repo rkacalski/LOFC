@@ -14,7 +14,7 @@ public class homeUI : MonoBehaviour
 
     public void questButton()
     {
-        SceneManager.LoadScene("questTest");
+        SceneManager.LoadScene("tradeBlock");
     }
 
     public void battleButton()

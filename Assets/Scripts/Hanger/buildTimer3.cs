@@ -22,7 +22,7 @@ public class buildTimer3 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {   
         if (inHanger == true)
         {

@@ -172,6 +172,9 @@ public class UImanager : MonoBehaviour
 
             //get card rarity
             cardSlots[i].transform.GetChild(16).transform.GetChild(3).GetComponent<Text>().text = sortedBinder[i].cardName;
+
+            //set orig array pos
+            cardSlots[i].transform.GetChild(16).transform.GetChild(4).GetComponent<Text>().text = i.ToString();
         }
     }
 

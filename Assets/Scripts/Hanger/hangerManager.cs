@@ -52,6 +52,7 @@ public class hangerManager : MonoBehaviour
             }
         }
 
+        getTimer3();
         hangerPannelUI();
         slotsUsedLabel.text = "Slots Used: " + numSlotsUsed + "/4";
     }
@@ -137,23 +138,24 @@ public class hangerManager : MonoBehaviour
 
 
 
-
-
-    public void buildTimer3()
+    public void getTimer3()
     {
-        if ((playerCards.hanger[2] != null) && (playerCards.hanger[2].built == false))
+        if ((playerCards.hanger[2] != null) && playerCards.hanger[2].built == false)
         {
             timer3 = playerCards.hanger[2].buildTime;
             inHanger3 = true;
         }
+    }
+
+    public void buildTimer3()
+    {  
         if (inHanger3 == true)
         {
-            playerCards.hanger[2].built = false;
             hangerSlots[2].transform.GetChild(4).gameObject.SetActive(true);
 
             if (playerCards.hanger[2].built == false)
             {
-                timer3 -= Time.deltaTime * 1f; 
+                timer3 = timer3 - Time.deltaTime;
                 TimeSpan time = TimeSpan.FromSeconds(timer3);
                 hangerSlots[2].transform.GetChild(4).GetComponent<Text>().text = time.ToString("hh':'mm':'ss");
                 print(timer3);

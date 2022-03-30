@@ -786,7 +786,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 206704163}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1968577129}
+        m_TargetAssemblyTypeName: tradeButtons, Assembly-CSharp
+        m_MethodName: forTrade5
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &206704163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3222,7 +3234,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 731800591}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1968577129}
+        m_TargetAssemblyTypeName: tradeButtons, Assembly-CSharp
+        m_MethodName: forTrade4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &731800591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4315,7 +4339,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1184266169}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1968577129}
+        m_TargetAssemblyTypeName: tradeButtons, Assembly-CSharp
+        m_MethodName: forTrade2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1184266169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4436,7 +4472,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1189471320}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1968577129}
+        m_TargetAssemblyTypeName: tradeButtons, Assembly-CSharp
+        m_MethodName: forTrade3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1189471320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7626,7 +7674,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedPopUpmenu: {fileID: 1713313761}
+  defultSprite: {fileID: 21300000, guid: bd09e0892be8b1b4c8b5cb13ec378c8c, type: 3}
   popUpImage: {fileID: 1576449296}
+  Image1: {fileID: 620603806}
+  Image2: {fileID: 378754041}
+  Image3: {fileID: 791223583}
+  Image4: {fileID: 956842098}
+  Image5: {fileID: 520810429}
 --- !u!1 &2044371298
 GameObject:
   m_ObjectHideFlags: 0

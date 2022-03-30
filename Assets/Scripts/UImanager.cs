@@ -17,10 +17,15 @@ public class UImanager : MonoBehaviour
     public Text cardAmount;
 
     List<Card> sortedBinder = new List<Card>();
+    List<int> origLoc = new List<int>();
 
     // Start is called before the first frame update
     void Start()
     {
+        for(int i = 0; i < playerCards.userCards.Count; i++)
+        {
+            origLoc.Add(i);
+        }
         DisplayCards();
         pageNum = 1;
         cardAmount.text = playerCards.userCards.Count.ToString();
@@ -71,11 +76,12 @@ public class UImanager : MonoBehaviour
     private void DisplayCards()
     {
         cardCount = playerCards.userCards.Count;
-        print(cardCount);
+        //print(cardCount);
         pageMax = Mathf.Ceil(playerCards.userCards.Count / 10f);
 
-        sortedBinder = playerCards.userCards.OrderBy(x => x.rarity).ToList();
-        sortedBinder.Reverse();
+        //sortedBinder = playerCards.userCards.OrderBy(x => x.rarity).ToList();
+        //sortedBinder.Reverse();
+        sortedBinder = playerCards.userCards;
 
         for (int i = 0; i <= 9; i++)
         {
@@ -174,7 +180,7 @@ public class UImanager : MonoBehaviour
             cardSlots[i].transform.GetChild(16).transform.GetChild(3).GetComponent<Text>().text = sortedBinder[i].cardName;
 
             //set orig array pos
-            cardSlots[i].transform.GetChild(16).transform.GetChild(4).GetComponent<Text>().text = i.ToString();
+            cardSlots[i].transform.GetChild(16).transform.GetChild(4).GetComponent<Text>().text = origLoc[i].ToString();
         }
     }
 
@@ -303,6 +309,9 @@ public class UImanager : MonoBehaviour
 
                 //get card rarity
                 cardSlots[i].transform.GetChild(16).transform.GetChild(3).GetComponent<Text>().text = sortedBinder[i + loopCounter].cardName;
+
+                //set orig array pos
+                cardSlots[i].transform.GetChild(16).transform.GetChild(4).GetComponent<Text>().text = origLoc[i + loopCounter].ToString();
             }
 
             for (int i = 0; i <= 9; i++)

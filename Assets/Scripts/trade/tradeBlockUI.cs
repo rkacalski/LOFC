@@ -9,33 +9,22 @@ using UnityEngine.SceneManagement;
 public class tradeBlockUI : MonoBehaviour
 {
     public Image[] cardSlots;
+    bool cardNull;
 
     // Start is called before the first frame update
     void Start()
     {
-        print(playerCards.userCards[0]);
-        print(string.IsNullOrEmpty(playerCards.userCards[0].cardName));
-        //print(string.IsNullOrEmpty(playerCards.forTrade[1].cardName));
         displayCards();
     }
 
     public void displayCards()
     {
-        for(int i = 0; i < 5; i++)
+        for (int i = 0; i < playerCards.forTrade.Count; i++)
         {
-            //print(playerCards.forTrade[i].cardName);
-            if(string.IsNullOrEmpty(playerCards.forTrade[i].cardName))
-            {
-                print("Empty");
-                continue;
-            }
-            if (string.IsNullOrEmpty(playerCards.forTrade[i].cardName))
-            {
-                print("Not empty");
-                cardSlots[i].GetComponent<Image>().sprite = playerCards.forTrade[i].cardArt;
-            }
+            cardSlots[i].GetComponent<Image>().sprite = playerCards.forTrade[i].cardArt;
         }
 
+        /*
         for (int i = 0; i < 5; i++)
         {
             if (playerCards.wishlist[i] == null)
@@ -47,5 +36,6 @@ public class tradeBlockUI : MonoBehaviour
                 cardSlots[i].GetComponent<Image>().sprite = playerCards.wishlist[i].cardArt;
             }
         }
+        */
     }
 }

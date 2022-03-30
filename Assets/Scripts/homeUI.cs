@@ -133,19 +133,6 @@ public class homeUI : MonoBehaviour
     {
         addStarterCards();
         check = 1;
-
-        //test
-        string test1;
-        test1 = "gg[AE]_5star_evo1";
-
-        for (int i = 0; i < playerCards.userCards.Count; i++)
-        {
-            if(playerCards.userCards[i].cardName.Equals(test1))
-            {
-                print(playerCards.userCards[i].cardName);
-                print(playerCards.userCards[i].baseSkillLevel);
-            }
-        }
     }
 
     // Update is called once per frame

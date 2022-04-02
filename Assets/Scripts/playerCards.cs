@@ -10,7 +10,7 @@ public class playerCards
     public static List<Card> supportCards = new List<Card>();
     public static vehicle[] hanger = new vehicle[4];
     public static List<Card> forTrade = new List<Card>();
-    public static Card[] wishlist = new Card[5];
+    public static List<Card> wishlist = new List<Card>();
     public static int playerCost;
 
     public static Card[,] mainForm = new Card[6, 3];

@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class tradeBlockUI : MonoBehaviour
 {
     public Image[] cardSlots;
+    public Image[] cardSlotsWL;
     bool cardNull;
 
     // Start is called before the first frame update
@@ -23,19 +24,9 @@ public class tradeBlockUI : MonoBehaviour
         {
             cardSlots[i].GetComponent<Image>().sprite = playerCards.forTrade[i].cardArt;
         }
-
-        /*
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < playerCards.wishlist.Count; i++)
         {
-            if (playerCards.wishlist[i] == null)
-            {
-                continue;
-            }
-            if (playerCards.wishlist[i] != null)
-            {
-                cardSlots[i].GetComponent<Image>().sprite = playerCards.wishlist[i].cardArt;
-            }
+            cardSlotsWL[i].GetComponent<Image>().sprite = playerCards.wishlist[i].cardArt;
         }
-        */
     }
 }

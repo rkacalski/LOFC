@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class CardBinder : MonoBehaviour
 {
-    public List<Card> playerCards = new List<Card>();
+    public List<Card> oneStarbaseLight = new List<Card>();
+    public List<Card> oneStarbaseDark = new List<Card>();
+    public List<Card> oneStarbaseNuet = new List<Card>();
 }

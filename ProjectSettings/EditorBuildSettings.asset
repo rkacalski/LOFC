@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/trading/forTradeSelect.unity
     guid: f6b09c4e35317ee44993b95acf837d2f
   - enabled: 1
+    path: Assets/Scenes/trading/wishlistSelect.unity
+    guid: 8b1e3e3c4b2f15d4083463d4f0554d61
+  - enabled: 1
     path: Assets/Scenes/trading/tradeBlock.unity
     guid: dde5240e9c088b741af198b1315ff797
   - enabled: 1

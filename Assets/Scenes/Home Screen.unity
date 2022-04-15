@@ -403,7 +403,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 45334901}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: evolve
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &45334901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,9 +536,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1466223016}
-        m_TargetAssemblyTypeName: homeUI, Assembly-CSharp
-        m_MethodName: hanger
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: hangerButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1071,7 +1083,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 117349683}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: enhanceButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &117349683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1272,7 +1296,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 148703751}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: hangerButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &148703751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1311,6 +1347,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148703748}
   m_CullTransparentMesh: 1
+--- !u!1 &153719927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 153719929}
+  - component: {fileID: 153719928}
+  m_Layer: 0
+  m_Name: Home Buttons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &153719928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153719927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50981d818b775164f8a797ab0c33ab6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  operationPopup: {fileID: 980742754}
+  cardPopup: {fileID: 271483374}
+  allyPopup: {fileID: 1697912543}
+  popup: 0
+--- !u!4 &153719929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153719927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 447.19223, y: 813.01, z: -408.30807}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &157257113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,9 +1808,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1466223016}
-        m_TargetAssemblyTypeName: homeUI, Assembly-CSharp
-        m_MethodName: cardBinder
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: cardbinderButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1787,7 +1870,6 @@ GameObject:
   - component: {fileID: 271483378}
   - component: {fileID: 271483377}
   - component: {fileID: 271483376}
-  - component: {fileID: 271483380}
   m_Layer: 0
   m_Name: Card Popup
   m_TagString: Untagged
@@ -1878,18 +1960,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271483374}
   m_CullTransparentMesh: 1
---- !u!114 &271483380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 271483374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc2f6cf2af03814c82d1e4114778602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &304783736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,8 +2665,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1466223016}
-        m_TargetAssemblyTypeName: homeUI, Assembly-CSharp
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
         m_MethodName: questButton
         m_Mode: 1
         m_Arguments:
@@ -3351,7 +3421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b3c9c6b7e1a8054fb384b3d235e6cbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c39aa085b8299cb4abdf8e6a20cb92e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3606,9 +3676,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1466223016}
-        m_TargetAssemblyTypeName: homeUI, Assembly-CSharp
-        m_MethodName: cardBinder
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: wishlistButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4343,7 +4413,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 856906411}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: skillMast
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &856906411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5177,7 +5259,6 @@ GameObject:
   - component: {fileID: 980742759}
   - component: {fileID: 980742758}
   - component: {fileID: 980742757}
-  - component: {fileID: 980742756}
   m_Layer: 0
   m_Name: Operations Popup
   m_TagString: Untagged
@@ -5205,18 +5286,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3.1163993, y: 452.14148}
   m_SizeDelta: {x: 793.76, y: 583.2939}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &980742756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980742754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc2f6cf2af03814c82d1e4114778602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &980742757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5610,9 +5679,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 271483380}
-        m_TargetAssemblyTypeName: bottomScreenAppear, Assembly-CSharp
-        m_MethodName: disapear
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: popupClose
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5742,7 +5811,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1071011138}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: operationOpen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1071011138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6205,50 +6286,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126529960}
   m_CullTransparentMesh: 1
---- !u!1 &1128743363
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1128743365}
-  - component: {fileID: 1128743364}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1128743364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128743363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8343b8842f6bae45bf85304fd3cfb7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player_name: 
---- !u!4 &1128743365
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128743363}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 854.2483, y: 845.4509, z: -3497.0693}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1130124415
 GameObject:
   m_ObjectHideFlags: 0
@@ -7269,9 +7306,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1466223016}
-        m_TargetAssemblyTypeName: homeUI, Assembly-CSharp
-        m_MethodName: enhance
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: enhanceButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8566,9 +8603,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1466223016}
-        m_TargetAssemblyTypeName: homeUI, Assembly-CSharp
-        m_MethodName: awaken
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: formationButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9092,9 +9129,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1697912544}
-        m_TargetAssemblyTypeName: bottomScreenAppear, Assembly-CSharp
-        m_MethodName: disapear
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: popupClose
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9361,7 +9398,6 @@ GameObject:
   - component: {fileID: 1697912547}
   - component: {fileID: 1697912546}
   - component: {fileID: 1697912545}
-  - component: {fileID: 1697912544}
   m_Layer: 0
   m_Name: Allies Popup
   m_TagString: Untagged
@@ -9369,18 +9405,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1697912544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697912543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc2f6cf2af03814c82d1e4114778602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1697912545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9745,7 +9769,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Status
+  m_Text: Skill Mast
 --- !u!222 &1747721556
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10215,7 +10239,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1855596552}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: formationButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1855596552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10415,7 +10451,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1881413584}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: allyOpen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1881413584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10885,9 +10933,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 271483380}
-        m_TargetAssemblyTypeName: bottomScreenAppear, Assembly-CSharp
-        m_MethodName: appear
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: cardOpen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11018,7 +11066,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2039083607}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: wishlistButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2039083607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11427,9 +11487,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1697912544}
-        m_TargetAssemblyTypeName: bottomScreenAppear, Assembly-CSharp
-        m_MethodName: disapear
+      - m_Target: {fileID: 153719928}
+        m_TargetAssemblyTypeName: homeButtons, Assembly-CSharp
+        m_MethodName: popupClose
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

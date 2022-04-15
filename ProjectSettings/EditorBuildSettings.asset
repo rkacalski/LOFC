@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Hanger.unity
     guid: ed4db6abacb68454cb415dde6ea1192f
   - enabled: 1
+    path: Assets/Scenes/Questing/QuestHome.unity
+    guid: 45f92152279196a4696c96545572f89d
+  - enabled: 1
     path: Assets/Scenes/trading/forTradeSelect.unity
     guid: f6b09c4e35317ee44993b95acf837d2f
   - enabled: 1

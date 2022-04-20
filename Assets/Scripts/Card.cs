@@ -20,6 +20,7 @@ public class Card : MonoBehaviour
     public int HP;
     public string atkPatern;
     public string NumofATKs;
+    public List<string> tags;
     public bool inForm;
     public int accuracy;
     public int evasion;

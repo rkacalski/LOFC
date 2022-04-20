@@ -103,6 +103,7 @@ MonoBehaviour:
   HP: 1500
   atkPatern: 1 -on- 1
   NumofATKs: 1 per turn
+  tags: []
   inForm: 0
   accuracy: 130
   evasion: 70
@@ -115,5 +116,5 @@ MonoBehaviour:
     commander. His skills at wielding up to four Lightsabers at once make him a deadly
     opponent. Many Jedi have fallen victim to his ruthless attacks. Whether they
     be Masters, or merely Padawans, no Jedi is safe.
-  X: 0
-  Y: 0
+  X: 1
+  Y: 1

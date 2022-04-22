@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8082392898832654012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3361992376377065648}
+  - component: {fileID: 2137335089971916255}
+  - component: {fileID: 1287871356600733055}
+  - component: {fileID: 8977110513364259506}
+  m_Layer: 0
+  m_Name: gregor_5star_base
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3361992376377065648
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8082392898832654012}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -242, y: 669.99976}
+  m_SizeDelta: {x: 147.4536, y: 225.7017}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2137335089971916255
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8082392898832654012}
+  m_CullTransparentMesh: 1
+--- !u!114 &1287871356600733055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8082392898832654012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 42df3a0637ad62a48b632c937fe499bd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8977110513364259506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8082392898832654012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ea2ebc309dbe94da7ca1cc002f4390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardName: gregor_5star_base
+  displayName: Gregor
+  cardArt: {fileID: 21300000, guid: 42df3a0637ad62a48b632c937fe499bd, type: 3}
+  rarity: 5
+  side: 76
+  range: L
+  atkFreq: 1
+  attack: 5910
+  defense: 3650
+  attack_mult: 34.40677966101695
+  defense_mult: 41.355932203389834
+  level: 1
+  HP: 2000
+  atkPatern: 1 -on- 1
+  NumofATKs: 1 per turn
+  tags:
+  - Clone War
+  - Male
+  - Galactic Republic
+  - Clone Trooper
+  inForm: 0
+  accuracy: 150
+  evasion: 50
+  cost: 40
+  skill: Blaster Blitz
+  skillLevel: 15
+  baseSkillLevel: 1
+  skillLevMult: 0.5128205128205128
+  cardDescript: Dangerous acts of heroism are just part of the job for the elite
+    clone commandos in the Grand Army. This rings especially true for CC-5579-39,
+    aka Gregor, who got to be a hero, not once, but twice in the service of the Republic.
+    Ready to join the fight without any hesitation during the Battle of Sarrish,
+    he was forced to retreat while covering for his allies and thought to be lost
+    in space. After being saved, he again risked his life to protect Meeber Gascon
+    and his companions. Amazingly he survived and finally retired on Seelos with
+    his comrades.
+  X: 1
+  Y: 1

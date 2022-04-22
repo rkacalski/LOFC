@@ -14,7 +14,7 @@ public class questCheck : MonoBehaviour
     //Do UI stuff in questHomeUI
     void Start()
     {
-        tat = true;
+        //tat = true;
         cwcheck = CWcheck();
 
         if(cwcheck == true)

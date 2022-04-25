@@ -17,6 +17,71 @@ public class questHomeUI : MonoBehaviour
 
     public void gcwNormalButton()
     {
-        SceneManager.LoadScene("questTest");
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void gcwNormalHard()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void cwNormalButton()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void cwNormalHard()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void torNormalButton()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void torNormalHard()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void kotorNormalButton()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void kotorNormalHard()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void tcwNormalButton()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void tcwNormalHard()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void yvNormalButton()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void yvNormalHard()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void legNormalButton()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
+    }
+
+    public void legNormalHard()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
     }
 }

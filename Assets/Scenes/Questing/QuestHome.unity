@@ -423,7 +423,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 47468064}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: torNormalHard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &47468064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,7 +587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &80805946
 RectTransform:
   m_ObjectHideFlags: 0
@@ -758,10 +770,10 @@ RectTransform:
   m_Father: {fileID: 175784902}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.0000088215, y: -1256}
-  m_SizeDelta: {x: 826.8054, y: 1774.1973}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -390.5}
+  m_SizeDelta: {x: 26.80542, y: 43.197266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96994305
 MonoBehaviour:
@@ -2367,7 +2379,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 268657793}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: gcwNormalHard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &268657793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2776,7 +2800,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 311376413}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: cwNormalButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &311376413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2933,7 +2969,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 324215517}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: tcwNormalButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &324215517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4701,7 +4749,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 614603959}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: torNormalButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &614603959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5904,7 +5964,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 749527542}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: kotorNormalButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &749527542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6547,7 +6619,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 781848311}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: legNormalButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &781848311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6893,7 +6977,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 812369978}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: cwNormalHard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &812369978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7865,7 +7961,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 871515265}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: tcwNormalHard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &871515265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8751,7 +8859,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 983898157}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: kotorNormalHard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &983898157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14888,7 +15008,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1869800826}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: yvNormalButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1869800826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15302,7 +15434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1901748709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15466,7 +15598,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1916438930}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: legNormalHard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1916438930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15645,7 +15789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1951727644
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16156,7 +16300,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2020400297}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769217643}
+        m_TargetAssemblyTypeName: questHomeUI, Assembly-CSharp
+        m_MethodName: yvNormalHard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2020400297
 MonoBehaviour:
   m_ObjectHideFlags: 0

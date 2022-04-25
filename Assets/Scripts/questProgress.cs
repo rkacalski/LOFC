@@ -12,6 +12,7 @@ public class questProgress : MonoBehaviour
     public static bool tat1_4_complete;
     public static bool tat1_5_complete;
     public static bool tat1_6_complete;
+    public static bool[] tat1 = new bool[] {tat1_1_complete, tat1_2_complete, tat1_3_complete, tat1_4_complete, tat1_5_complete, tat1_6_complete };
 
     public static bool tat2_1_complete;
     public static bool tat2_2_complete;
@@ -19,6 +20,7 @@ public class questProgress : MonoBehaviour
     public static bool tat2_4_complete;
     public static bool tat2_5_complete;
     public static bool tat2_6_complete;
+    bool[] tat2 = new bool[] { tat2_1_complete, tat2_2_complete, tat2_3_complete, tat2_4_complete, tat2_5_complete, tat2_6_complete };
 
     public static bool tat3_1_complete;
     public static bool tat3_2_complete;
@@ -26,6 +28,7 @@ public class questProgress : MonoBehaviour
     public static bool tat3_4_complete;
     public static bool tat3_5_complete;
     public static bool tat3_6_complete;
+    bool[] tat3 = new bool[] { tat3_1_complete, tat3_2_complete, tat3_3_complete, tat3_4_complete, tat3_5_complete, tat3_6_complete };
 
     public static bool tat4_1_complete;
     public static bool tat4_2_complete;
@@ -33,6 +36,7 @@ public class questProgress : MonoBehaviour
     public static bool tat4_4_complete;
     public static bool tat4_5_complete;
     public static bool tat4_6_complete;
+    bool[] tat4 = new bool[] { tat4_1_complete, tat4_2_complete, tat4_3_complete, tat4_4_complete, tat4_5_complete, tat4_6_complete };
 
     public static bool tat5_1_complete;
     public static bool tat5_2_complete;
@@ -40,6 +44,7 @@ public class questProgress : MonoBehaviour
     public static bool tat5_4_complete;
     public static bool tat5_5_complete;
     public static bool tat5_6_complete;
+    bool[] tat5 = new bool[] { tat5_1_complete, tat5_2_complete, tat5_3_complete, tat5_4_complete, tat5_5_complete, tat5_6_complete };
 
     public static bool tat6_1_complete;
     public static bool tat6_2_complete;
@@ -47,6 +52,7 @@ public class questProgress : MonoBehaviour
     public static bool tat6_4_complete;
     public static bool tat6_5_complete;
     public static bool tat6_6_complete;
+    bool[] tat6 = new bool[] { tat6_1_complete, tat6_2_complete, tat6_3_complete, tat6_4_complete, tat6_5_complete, tat6_6_complete };
 
     //DS
     public static bool ds1_1_complete;

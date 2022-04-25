@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 public class questCheck : MonoBehaviour
 {
-    public List<GameObject> LockedImages = new List<GameObject>();
     public bool tat;
     public bool cwcheck;
+    public int numLevels;
 
     //Do UI stuff in questHomeUI
     void Start()
@@ -19,19 +19,58 @@ public class questCheck : MonoBehaviour
 
         if(cwcheck == true)
         {
-            LockedImages[0].SetActive(false);
+            print("workinh");
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public bool tat1()
     {
-        
+        for (int i = 0; i < questProgress.tat1.Length; i++)
+        {
+            questProgress.tat1[i] = true;
+            if (questProgress.tat1[i] == true)
+            {
+                numLevels += 1;
+            }
+        }
+
+        if(numLevels.Equals(6))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    public bool tat2()
+    {
+        return false;
+    }
+
+    public bool tat3()
+    {
+        return false;
+    }
+
+    public bool tat4()
+    {
+        return false;
+    }
+
+    public bool tat5()
+    {
+        return false;
+    }
+
+    public bool tat6()
+    {
+        return false;
     }
 
     public bool CWcheck()
     {
-        if(tat == true)
+        bool check = tat1();
+        if (check == true)
         {
             return true;
         }

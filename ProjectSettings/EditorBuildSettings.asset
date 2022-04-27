@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Questing/questComplete.unity
     guid: d33b663a897a7374d82e9d2b5b6fd60e
   - enabled: 1
+    path: Assets/Scenes/Questing/Selection Scenes/GCW_tat_L_Select.unity
+    guid: ae309495855518b4d9afac655011d565
+  - enabled: 1
+    path: Assets/Scenes/Questing/Selection Scenes/GCW_tat1_L_Select.unity
+    guid: b5902c8bcbd8f1d458ad340c4fc5e9b5
+  - enabled: 1
     path: Assets/Scenes/Card Binder.unity
     guid: e8226d8f7f81fbe4389881f32e72a2e8
   - enabled: 1

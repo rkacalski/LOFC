@@ -9,7 +9,8 @@ public class questCheck : MonoBehaviour
 {
     public bool tat;
     public bool cwcheck;
-    public int numLevels;
+    public int numLevels_L;
+    public int numLevels_D;
 
     //Do UI stuff in questHomeUI
     void Start()
@@ -25,16 +26,25 @@ public class questCheck : MonoBehaviour
 
     public bool tat1()
     {
-        for (int i = 0; i < questProgress.tat1.Length; i++)
+        for (int i = 0; i < questProgress.tat1_L.Length; i++)
         {
-            questProgress.tat1[i] = true;
-            if (questProgress.tat1[i] == true)
+            questProgress.tat1_L[i] = true;
+            if (questProgress.tat1_L[i] == true)
             {
-                numLevels += 1;
+                numLevels_L += 1;
             }
         }
 
-        if(numLevels.Equals(6))
+        for (int i = 0; i < questProgress.tat1_D.Length; i++)
+        {
+            questProgress.tat1_D[i] = true;
+            if (questProgress.tat1_D[i] == true)
+            {
+                numLevels_D += 1;
+            }
+        }
+
+        if (numLevels_L.Equals(6) || numLevels_D.Equals(6))
         {
             return true;
         }

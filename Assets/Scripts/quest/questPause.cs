@@ -35,6 +35,15 @@ public class questPause : MonoBehaviour
     {
         player.questPosX = 0;
         player.questPosY = 0;
+        questProgCalc(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("questComplete");
+    }
+
+    public void questProgCalc(string levelName)
+    {
+        if(levelName.Equals("questTest"))
+        {
+            questProgress.tat1_1_complete_L_N = true;
+        }
     }
 }

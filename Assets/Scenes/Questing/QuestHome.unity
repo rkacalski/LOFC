@@ -6326,6 +6326,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f84d02e4a2eb95a45bb2369f039d0552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checks: {fileID: 1574507173}
+  cwLocked: {fileID: 396009645}
+  torLocked: {fileID: 97794392}
+  kotorLocked: {fileID: 178827242}
+  tcwLocked: {fileID: 1984212214}
+  yvLocked: {fileID: 604384006}
+  legLocked: {fileID: 1621850545}
+  gcwProgress: {fileID: 1394729138}
+  cwProgress: {fileID: 417386719}
+  torProgress: {fileID: 2101199320}
+  kotorProgress: {fileID: 857851062}
+  tcwProgress: {fileID: 2143970019}
+  yvProgress: {fileID: 163984279}
+  legProgress: {fileID: 1190568790}
+  count: 0
+  finalNum: 0
 --- !u!4 &769217644
 Transform:
   m_ObjectHideFlags: 0
@@ -13002,15 +13018,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08362e1c016464848a8b64193ce79533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LockedImages:
-  - {fileID: 396009645}
-  - {fileID: 97794392}
-  - {fileID: 178827242}
-  - {fileID: 1984212214}
-  - {fileID: 604384006}
-  - {fileID: 1621850545}
-  tat: 0
-  cwcheck: 0
 --- !u!4 &1574507174
 Transform:
   m_ObjectHideFlags: 0

@@ -3035,6 +3035,7 @@ MonoBehaviour:
   numBronzeContainers: {fileID: 1250410276}
   numSilverContainers: {fileID: 967621767}
   numGoldContainers: {fileID: 694649907}
+  mapcheck: 
 --- !u!1 &422178646
 GameObject:
   m_ObjectHideFlags: 0

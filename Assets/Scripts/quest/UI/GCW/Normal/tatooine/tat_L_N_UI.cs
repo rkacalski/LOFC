@@ -20,6 +20,8 @@ public class tat_L_N_UI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //questProgress.tat1_L[0] = true;
+
         //Update progress
         getnumbers(1);
         getnumbers(2);
@@ -33,14 +35,15 @@ public class tat_L_N_UI : MonoBehaviour
     
     public void enterTat1()
     {
-        //Send to tat2 Select page
+        SceneManager.LoadScene("GCW_tat1_L_Select");
     }
 
     public void enterTat2()
     {
         if(checks.tat2_check() == true)
         {
-            print("working");
+            SceneManager.LoadScene("GCW_tat2_L_Select");
+
             //Send to tat2 Select page
         }
     }
@@ -49,7 +52,7 @@ public class tat_L_N_UI : MonoBehaviour
     {
         if (checks.tat3_check() == true)
         {
-            print("working");
+            SceneManager.LoadScene("GCW_tat3_L_Select");
             //Send to tat3 Select page
         }
     }
@@ -58,7 +61,8 @@ public class tat_L_N_UI : MonoBehaviour
     {
         if (checks.tat4_check() == true)
         {
-            print("working");
+            SceneManager.LoadScene("GCW_tat4_L_Select");
+
             //Send to tat3 Select page
         }
     }
@@ -67,7 +71,8 @@ public class tat_L_N_UI : MonoBehaviour
     {
         if (checks.tat5_check() == true)
         {
-            print("working");
+            SceneManager.LoadScene("GCW_tat5_L_Select");
+
             //Send to tat3 Select page
         }
     }
@@ -76,9 +81,14 @@ public class tat_L_N_UI : MonoBehaviour
     {
         if (checks.tat6_check() == true)
         {
-            print("working");
+            SceneManager.LoadScene("GCW_tat6_L_Select");
             //Send to tat3 Select page
         }
+    }
+
+    public void backButton()
+    {
+        SceneManager.LoadScene("GCW_main_normal");
     }
 
     public void getnumbers(int Level)
@@ -87,11 +97,14 @@ public class tat_L_N_UI : MonoBehaviour
         {
             for (int i = 0; i < questProgress.tat1_L.Length; i++)
             {
+                print(i + " Not in loop " + questProgress.tat1_L[i]);
                 if (questProgress.tat1_L[i] == true)
                 {
+                    print("in Loop ");
                     count += 1;
                 }
             }
+
             Level1.GetComponent<UnityEngine.UI.Text>().text = "Cleared: " + count.ToString() + "/6";
             count = 0;
         }

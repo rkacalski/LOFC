@@ -1,18 +1,72 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GCW_main_UI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void GCW_tat_L()
     {
-        
+        SceneManager.LoadScene("GCW_tat_L_Select");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GCW_tat_D()
     {
-        
+
+    }
+
+    public void GCW_DS_L()
+    {
+
+    }
+
+    public void GCW_DS_D()
+    {
+
+    }
+
+    public void GCW_Y4_L()
+    {
+
+    }
+
+    public void GCW_Y4_D()
+    {
+
+    }
+
+    public void GCW_hth_L()
+    {
+
+    }
+
+    public void GCW_hth_D()
+    {
+
+    }
+
+    public void GCW_bes_L()
+    {
+
+    }
+
+    public void GCW_bes_D()
+    {
+
+    }
+
+    public void GCW_end_L()
+    {
+
+    }
+    public void GCW_end_D()
+    {
+
+    }
+
+    public void backButton()
+    {
+        SceneManager.LoadScene("QuestHome");
     }
 }

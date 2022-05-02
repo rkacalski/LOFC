@@ -4741,7 +4741,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cleared: 0/36'
+  m_Text: 'Cleared: 0/72'
 --- !u!222 &558063627
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6148,7 +6148,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 719632859}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2085521808}
+        m_TargetAssemblyTypeName: GCW_main_UI, Assembly-CSharp
+        m_MethodName: GCW_tat_D
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &719632859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8630,7 +8642,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cleared: 0/36'
+  m_Text: 'Cleared: 0/72'
 --- !u!222 &988288418
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12096,7 +12108,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cleared: 0/36'
+  m_Text: 'Cleared: 0/72'
 --- !u!222 &1351218013
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16605,7 +16617,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cleared: 0/36'
+  m_Text: 'Cleared: 0/72'
 --- !u!222 &1838526403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17332,7 +17344,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cleared: 0/36'
+  m_Text: 'Cleared: 0/72'
 --- !u!222 &1928485298
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18744,6 +18756,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461b06f320df3f044aaf2c8805453b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checks: {fileID: 1853292137}
+  DSLocked: {fileID: 124078937}
+  Y4Locked: {fileID: 1101397281}
+  HTHLocked: {fileID: 1228986683}
+  BESLocked: {fileID: 464660302}
+  ENDLocked: {fileID: 1050552054}
+  tatProg: {fileID: 1629379782}
+  dsProg: {fileID: 558063626}
+  y4Prog: {fileID: 1351218012}
+  hthProg: {fileID: 1838526402}
+  besProg: {fileID: 1928485297}
+  endProg: {fileID: 988288417}
 --- !u!4 &2085521809
 Transform:
   m_ObjectHideFlags: 0

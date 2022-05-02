@@ -12,9 +12,9 @@ public class tat_L_selChecks_N : MonoBehaviour
 
     public bool tat2_check()
     {
-        for (int i = 0; i < questProgress.tat1_L.Length; i++)
+        for (int i = 0; i < questProgress.tat1_L_N.Count; i++)
         {
-            if (questProgress.tat1_L[i] == true)
+            if (questProgress.tat1_L_N[i] == true)
             {
                 count2 += 1;
             }
@@ -30,9 +30,9 @@ public class tat_L_selChecks_N : MonoBehaviour
     
     public bool tat3_check()
     {
-        for (int i = 0; i < questProgress.tat2_L.Length; i++)
+        for (int i = 0; i < questProgress.tat2_L_N.Count; i++)
         {
-            if (questProgress.tat2_L[i] == true)
+            if (questProgress.tat2_L_N[i] == true)
             {
                 count3 += 1;
             }
@@ -48,9 +48,9 @@ public class tat_L_selChecks_N : MonoBehaviour
     
     public bool tat4_check()
     {
-        for (int i = 0; i < questProgress.tat3_L.Length; i++)
+        for (int i = 0; i < questProgress.tat3_L_N.Count; i++)
         {
-            if (questProgress.tat3_L[i] == true)
+            if (questProgress.tat3_L_N[i] == true)
             {
                 count4 += 1;
             }
@@ -66,9 +66,9 @@ public class tat_L_selChecks_N : MonoBehaviour
     
     public bool tat5_check()
     {
-        for (int i = 0; i < questProgress.tat4_L.Length; i++)
+        for (int i = 0; i < questProgress.tat4_L_N.Count; i++)
         {
-            if (questProgress.tat4_L[i] == true)
+            if (questProgress.tat4_L_N[i] == true)
             {
                 count5 += 1;
             }
@@ -84,9 +84,9 @@ public class tat_L_selChecks_N : MonoBehaviour
     
     public bool tat6_check()
     {
-        for (int i = 0; i < questProgress.tat5_L.Length; i++)
+        for (int i = 0; i < questProgress.tat5_L_N.Count; i++)
         {
-            if (questProgress.tat5_L[i] == true)
+            if (questProgress.tat5_L_N[i] == true)
             {
                 count6 += 1;
             }

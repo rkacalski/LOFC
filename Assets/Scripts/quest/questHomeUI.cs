@@ -28,8 +28,6 @@ public class questHomeUI : MonoBehaviour
 
     void Start()
     {
-        print(questProgress.tat1_L[0]);
-
         //cw check and progress
         if (checks.CWcheck() == true)
         {
@@ -123,17 +121,17 @@ public class questHomeUI : MonoBehaviour
         if(Level.Equals(1))
         {
             // Tat
-            for(int i = 0; i < questProgress.tat1_L.Length; i++)
+            for(int i = 0; i < questProgress.tat1_L_N.Count; i++)
             {
-                if (questProgress.tat1_L[i] == true)
+                if (questProgress.tat1_L_N[i] == true)
                 {
                     count += 1;
                 }
             }
 
-            for (int i = 0; i < questProgress.tat1_D.Length; i++)
+            for (int i = 0; i < questProgress.tat1_D_N.Count; i++)
             {
-                if (questProgress.tat1_D[i] == true)
+                if (questProgress.tat1_L_N[i] == true)
                 {
                     count += 1;
                 }

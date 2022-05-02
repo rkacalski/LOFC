@@ -20,7 +20,6 @@ public class tat_L_N_UI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //questProgress.tat1_L[0] = true;
 
         //Update progress
         getnumbers(1);
@@ -95,10 +94,10 @@ public class tat_L_N_UI : MonoBehaviour
     {
         if(Level.Equals(1))
         {
-            for (int i = 0; i < questProgress.tat1_L.Length; i++)
+            for (int i = 0; i < questProgress.tat1_L_N.Count; i++)
             {
-                print(i + " Not in loop " + questProgress.tat1_L[i]);
-                if (questProgress.tat1_L[i] == true)
+                print(i + " Not in loop " + questProgress.tat1_L_N[i]);
+                if (questProgress.tat1_L_N[i] == true)
                 {
                     print("in Loop ");
                     count += 1;
@@ -111,9 +110,9 @@ public class tat_L_N_UI : MonoBehaviour
 
         if (Level.Equals(2))
         {
-            for (int i = 0; i < questProgress.tat2_L.Length; i++)
+            for (int i = 0; i < questProgress.tat2_L_N.Count; i++)
             {
-                if (questProgress.tat2_L[i] == true)
+                if (questProgress.tat2_L_N[i] == true)
                 {
                     count += 1;
                 }
@@ -124,9 +123,9 @@ public class tat_L_N_UI : MonoBehaviour
 
         if (Level.Equals(3))
         {
-            for (int i = 0; i < questProgress.tat3_L.Length; i++)
+            for (int i = 0; i < questProgress.tat3_L_N.Count; i++)
             {
-                if (questProgress.tat3_L[i] == true)
+                if (questProgress.tat3_L_N[i] == true)
                 {
                     count += 1;
                 }
@@ -137,9 +136,9 @@ public class tat_L_N_UI : MonoBehaviour
 
         if (Level.Equals(4))
         {
-            for (int i = 0; i < questProgress.tat4_L.Length; i++)
+            for (int i = 0; i < questProgress.tat4_L_N.Count; i++)
             {
-                if (questProgress.tat4_L[i] == true)
+                if (questProgress.tat4_L_N[i] == true)
                 {
                     count += 1;
                 }
@@ -150,9 +149,9 @@ public class tat_L_N_UI : MonoBehaviour
 
         if (Level.Equals(5))
         {
-            for (int i = 0; i < questProgress.tat5_L.Length; i++)
+            for (int i = 0; i < questProgress.tat5_L_N.Count; i++)
             {
-                if (questProgress.tat5_L[i] == true)
+                if (questProgress.tat5_L_N[i] == true)
                 {
                     count += 1;
                 }
@@ -163,9 +162,9 @@ public class tat_L_N_UI : MonoBehaviour
 
         if (Level.Equals(6))
         {
-            for (int i = 0; i < questProgress.tat6_L.Length; i++)
+            for (int i = 0; i < questProgress.tat6_L_N.Count; i++)
             {
-                if (questProgress.tat6_L[i] == true)
+                if (questProgress.tat6_L_N[i] == true)
                 {
                     count += 1;
                 }

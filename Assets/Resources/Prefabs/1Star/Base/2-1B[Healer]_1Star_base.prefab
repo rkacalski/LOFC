@@ -103,6 +103,8 @@ MonoBehaviour:
   HP: 500
   atkPatern: 1 -on- 1
   NumofATKs: 1 per turn
+  tags:
+  - 
   inForm: 0
   accuracy: 110
   evasion: 20

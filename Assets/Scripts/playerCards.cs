@@ -8,7 +8,10 @@ public class playerCards
 {
     public static List<Card> userCards = new List<Card>();
     public static List<Card> supportCards = new List<Card>();
+    //public static List<vehicle> hanger = new List<vehicle>();
+
     public static vehicle[] hanger = new vehicle[4];
+
     public static List<Card> forTrade = new List<Card>();
     public static List<Card> wishlist = new List<Card>();
     public static int playerCost;

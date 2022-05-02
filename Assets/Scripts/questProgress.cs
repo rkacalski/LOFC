@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class questProgress : MonoBehaviour
 {
+    public static bool listsCreated;
     //GCW (Tatooine, Death Star, Yavin 4, Hoth, Bespin, Endor) ///////////////////////////////////////////////////////////////////
     //Tat
     public static bool tat1_1_complete_L_N;
@@ -18,8 +19,8 @@ public class questProgress : MonoBehaviour
     public static bool tat1_4_complete_D_N;
     public static bool tat1_5_complete_D_N;
     public static bool tat1_6_complete_D_N;
-    public static bool[] tat1_L = new bool[] { tat1_1_complete_L_N, tat1_2_complete_L_N, tat1_3_complete_L_N, tat1_4_complete_L_N, tat1_5_complete_L_N, tat1_6_complete_L_N };
-    public static bool[] tat1_D = new bool[] { tat1_1_complete_D_N, tat1_2_complete_D_N, tat1_3_complete_D_N, tat1_4_complete_D_N, tat1_5_complete_D_N, tat1_6_complete_D_N };
+    public static List<bool> tat1_L_N = new List<bool>();
+    public static List<bool> tat1_D_N = new List<bool>();
 
     public static bool tat2_1_complete_L_N;
     public static bool tat2_2_complete_L_N;
@@ -33,8 +34,8 @@ public class questProgress : MonoBehaviour
     public static bool tat2_4_complete_D_N;
     public static bool tat2_5_complete_D_N;
     public static bool tat2_6_complete_D_N;
-    public static bool[] tat2_L = new bool[] { tat2_1_complete_L_N, tat2_2_complete_L_N, tat2_3_complete_L_N, tat2_4_complete_L_N, tat2_5_complete_L_N, tat2_6_complete_L_N };
-    public static bool[] tat2_D = new bool[] { tat2_1_complete_D_N, tat2_2_complete_D_N, tat2_3_complete_D_N, tat2_4_complete_D_N, tat2_5_complete_D_N, tat2_6_complete_D_N };
+    public static List<bool> tat2_L_N = new List<bool>();
+    public static List<bool> tat2_D_N = new List<bool>();
 
     public static bool tat3_1_complete_L_N;
     public static bool tat3_2_complete_L_N;
@@ -48,8 +49,8 @@ public class questProgress : MonoBehaviour
     public static bool tat3_4_complete_D_N;
     public static bool tat3_5_complete_D_N;
     public static bool tat3_6_complete_D_N;
-    public static bool[] tat3_L = new bool[] { tat3_1_complete_L_N, tat3_2_complete_L_N, tat3_3_complete_L_N, tat3_4_complete_L_N, tat3_5_complete_L_N, tat3_6_complete_L_N };
-    public static bool[] tat3_D = new bool[] { tat3_1_complete_D_N, tat3_2_complete_D_N, tat3_3_complete_D_N, tat3_4_complete_D_N, tat3_5_complete_D_N, tat3_6_complete_D_N };
+    public static List<bool> tat3_L_N = new List<bool>();
+    public static List<bool> tat3_D_N = new List<bool>();
 
     public static bool tat4_1_complete_L_N;
     public static bool tat4_2_complete_L_N;
@@ -63,8 +64,8 @@ public class questProgress : MonoBehaviour
     public static bool tat4_4_complete_D_N;
     public static bool tat4_5_complete_D_N;
     public static bool tat4_6_complete_D_N;
-    public static bool[] tat4_L = new bool[] { tat4_1_complete_L_N, tat4_2_complete_L_N, tat4_3_complete_L_N, tat4_4_complete_L_N, tat4_5_complete_L_N, tat4_6_complete_L_N };
-    public static bool[] tat4_D = new bool[] { tat4_1_complete_D_N, tat4_2_complete_D_N, tat4_3_complete_D_N, tat4_4_complete_D_N, tat4_5_complete_D_N, tat4_6_complete_D_N };
+    public static List<bool> tat4_L_N = new List<bool>();
+    public static List<bool> tat4_D_N = new List<bool>();
 
     public static bool tat5_1_complete_L_N;
     public static bool tat5_2_complete_L_N;
@@ -78,8 +79,8 @@ public class questProgress : MonoBehaviour
     public static bool tat5_4_complete_D_N;
     public static bool tat5_5_complete_D_N;
     public static bool tat5_6_complete_D_N;
-    public static bool[] tat5_L = new bool[] { tat5_1_complete_L_N, tat5_2_complete_L_N, tat5_3_complete_L_N, tat5_4_complete_L_N, tat5_5_complete_L_N, tat5_6_complete_L_N};
-    public static bool[] tat5_D = new bool[] { tat5_1_complete_D_N, tat5_2_complete_D_N, tat5_3_complete_D_N, tat5_4_complete_D_N, tat5_5_complete_D_N, tat5_6_complete_D_N};
+    public static List<bool> tat5_L_N = new List<bool>();
+    public static List<bool> tat5_D_N = new List<bool>();
 
     public static bool tat6_1_complete_L_N;
     public static bool tat6_2_complete_L_N;
@@ -93,8 +94,10 @@ public class questProgress : MonoBehaviour
     public static bool tat6_4_complete_D_N;
     public static bool tat6_5_complete_D_N;
     public static bool tat6_6_complete_D_N;
-    public static bool[] tat6_L = new bool[] { tat6_1_complete_L_N, tat6_2_complete_L_N, tat6_3_complete_L_N, tat6_4_complete_L_N, tat6_5_complete_L_N, tat6_6_complete_L_N };
-    public static bool[] tat6_D = new bool[] { tat6_1_complete_D_N, tat6_2_complete_D_N, tat6_3_complete_D_N, tat6_4_complete_D_N, tat6_5_complete_D_N, tat6_6_complete_D_N };
+    public static List<bool> tat6_L_N = new List<bool>();
+    public static List<bool> tat6_D_N = new List<bool>();
+    //public static bool[] tat6_L = new bool[] { tat6_1_complete_L_N, tat6_2_complete_L_N, tat6_3_complete_L_N, tat6_4_complete_L_N, tat6_5_complete_L_N, tat6_6_complete_L_N };
+    //public static bool[] tat6_D = new bool[] { tat6_1_complete_D_N, tat6_2_complete_D_N, tat6_3_complete_D_N, tat6_4_complete_D_N, tat6_5_complete_D_N, tat6_6_complete_D_N };
 
     //DS
     public static bool ds1_1_complete;

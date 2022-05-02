@@ -12,17 +12,17 @@ public class questCheck : MonoBehaviour
 
     public bool CWcheck()
     {
-        for(int i = 0; i < questProgress.tat1_L.Length; i++)
+        for(int i = 0; i < questProgress.tat1_L_N.Count; i++)
         {
-            if (questProgress.tat1_L[i] == true)
+            if (questProgress.tat1_L_N[i] == true)
             {
                 cwCheck1 += 1;
             }
         }
 
-        for (int i = 0; i < questProgress.tat1_D.Length; i++)
+        for (int i = 0; i < questProgress.tat1_D_N.Count; i++)
         {
-            if (questProgress.tat1_D[i] == true)
+            if (questProgress.tat1_D_N[i] == true)
             {
                 cwCheck2 += 1;
             }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &18721157100820024
+--- !u!1 &5680884050161184480
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6827700092046067764}
-  - component: {fileID: 7908806652156503387}
-  - component: {fileID: 7041271790208697851}
-  - component: {fileID: 936173940211472950}
+  - component: {fileID: 6363243251656980567}
+  - component: {fileID: 8694697085408745525}
+  - component: {fileID: 7730840418949006232}
+  - component: {fileID: 866994141545473808}
   m_Layer: 0
   m_Name: kam_3star_base
   m_TagString: Untagged
@@ -19,13 +19,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &6827700092046067764
+--- !u!224 &6363243251656980567
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18721157100820024}
+  m_GameObject: {fileID: 5680884050161184480}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -38,21 +38,21 @@ RectTransform:
   m_AnchoredPosition: {x: -242, y: 669.99976}
   m_SizeDelta: {x: 147.4536, y: 225.7017}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7908806652156503387
+--- !u!222 &8694697085408745525
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18721157100820024}
+  m_GameObject: {fileID: 5680884050161184480}
   m_CullTransparentMesh: 1
---- !u!114 &7041271790208697851
+--- !u!114 &7730840418949006232
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18721157100820024}
+  m_GameObject: {fileID: 5680884050161184480}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -76,13 +76,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &936173940211472950
+--- !u!114 &866994141545473808
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18721157100820024}
+  m_GameObject: {fileID: 5680884050161184480}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54ea2ebc309dbe94da7ca1cc002f4390, type: 3}
@@ -103,11 +103,12 @@ MonoBehaviour:
   HP: 1200
   atkPatern: 1 -on- 1
   NumofATKs: 1 per turn
+  tags1: []
   tags:
-  - Clone War
-  - Male
-  - Jedi
-  - Galactic Republic
+  - {fileID: 21300000, guid: b7ec6d8d373454642b1dbf1dc1e21abe, type: 3}
+  - {fileID: 21300000, guid: bfedcf54ecb27c4479f1e7150e7c164e, type: 3}
+  - {fileID: 21300000, guid: ec59dc4c837cd7f4c9bf2d017d22d534, type: 3}
+  - {fileID: 21300000, guid: 13862241b49b5614bbc83ec301bf3dd8, type: 3}
   inForm: 0
   accuracy: 140
   evasion: 60

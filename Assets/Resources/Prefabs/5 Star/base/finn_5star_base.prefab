@@ -103,9 +103,10 @@ MonoBehaviour:
   HP: 2000
   atkPatern: 1 -on- 1
   NumofATKs: 1 per turn
+  tags1: []
   tags:
-  - Clone War
-  - Male
+  - {fileID: 21300000, guid: 385532b3b31766349a70df3f81260f41, type: 3}
+  - {fileID: 21300000, guid: bfedcf54ecb27c4479f1e7150e7c164e, type: 3}
   inForm: 0
   accuracy: 150
   evasion: 50

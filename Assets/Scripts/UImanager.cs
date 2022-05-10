@@ -15,6 +15,7 @@ public class UImanager : MonoBehaviour
     public float pageMax;
     public Text pageText;
     public Text cardAmount;
+    public int tagCount;
 
     List<Card> sortedBinder = new List<Card>();
     List<int> origLoc = new List<int>();
@@ -181,6 +182,22 @@ public class UImanager : MonoBehaviour
 
             //set orig array pos
             cardSlots[i].transform.GetChild(16).transform.GetChild(4).GetComponent<Text>().text = origLoc[i].ToString();
+
+            // Update tags set up for loop and update iamges. set active to false if no more tags
+            //cardSlots[i].transform.GetChild(17).transform.GetChild(i).GetComponent<Image>().sprite = sortedBinder[i].cardArt;
+
+            tagCount = sortedBinder[i].tags.Count;
+            for (int j = 0; j < 9; j++)
+            {
+                if(j < tagCount)
+                {
+                    cardSlots[i].transform.GetChild(17).transform.GetChild(j).GetComponent<Image>().sprite = sortedBinder[i].tags[j];
+                }
+                else
+                {
+                    cardSlots[i].transform.GetChild(17).transform.GetChild(j).gameObject.SetActive(false);
+                }
+            }
         }
     }
 
@@ -312,6 +329,19 @@ public class UImanager : MonoBehaviour
 
                 //set orig array pos
                 cardSlots[i].transform.GetChild(16).transform.GetChild(4).GetComponent<Text>().text = origLoc[i + loopCounter].ToString();
+
+                tagCount = sortedBinder[i + loopCounter].tags.Count;
+                for (int j = 0; j < 9; j++)
+                {
+                    if (j < tagCount)
+                    {
+                        cardSlots[i].transform.GetChild(17).transform.GetChild(j).GetComponent<Image>().sprite = sortedBinder[i + loopCounter].tags[j];
+                    }
+                    else
+                    {
+                        cardSlots[i].transform.GetChild(17).transform.GetChild(j).gameObject.SetActive(false);
+                    }
+                }
             }
 
             for (int i = 0; i <= 9; i++)

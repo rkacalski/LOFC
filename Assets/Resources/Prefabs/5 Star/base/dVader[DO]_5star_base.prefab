@@ -103,11 +103,12 @@ MonoBehaviour:
   HP: 2000
   atkPatern: 1 -on- 1
   NumofATKs: 1 per turn
+  tags1: []
   tags:
-  - Galactic Civil War
-  - Male
-  - Galactic Empire
-  - Sith
+  - {fileID: 21300000, guid: cfe7c7111ad891a4e85ac8e7b9a178e9, type: 3}
+  - {fileID: 21300000, guid: bfedcf54ecb27c4479f1e7150e7c164e, type: 3}
+  - {fileID: 21300000, guid: 303c81fb664ef9b42ae488aae3ded242, type: 3}
+  - {fileID: 21300000, guid: d649cd74c42638044ac96f13d333ae44, type: 3}
   inForm: 0
   accuracy: 170
   evasion: 80

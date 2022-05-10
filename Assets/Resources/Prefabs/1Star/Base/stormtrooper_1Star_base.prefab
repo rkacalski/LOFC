@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &477350304823975490
+--- !u!1 &6567547614567709155
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6349438130134483022}
-  - component: {fileID: 7718282347748699425}
-  - component: {fileID: 7452048061601942913}
-  - component: {fileID: 729746299619512908}
+  - component: {fileID: 4828284651191406783}
+  - component: {fileID: 7712789738079253316}
+  - component: {fileID: 6532771834975542109}
+  - component: {fileID: 1145903991733495024}
   m_Layer: 0
   m_Name: stormtrooper_1Star_base
   m_TagString: Untagged
@@ -19,13 +19,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &6349438130134483022
+--- !u!224 &4828284651191406783
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477350304823975490}
+  m_GameObject: {fileID: 6567547614567709155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -35,24 +35,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.2101, y: -211.4173}
+  m_AnchoredPosition: {x: -214, y: 302}
   m_SizeDelta: {x: 147.4536, y: 225.7017}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7718282347748699425
+--- !u!222 &7712789738079253316
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477350304823975490}
+  m_GameObject: {fileID: 6567547614567709155}
   m_CullTransparentMesh: 1
---- !u!114 &7452048061601942913
+--- !u!114 &6532771834975542109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477350304823975490}
+  m_GameObject: {fileID: 6567547614567709155}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 26a774da7a9a34844b4d79ed06630d8e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d480366fbedaebe46ba7363ac5fa6cb4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -76,13 +76,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &729746299619512908
+--- !u!114 &1145903991733495024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477350304823975490}
+  m_GameObject: {fileID: 6567547614567709155}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54ea2ebc309dbe94da7ca1cc002f4390, type: 3}
@@ -100,14 +100,23 @@ MonoBehaviour:
   attack_mult: 97.7777778
   defense_mult: 93.3
   level: 1
-  HP: 500
+  HP: 400
   atkPatern: 1 -on- 1
   NumofATKs: 1 per turn
+  tags1: []
+  tags:
+  - {fileID: 21300000, guid: cfe7c7111ad891a4e85ac8e7b9a178e9, type: 3}
+  - {fileID: 21300000, guid: d649cd74c42638044ac96f13d333ae44, type: 3}
   inForm: 0
   accuracy: 100
   evasion: 10
   cost: 4
   skill: None
+  skillLevel: 0
+  baseSkillLevel: 0
+  skillLevMult: 0
   cardDescript: A will of iron encased in hardened white armor, these Imperial shock
     troops neutralized resistance to the New Order and remain totally loyal to the
     Emperor, even in the face of certain death.
+  X: 0
+  Y: 0

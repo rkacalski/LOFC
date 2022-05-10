@@ -103,11 +103,12 @@ MonoBehaviour:
   HP: 2000
   atkPatern: 1 -on- 1
   NumofATKs: 1 per turn
+  tags1: []
   tags:
-  - Clone War
-  - Female
-  - Jedi
-  - Galactic Republic
+  - {fileID: 21300000, guid: b7ec6d8d373454642b1dbf1dc1e21abe, type: 3}
+  - {fileID: 21300000, guid: f565e0a26668eca42a1fe4cd22a0d136, type: 3}
+  - {fileID: 21300000, guid: ec59dc4c837cd7f4c9bf2d017d22d534, type: 3}
+  - {fileID: 21300000, guid: 13862241b49b5614bbc83ec301bf3dd8, type: 3}
   inForm: 0
   accuracy: 170
   evasion: 90

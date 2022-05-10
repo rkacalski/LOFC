@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Card : MonoBehaviour
@@ -20,7 +21,8 @@ public class Card : MonoBehaviour
     public int HP;
     public string atkPatern;
     public string NumofATKs;
-    public List<string> tags;
+    public List<string> tags1;
+    public List<Sprite> tags;
     public bool inForm;
     public int accuracy;
     public int evasion;

@@ -103,10 +103,11 @@ MonoBehaviour:
   HP: 2000
   atkPatern: 1 -on- 1
   NumofATKs: 1 per turn
+  tags1: []
   tags:
-  - Galactic Civil War
-  - Droid
-  - Rebel Alliance
+  - {fileID: 21300000, guid: cfe7c7111ad891a4e85ac8e7b9a178e9, type: 3}
+  - {fileID: 21300000, guid: 3fa7475f8dec7f043a42bb65f38ea3d5, type: 3}
+  - {fileID: 21300000, guid: d851d8c3dc154674e914a3b09c192289, type: 3}
   inForm: 0
   accuracy: 140
   evasion: 50

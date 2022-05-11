@@ -30,6 +30,7 @@ public class Card : MonoBehaviour
     public string skill;
     public double skillLevel;
     public int baseSkillLevel;
+    public string skillDescript;
     public double skillLevMult;
     public string cardDescript;
     public int X;

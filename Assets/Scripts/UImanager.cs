@@ -97,15 +97,15 @@ public class UImanager : MonoBehaviour
 
             if (Lightresult == true)
             {
-                cardSlots[i].transform.GetChild(0).GetComponent<Image>().color = new Color32(3, 17, 53, 255);
+                cardSlots[i].transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = new Color32(0, 0, 100, 110);
             }
             if (Darkresult == true)
             {
-                cardSlots[i].transform.GetChild(0).GetComponent<Image>().color = new Color32(53, 10, 3, 255);
+                cardSlots[i].transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = new Color32(73, 10, 3, 110);
             }
             if (Nuetralresult == true)
             {
-                cardSlots[i].transform.GetChild(0).GetComponent<Image>().color = new Color32(153, 101, 21, 255);
+                cardSlots[i].transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = new Color32(133, 81, 21, 110);
             }
 
             //display Card art
@@ -244,15 +244,15 @@ public class UImanager : MonoBehaviour
 
                 if (Lightresult == true)
                 {
-                    cardSlots[i].transform.GetChild(0).GetComponent<Image>().color = new Color32(3, 17, 53, 255);
+                    cardSlots[i].transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = new Color32(0, 0, 100, 110);
                 }
                 if (Darkresult == true)
                 {
-                    cardSlots[i].transform.GetChild(0).GetComponent<Image>().color = new Color32(53, 10, 3, 255);
+                    cardSlots[i].transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = new Color32(73, 10, 3, 110);
                 }
                 if (Nuetralresult == true)
                 {
-                    cardSlots[i].transform.GetChild(0).GetComponent<Image>().color = new Color32(153, 101, 21, 255);
+                    cardSlots[i].transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = new Color32(133, 81, 21, 110);
                 }
 
                 //display Card art

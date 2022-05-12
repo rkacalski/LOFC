@@ -117,10 +117,10 @@ MonoBehaviour:
   skillLevel: 30
   baseSkillLevel: 1
   skillDescript: Constantly increases the DEF and EVA of friendly Galactic Republic
-    type units positioned in the same horizontal row as this skill card, by + skillLevel
-    + %. However, the effect will be 2/3 for unit(s) positioned one space away from
-    this skill card, and 1/2 for unit(s) positioned two or more spaces away from
-    this skill card.
+    type units positioned in the same horizontal row as this skill card, by level.
+    However, the effect will be 2/3 for unit(s) positioned one space away from this
+    skill card, and 1/2 for unit(s) positioned two or more spaces away from this
+    skill card.
   skillLevMult: 0.1282051282051282
   cardDescript: Shaak Ti is a Jedi General and member of the Jedi Council who fought
     in some of the largest battles in the Clone Wars. During the battle of Kamino,

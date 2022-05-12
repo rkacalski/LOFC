@@ -187,6 +187,14 @@ public class UImanager : MonoBehaviour
             //cardSlots[i].transform.GetChild(17).transform.GetChild(i).GetComponent<Image>().sprite = sortedBinder[i].cardArt;
 
             tagCount = sortedBinder[i].tags.Count;
+            for (int k = 0; k < 9; k++)
+            {
+                if (tagCount != 10)
+                {
+                    cardSlots[i].transform.GetChild(17).transform.GetChild(k).gameObject.SetActive(true);
+                }
+            }
+
             for (int j = 0; j < 9; j++)
             {
                 if(j < tagCount)
@@ -331,6 +339,13 @@ public class UImanager : MonoBehaviour
                 cardSlots[i].transform.GetChild(16).transform.GetChild(4).GetComponent<Text>().text = origLoc[i + loopCounter].ToString();
 
                 tagCount = sortedBinder[i + loopCounter].tags.Count;
+                for (int k = 0; k < 9; k++)
+                {
+                    if (tagCount != 10)
+                    {
+                        cardSlots[i].transform.GetChild(17).transform.GetChild(k).gameObject.SetActive(true);
+                    }
+                }
                 for (int j = 0; j < 9; j++)
                 {
                     if (j < tagCount)

@@ -116,6 +116,7 @@ MonoBehaviour:
   skill: Presence of Malice
   skillLevel: 7
   baseSkillLevel: 1
+  skillDescript: 
   skillLevMult: 0.20512820512820512
   cardDescript: As he delves deeper into the dark side of the force, Darth Vader
     is proving himself to be a worthy apprentice. Upon his master's request the Dark

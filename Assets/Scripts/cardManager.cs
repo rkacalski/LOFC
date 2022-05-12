@@ -39,8 +39,6 @@ public class cardManager : MonoBehaviour
             origLevelValue = int.Parse(cardSelect.card1Level);
         }
 
-        //sortedBinder = playerCards.userCards.OrderBy(x => x.rarity).ToList();
-        //sortedBinder.Reverse();
         sortedBinder = playerCards.userCards;
 
         player.credits = 9052;

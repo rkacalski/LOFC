@@ -115,6 +115,8 @@ MonoBehaviour:
   skill: Adjacent Separatist ATK and ACC Up [Med]
   skillLevel: 20
   baseSkillLevel: 1
+  skillDescript: Constantly increase the ATK and ACC of the seperatist type units
+    positioned directly adjacent to this skill card by level.
   skillLevMult: 0.5128205128205128
   cardDescript: Neimoidians were known for their exceptional organizational and business
     skills, but Nute Gunray is more cutthroat than most. His unscrupulous nature

@@ -116,6 +116,9 @@ MonoBehaviour:
   skill: Counter Attack [Med]
   skillLevel: 200
   baseSkillLevel: 1
+  skillDescript: "A large chance to increase this unit\u2019s EVA by level during
+    battle. If this unit then dodges an attack, it will immediately counter attack
+    for that turn. However, an S-Range unit can only attack an adjacent enemy."
   skillLevMult: 2
   cardDescript: As the cyborg leader of the Droid Army, General Grievous is a superior
     commander. His skills at wielding up to four Lightsabers at once make him a deadly

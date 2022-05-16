@@ -116,6 +116,8 @@ MonoBehaviour:
   skill: Blaster Blitz
   skillLevel: 15
   baseSkillLevel: 1
+  skillDescript: At a fixed probability increase this unit's ATK by level and increase
+    this unit's attack frequency by 4 for that turn.
   skillLevMult: 0.5128205128205128
   cardDescript: Dangerous acts of heroism are just part of the job for the elite
     clone commandos in the Grand Army. This rings especially true for CC-5579-39,

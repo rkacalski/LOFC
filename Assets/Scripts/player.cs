@@ -16,6 +16,16 @@ public class player : MonoBehaviour
     public static int player_bp;
     public static int player_maxBp;
 
+    //Card tickets
+    public static int silverCardPack;
+    public static int goldCardPack;
+    public static int gold2CardPack;
+    public static int gold3CardPack;
+    public static int gold5CardPack;
+    public static int platCardPack;
+    public static int diamondCardPack;
+
+    //Enhancing Items
     public static int credits;
     public static int training_remotes;
     public static int crystals;

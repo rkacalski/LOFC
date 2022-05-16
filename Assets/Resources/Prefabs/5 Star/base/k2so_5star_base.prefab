@@ -115,6 +115,10 @@ MonoBehaviour:
   skill: Loyal Protector
   skillLevel: 12
   baseSkillLevel: 1
+  skillDescript: Constantly increase the DEF and EVA of friendly rebel alliance units
+    positioned in the same column and columns to the left and right of this skill
+    card by level. At a fixed probability as well, this skill card engages attacks
+    from all enemies from all attacks this unit can potentially be hit from.
   skillLevMult: 0.20512820512820512
   cardDescript: K-2SO was a KX-series security droid originally created for use in
     the Galactic Empire's armed forces. However At some point, the droid encountered

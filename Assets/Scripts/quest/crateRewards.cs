@@ -9,6 +9,7 @@ public class crateRewards : MonoBehaviour
     public string[] silverPossibleRewards;
     public string[] goldPossibleRewards;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -245,6 +246,21 @@ public class crateRewards : MonoBehaviour
             if (item.Equals("4 Star Great Holocron"))
             {
                 itemQuant = (int)randomInt(1, 3);
+                return itemQuant;
+            }
+            if (item.Equals("5 Star Jedi Holocron"))
+            {
+                itemQuant = 1;
+                return itemQuant;
+            }
+            if (item.Equals("5 Star Sith Holocron"))
+            {
+                itemQuant = 1;
+                return itemQuant;
+            }
+            if (item.Equals("5 Star Great Holocron"))
+            {
+                itemQuant = 1;
                 return itemQuant;
             }
         }

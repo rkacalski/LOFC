@@ -2043,6 +2043,9 @@ MonoBehaviour:
   - 4 Star Jedi Holocron
   - 4 Star Sith Holocron
   - 4 Star Great Holocron
+  - 5 Star Great Holocron
+  - 5 Star Jedi Holocron
+  - 5 Star Sith Holocron
 --- !u!4 &818240021
 Transform:
   m_ObjectHideFlags: 0

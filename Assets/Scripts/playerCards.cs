@@ -8,7 +8,7 @@ public class playerCards
 {
     public static List<Card> userCards = new List<Card>();
     public static List<Card> supportCards = new List<Card>();
-    //public static List<vehicle> hanger = new List<vehicle>();
+    public static List<vehicle> playerHanger = new List<vehicle>();
 
     public static vehicle[] hanger = new vehicle[4];
 

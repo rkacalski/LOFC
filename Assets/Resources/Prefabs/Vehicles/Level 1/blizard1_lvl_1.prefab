@@ -102,9 +102,11 @@ MonoBehaviour:
   level: 1
   HP: 6000
   inForm: 0
+  built: 0
+  buildTime: 0
   vehicleDescript: 
   X: 2
   Y: 3
-  numPiolts: 1
-  numCoPiolts: 2
+  pilot: {fileID: 0}
+  coPilots: []
   numParts: 3

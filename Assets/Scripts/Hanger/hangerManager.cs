@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class hangerManager : MonoBehaviour
 {
+    public GameObject selectedPopUpmenu;
     public GameObject[] hangerSlots;
     public int numSlotsUsed;
     public Text slotsUsedLabel;
@@ -21,11 +22,15 @@ public class hangerManager : MonoBehaviour
     public bool inHanger3;
 
     public static int selectedHanger;
+    public int sellHanger;
 
     // Start is called before the first frame update
     void Start()
     {
+        selectedPopUpmenu.transform.localScale = Vector2.zero;
+        sellHanger = -1;
         //Initiate Test vehicles ///////////////////////////////////////
+        /**
         vehicle tempCard;
         List<vehicle> tempBinder = new List<vehicle>();
 
@@ -35,8 +40,9 @@ public class hangerManager : MonoBehaviour
         {
             tempCard = GameObject.Instantiate(tempBinder[i]);
             tempCard.built = true;
-            playerCards.hanger[i] = tempCard;
+            playerCards.playerHanger.Insert(i, tempCard);
         }
+        **/
         insertHanger1();
         insertHanger2();
         insertHanger3();
@@ -44,39 +50,39 @@ public class hangerManager : MonoBehaviour
 
         //////////////////////////////////////////////////////////
 
-        for (int i = 0; i < playerCards.hanger.Length; i++)
+        for (int i = 0; i < playerCards.playerHanger.Count; i++)
         {
-            if(playerCards.hanger[i] != null)
+            if(playerCards.playerHanger[i] != null)
             {
                 numSlotsUsed += 1;
             }
         }
 
-        getTimer3();
+        //getTimer3();
         hangerPannelUI();
         slotsUsedLabel.text = "Slots Used: " + numSlotsUsed + "/4";
     }
 
     void Update()
     {
-        buildTimer3();
+        
     }
 
     void hangerPannelUI()
     {
-        for (int i = 0; i <= 3; i++)
+        for (int i = 0; i < 4; i++)
         {
             //Set Art, Name, Level
-            if (playerCards.hanger[i] != null)
+            if (i < playerCards.playerHanger.Count && playerCards.playerHanger[i] != null)
             {
-                hangerSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = playerCards.hanger[i].art;
-                hangerSlots[i].transform.GetChild(2).GetComponent<Text>().text = playerCards.hanger[i].displayName;
-                hangerSlots[i].transform.GetChild(3).GetComponent<Text>().text = "Level " + playerCards.hanger[i].level.ToString();
-                if(playerCards.hanger[i].level.Equals(5))
+                hangerSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = playerCards.playerHanger[i].art;
+                hangerSlots[i].transform.GetChild(2).GetComponent<Text>().text = playerCards.playerHanger[i].displayName;
+                hangerSlots[i].transform.GetChild(3).GetComponent<Text>().text = "Level " + playerCards.playerHanger[i].level.ToString();
+                if(playerCards.playerHanger[i].level.Equals(5))
                 {
-                    hangerSlots[i].transform.GetChild(3).GetComponent<Text>().text = "Level " + playerCards.hanger[i].level.ToString() + " (MAX)";
+                    hangerSlots[i].transform.GetChild(3).GetComponent<Text>().text = "Level " + playerCards.playerHanger[i].level.ToString() + " (MAX)";
                 }
-                if(playerCards.hanger[i].built == true)
+                if(playerCards.playerHanger[i].built == true)
                 {
                     hangerSlots[i].transform.GetChild(4).gameObject.SetActive(false);
                 }
@@ -91,9 +97,9 @@ public class hangerManager : MonoBehaviour
         }
 
         //Set slots to true
-        for (int i = 0; i < playerCards.hanger.Length; i++)
+        for (int i = 0; i < playerCards.playerHanger.Count; i++)
         {
-            if (playerCards.hanger[i] != null)
+            if (playerCards.playerHanger[i] != null)
             {
                 if(i.Equals(0))
                 {
@@ -113,7 +119,6 @@ public class hangerManager : MonoBehaviour
                 }
             }
         }
-
     }
 
     void vehiclePopUp()
@@ -140,33 +145,10 @@ public class hangerManager : MonoBehaviour
 
     public void getTimer3()
     {
-        if ((playerCards.hanger[2] != null) && playerCards.hanger[2].built == false)
+        if ((playerCards.playerHanger[2] != null) && playerCards.playerHanger[2].built == false)
         {
-            timer3 = playerCards.hanger[2].buildTime;
+            timer3 = playerCards.playerHanger[2].buildTime;
             inHanger3 = true;
-        }
-    }
-
-    public void buildTimer3()
-    {  
-        if (inHanger3 == true)
-        {
-            hangerSlots[2].transform.GetChild(4).gameObject.SetActive(true);
-
-            if (playerCards.hanger[2].built == false)
-            {
-                timer3 = timer3 - Time.deltaTime;
-                TimeSpan time = TimeSpan.FromSeconds(timer3);
-                hangerSlots[2].transform.GetChild(4).GetComponent<Text>().text = time.ToString("hh':'mm':'ss");
-                print(timer3);
-
-                if (timer3 < 0)
-                {
-                    hangerSlots[2].transform.GetChild(4).gameObject.SetActive(false);
-                    playerCards.hanger[2].built = true;
-                }
-
-            }
         }
     }
 
@@ -175,8 +157,10 @@ public class hangerManager : MonoBehaviour
     {
         if (vehicleSelect.selectedVehicle != null)
         {
-            playerCards.hanger[selectedHanger] = vehicleSelect.selectedVehicle;
+            playerCards.playerHanger.Insert(selectedHanger, vehicleSelect.selectedVehicle);
+
         }
+
         vehicleSelect.selectedVehicle = null;
         selectedHanger = -1;
     }
@@ -185,7 +169,7 @@ public class hangerManager : MonoBehaviour
     {
         if (vehicleSelect.selectedVehicle != null)
         {
-            playerCards.hanger[selectedHanger] = vehicleSelect.selectedVehicle;
+            playerCards.playerHanger.Insert(selectedHanger, vehicleSelect.selectedVehicle);
         }
         vehicleSelect.selectedVehicle = null;
         selectedHanger = -1;
@@ -195,9 +179,9 @@ public class hangerManager : MonoBehaviour
     {
         if (vehicleSelect.selectedVehicle != null)
         {
-            playerCards.hanger[selectedHanger] = vehicleSelect.selectedVehicle;
-            playerCards.hanger[selectedHanger].built = false;
-            print(playerCards.hanger[selectedHanger].built);
+            playerCards.playerHanger[selectedHanger] = vehicleSelect.selectedVehicle;
+            playerCards.playerHanger[selectedHanger].built = false;
+            //print(playerCards.playerHanger[selectedHanger].built);
         }
         vehicleSelect.selectedVehicle = null;
         selectedHanger = -1;
@@ -207,7 +191,7 @@ public class hangerManager : MonoBehaviour
     {
         if (vehicleSelect.selectedVehicle != null)
         {
-            playerCards.hanger[selectedHanger] = vehicleSelect.selectedVehicle;
+            playerCards.playerHanger[selectedHanger] = vehicleSelect.selectedVehicle;
         }
         vehicleSelect.selectedVehicle = null;
         selectedHanger = -1;
@@ -217,35 +201,166 @@ public class hangerManager : MonoBehaviour
     {
         if (slot1Full == false)
         {
-            SceneManager.LoadScene("Vehicle_Select");
             selectedHanger = 0;
+            SceneManager.LoadScene("Vehicle_Select");
+        }
+        if (slot1Full == true)
+        {
+            sellHanger = 0;
+            displayVehicle(0);
         }
     }
 
     public void hanger2()
     {
-        if (slot2Full == false)
+        if (slot2Full == false && slot1Full == true)
         {
-            SceneManager.LoadScene("Vehicle_Select");
             selectedHanger = 1;
+            SceneManager.LoadScene("Vehicle_Select");
+        }
+        if (slot2Full == true)
+        {
+            sellHanger = 1;
+            displayVehicle(1);
         }
     }
 
     public void hanger3()
     {
-        if(slot3Full == false)
+        if(slot3Full == false && slot2Full == true && slot1Full == true)
         {
-            SceneManager.LoadScene("Vehicle_Select");
             selectedHanger = 2;
+            SceneManager.LoadScene("Vehicle_Select");
+        }
+        if (slot3Full == true)
+        {
+            sellHanger = 2;
+            displayVehicle(2);
         }
     }
 
     public void hanger4()
     {
-        if (slot4Full == false)
+        if (slot4Full == false && slot3Full == true && slot2Full == true && slot1Full == true)
         {
-            SceneManager.LoadScene("Vehicle_Select");
             selectedHanger = 3;
+            SceneManager.LoadScene("Vehicle_Select");
         }
+        if (slot4Full == true)
+        {
+            sellHanger = 3;
+            displayVehicle(3);
+        }
+    }
+
+    void displayVehicle(int hangerLocation)
+    {
+        vehicle vehicle = playerCards.playerHanger[hangerLocation];
+
+        //Set art, pilots, copilots
+        selectedPopUpmenu.transform.GetChild(2).transform.GetChild(0).GetComponent<Image>().sprite = vehicle.art;
+        if (vehicle.pilot != null)
+        {
+            selectedPopUpmenu.transform.GetChild(6).transform.GetChild(0).GetComponent<Image>().sprite = vehicle.pilot.cardArt;
+        }
+
+        for(int i = 0; i < vehicle.coPilots.Count; i++)
+        {
+            if (i <= vehicle.coPilots.Count)
+            {
+                selectedPopUpmenu.transform.GetChild(7).transform.GetChild(i).GetComponent<Image>().sprite = vehicle.coPilots[i].cardArt;
+            }
+            else
+            {
+                selectedPopUpmenu.transform.GetChild(7).transform.GetChild(i).gameObject.SetActive(false);
+            }
+        }
+
+        //Labels
+        selectedPopUpmenu.transform.GetChild(8).transform.GetChild(0).GetComponent<Text>().text = "Cost: " + vehicle.cost.ToString();
+        selectedPopUpmenu.transform.GetChild(8).transform.GetChild(1).GetComponent<Text>().text = "Attack: " + vehicle.attack.ToString();
+        selectedPopUpmenu.transform.GetChild(8).transform.GetChild(2).GetComponent<Text>().text = "Accuracy: " + vehicle.accuracy.ToString();
+        selectedPopUpmenu.transform.GetChild(8).transform.GetChild(3).GetComponent<Text>().text = "HP: " + vehicle.HP.ToString();
+        selectedPopUpmenu.transform.GetChild(8).transform.GetChild(4).GetComponent<Text>().text = "X-Size: " + vehicle.X.ToString();
+        selectedPopUpmenu.transform.GetChild(8).transform.GetChild(5).GetComponent<Text>().text = "# of Attack's: " + vehicle.atkFreq.ToString() + " per turn";
+        selectedPopUpmenu.transform.GetChild(8).transform.GetChild(6).GetComponent<Text>().text = "Range: " + rangeFormat(vehicle);
+        selectedPopUpmenu.transform.GetChild(8).transform.GetChild(7).GetComponent<Text>().text = "Defense: " + vehicle.defense.ToString();
+        selectedPopUpmenu.transform.GetChild(8).transform.GetChild(8).GetComponent<Text>().text = "Evasion: " + vehicle.evasion.ToString();
+        selectedPopUpmenu.transform.GetChild(8).transform.GetChild(10).GetComponent<Text>().text = "Y-Size: " + vehicle.Y.ToString();
+
+        if (vehicle.pilot != null)
+        {
+            if (vehicle.pilot.skill.Contains("None"))
+            {
+                selectedPopUpmenu.transform.GetChild(8).transform.GetChild(12).GetComponent<Text>().text = "Skill: " + vehicle.pilot.skill;
+            }
+        else
+            {
+                selectedPopUpmenu.transform.GetChild(8).transform.GetChild(12).GetComponent<Text>().text = "Skill: " + vehicle.pilot.skill.ToString() + "<color=#32FF00>" + " (" + vehicle.pilot.skillLevel.ToString() + "%)" + "</color>";
+            }
+        }
+
+        //Tags
+        for(int i = 0; i < 5; i++)
+        {
+            if (vehicle.pilot != null)
+            {
+                if (i < vehicle.pilot.tags.Count)
+                {
+                    selectedPopUpmenu.transform.GetChild(8).transform.GetChild(11).transform.GetChild(i).GetComponent<Image>().sprite = vehicle.pilot.tags[i];
+                }
+                else
+                {
+                    selectedPopUpmenu.transform.GetChild(8).transform.GetChild(11).transform.GetChild(i).gameObject.SetActive(false);
+                }
+            }
+            if (vehicle.pilot == null)
+            {
+                selectedPopUpmenu.transform.GetChild(8).transform.GetChild(11).transform.GetChild(i).gameObject.SetActive(false);
+            }
+        }
+
+        //Parts (finish when vehicle parts completed)
+        //selectedPopUpmenu.transform.GetChild(11).transform.GetChild(i).transform.GetChild(i).GetComponent<Image>().sprite = vehicle.pilot.tags[i];
+
+        //launch popup
+        selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
+    }
+    
+    public void closePopUp()
+    {
+        selectedPopUpmenu.transform.LeanScale(Vector2.zero, 0.7f).setEaseOutQuart();
+    }
+
+    public void sellVehicle()
+    {
+        int hangerLocation = sellHanger;
+
+        //Do Sell logic base ship plus item upgrades
+
+        //return pilots to inventory
+
+        playerCards.playerHanger.RemoveAt(hangerLocation);
+        Scene scene = SceneManager.GetActiveScene(); 
+        SceneManager.LoadScene(scene.name);
+    }
+
+    public string rangeFormat(vehicle card)
+    {
+        if (card.range.Equals("S"))
+        {
+            return "Short";
+        }
+
+        if (card.range.Equals("M"))
+        {
+            return "Medium";
+        }
+
+        if (card.range.Equals("L"))
+        {
+            return "Long";
+        }
+        return "";
     }
 }

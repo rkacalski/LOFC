@@ -277,6 +277,7 @@ public class hangerManager : MonoBehaviour
         }
 
         //Labels
+        selectedPopUpmenu.transform.GetChild(1).transform.GetChild(0).GetComponent<Text>().text = vehicle.displayName;
         selectedPopUpmenu.transform.GetChild(8).transform.GetChild(0).GetComponent<Text>().text = "Cost: " + vehicle.cost.ToString();
         selectedPopUpmenu.transform.GetChild(8).transform.GetChild(1).GetComponent<Text>().text = "Attack: " + vehicle.attack.ToString();
         selectedPopUpmenu.transform.GetChild(8).transform.GetChild(2).GetComponent<Text>().text = "Accuracy: " + vehicle.accuracy.ToString();

@@ -108,5 +108,6 @@ MonoBehaviour:
   X: 2
   Y: 3
   pilot: {fileID: 0}
+  numCoPilots: 2
   coPilots: []
   numParts: 3

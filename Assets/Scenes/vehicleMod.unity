@@ -2073,7 +2073,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: 0
+  m_Spacing: -28.06
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -3464,19 +3464,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1300716978}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fea20a0aa73301a4ea3d9e560f8ff3f8, type: 3}
+  m_Script: {fileID: 11500000, guid: c8b7ea9f130fad54f91b62d4470014d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedPopUpmenu: {fileID: 0}
-  hangerSlots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  numSlotsUsed: 0
-  slotsUsedLabel: {fileID: 0}
-  inHanger3: 0
-  sellHanger: 0
+  selectedVehicle: {fileID: 1393443575015041363, guid: 1c5db8883533b6f488dddb876eb000b6, type: 3}
+  vehicleImage: {fileID: 1018284176}
+  vehicleName: {fileID: 627049777}
+  pilot: {fileID: 896638982}
+  parts: {fileID: 1894245113}
+  labels: {fileID: 36074139}
 --- !u!4 &1300716980
 Transform:
   m_ObjectHideFlags: 0
@@ -5649,7 +5645,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: 0
+  m_Spacing: -55.01
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0

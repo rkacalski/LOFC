@@ -25,6 +25,7 @@ public class vehicle : MonoBehaviour
     public int X;
     public int Y;
     public Card pilot;
+    public int numCoPilots;
     public List<Card> coPilots = new List<Card>();
     public int numParts;
 }

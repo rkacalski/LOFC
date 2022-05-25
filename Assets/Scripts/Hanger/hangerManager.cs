@@ -346,6 +346,13 @@ public class hangerManager : MonoBehaviour
         SceneManager.LoadScene(scene.name);
     }
 
+    public void modifyVehicle()
+    {
+        print(sellHanger);
+        vehicleModHelper.selectedVehicle = playerCards.playerHanger[sellHanger];
+        SceneManager.LoadScene("vehicleMod");
+    }
+
     public string rangeFormat(vehicle card)
     {
         if (card.range.Equals("S"))

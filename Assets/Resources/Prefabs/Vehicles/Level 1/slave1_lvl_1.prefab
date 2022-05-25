@@ -107,6 +107,7 @@ MonoBehaviour:
   vehicleDescript: 
   X: 2
   Y: 2
-  numPiolts: 1
-  numCoPiolts: 1
+  pilot: {fileID: 0}
+  numCoPilots: 1
+  coPilots: []
   numParts: 2

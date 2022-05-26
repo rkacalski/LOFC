@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,47 +7,84 @@ using UnityEngine.UI;
 public class pilotUI : MonoBehaviour
 {
     public GameObject[] cardSlots;
-    public List<Card> testList = new List<Card>();
+    //public List<Card> testList = new List<Card>();
     public List<Card> tempBinder = new List<Card>();
+    public List<int> origPos = new List<int>();
 
-    public string selectedVehicle;
+    vehicle selectedVehicle;
     public pilotLists pilotList;
 
     int newAtk;
     int newDef;
+    int tagCount;
+    int pageNum;
+    int loopCounter;
+    float pageMax;
+    public Text cardCount;
 
     void Start()
     {
-        selectedVehicle = "slave1"; //Change to helper variable later
-        initateTempBidner(selectedVehicle);
+        selectedVehicle = vehicleModHelper.selectedVehicle;
+        initateTempBidner(selectedVehicle.displayName);
 
-        for(int i = 0; i < tempBinder.Count; i++)
-        {
-            print(i + tempBinder[i].cardName);
-        }
+        pageNum = 1;
+        pageMax = Mathf.Ceil(tempBinder.Count / 10f);
 
         DisplayCards();
-        if (pilotList.slave1.ContainsKey("dVader_2star"))
-        {
-            //print(pilotList.slave1["dVader_2star"]);
-        }
     }
 
     void Update()
     {
-        //update cards when page changes
+        updatePage();
+        updateCards();
+    }
+
+    void updatePage()
+    {
+        cardCount.text = pageNum.ToString() + "/" + pageMax.ToString();
+    }
+
+    public void nextPage()
+    {
+        if (tempBinder.Count > 0)
+        {
+            if (pageNum >= pageMax)
+            {
+                pageNum = 1;
+            }
+            else
+            {
+                pageNum = pageNum + 1;
+            }
+        }
+    }
+
+    public void prevPage()
+    {
+        if (tempBinder.Count > 0)
+        {
+            if (pageNum <= 1)
+            {
+                pageNum = (int)pageMax;
+            }
+            else
+            {
+                pageNum = pageNum - 1;
+            }
+        }
     }
 
     void initateTempBidner(string vehicleName)
     {
-        if(vehicleName.Equals("slave1"))
+        if (vehicleName.Equals("Slave 1"))
         {
-            for(int i = 0; i < testList.Count; i++)
+            for (int i = 0; i < playerCards.userCards.Count; i++)
             {
-                string keyVal = testList[i].cardName.Substring(0, testList[i].cardName.LastIndexOf("_"));
+                string keyVal = playerCards.userCards[i].cardName.Substring(0, playerCards.userCards[i].cardName.LastIndexOf("_"));
                 if (pilotList.slave1.ContainsKey(keyVal))
                 {
-                    tempBinder.Add(testList[i]);
+                    tempBinder.Add(playerCards.userCards[i]);
+                    origPos.Add(i);
                 }
             }
         }
@@ -54,19 +92,73 @@ public class pilotUI : MonoBehaviour
 
     public string getKeyValue(string vehicleName, string cardName)
     {
-        if (vehicleName.Equals("slave1"))
+        if (vehicleName.Equals("Slave 1"))
         {
-            if (vehicleName.Equals("slave1"))
+            if (pilotList.slave1.ContainsKey(cardName))
             {
-                if (pilotList.slave1.ContainsKey(cardName))
-                {
                     return pilotList.slave1[cardName];
-                }
-                return "";
             }
             return "";
         }
         return "";
+    }
+
+    decimal getPilotMultAtk(string affinity)
+    {
+        if (affinity.Equals("SS"))
+        {
+            return 45;
+        }
+        if (affinity.Equals("S"))
+        {
+            return 40;
+        }
+        if (affinity.Equals("A"))
+        {
+            return 30;
+        }
+        if (affinity.Equals("B"))
+        {
+            return 20;
+        }
+        if (affinity.Equals("C"))
+        {
+            return 15;
+        }
+        if (affinity.Equals("D"))
+        {
+            return 10;
+        }
+        return 0;
+    }
+
+    decimal getPilotMultDef(string affinity)
+    {
+        if (affinity.Equals("SS"))
+        {
+            return 30;
+        }
+        if (affinity.Equals("S"))
+        {
+            return 20;
+        }
+        if (affinity.Equals("A"))
+        {
+            return 15;
+        }
+        if (affinity.Equals("B"))
+        {
+            return 10;
+        }
+        if (affinity.Equals("C"))
+        {
+            return 7;
+        }
+        if (affinity.Equals("D"))
+        {
+            return 4;
+        }
+        return 0;
     }
 
     void DisplayCards()
@@ -107,21 +199,143 @@ public class pilotUI : MonoBehaviour
                 cardSlots[i].transform.GetChild(1).GetComponent<Image>().sprite = tempBinder[i].cardArt;
 
                 //afinity
-                cardSlots[i].transform.GetChild(5).GetComponent<Text>().text = getKeyValue(selectedVehicle, tempBinder[i].cardName.Substring(0, tempBinder[i].cardName.LastIndexOf("_")));
+                cardSlots[i].transform.GetChild(5).GetComponent<Text>().text = getKeyValue(selectedVehicle.displayName, tempBinder[i].cardName.Substring(0, tempBinder[i].cardName.LastIndexOf("_")));
+
 
                 //atk
+                cardSlots[i].transform.GetChild(6).GetComponent<Text>().text = "ATK: +" + Math.Round(((getPilotMultAtk(cardSlots[i].transform.GetChild(5).GetComponent<Text>().text) / 100m) * tempBinder[i].attack), 0).ToString();
 
                 //def
+                cardSlots[i].transform.GetChild(7).GetComponent<Text>().text = "Def: +" + Math.Round(((getPilotMultDef(cardSlots[i].transform.GetChild(5).GetComponent<Text>().text) / 100m) * tempBinder[i].attack), 0).ToString();
 
                 //tags
+                tagCount = tempBinder[i].tags.Count;
+                for (int k = 0; k < 5; k++)
+                {
+                    if (tagCount != 5)
+                    {
+                        cardSlots[i].transform.GetChild(3).transform.GetChild(0).transform.GetChild(k).gameObject.SetActive(true);
+                    }
+                }
+                for (int j = 0; j < 5; j++)
+                {
+                    if (j < tagCount)
+                    {
+                        cardSlots[i].transform.GetChild(3).transform.GetChild(0).transform.GetChild(j).GetComponent<Image>().sprite = tempBinder[i].tags[j];
+                    }
+                    else
+                    {
+                        cardSlots[i].transform.GetChild(3).transform.GetChild(0).transform.GetChild(j).gameObject.SetActive(false);
+
+                    }
+                }
 
                 //button stuff
+                cardSlots[i].transform.GetChild(8).transform.GetChild(4).GetComponent<Text>().text = origPos[i].ToString();
 
-                //Setting active
+
             }
             if (i > cardCount - 1)
             {
                 cardSlots[i].gameObject.SetActive(false);
+            }
+        }
+    }
+
+    void updateCards()
+    {
+        if (pageNum == 1)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                cardSlots[i].gameObject.SetActive(true);
+            }
+            DisplayCards();
+        }
+
+        if (pageNum != 1)
+        {
+            loopCounter = (pageNum -1) * 10;
+            for (int i = 0; i < 10; i++)
+            {
+                if ((i + loopCounter) >= tempBinder.Count)
+                {
+                    break;
+                }
+
+                //background
+                bool Lightresult;
+                bool Darkresult;
+                bool Nuetralresult;
+                char currentSide = tempBinder[i + loopCounter].side;
+                Lightresult = currentSide.Equals('L');
+                Darkresult = currentSide.Equals('D');
+                Nuetralresult = currentSide.Equals('N');
+
+                if (Lightresult == true)
+                {
+                    cardSlots[i].transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = new Color32(0, 0, 100, 110);
+                }
+                if (Darkresult == true)
+                {
+                    cardSlots[i].transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = new Color32(73, 10, 3, 110);
+                }
+                if (Nuetralresult == true)
+                {
+                    cardSlots[i].transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = new Color32(133, 81, 21, 110);
+                }
+
+                //name
+                cardSlots[i].transform.GetChild(2).GetComponent<Text>().text = tempBinder[i + loopCounter].displayName;
+
+                //art
+                cardSlots[i].transform.GetChild(1).GetComponent<Image>().sprite = tempBinder[i + loopCounter].cardArt;
+
+                //afinity
+                cardSlots[i].transform.GetChild(5).GetComponent<Text>().text = getKeyValue(selectedVehicle.displayName, tempBinder[i + loopCounter].cardName.Substring(0, tempBinder[i + loopCounter].cardName.LastIndexOf("_")));
+
+                //atk
+                cardSlots[i].transform.GetChild(6).GetComponent<Text>().text = "ATK: +" + Math.Round(((getPilotMultAtk(cardSlots[i].transform.GetChild(5).GetComponent<Text>().text) / 100m) * tempBinder[i + loopCounter].attack), 0).ToString();
+
+                //def
+                cardSlots[i].transform.GetChild(7).GetComponent<Text>().text = "Def: +" + Math.Round(((getPilotMultDef(cardSlots[i].transform.GetChild(5).GetComponent<Text>().text) / 100m) * tempBinder[i + loopCounter].attack), 0).ToString();
+
+                //tags
+                tagCount = tempBinder[i + loopCounter].tags.Count;
+                for (int k = 0; k < 5; k++)
+                {
+                    if (tagCount != 5)
+                    {
+                        cardSlots[i].transform.GetChild(3).transform.GetChild(0).transform.GetChild(k).gameObject.SetActive(true);
+                    }
+                }
+                for (int j = 0; j < 5; j++)
+                {
+                    if (j < tagCount)
+                    {
+                        cardSlots[i].transform.GetChild(3).transform.GetChild(0).transform.GetChild(j).GetComponent<Image>().sprite = tempBinder[i + loopCounter].tags[j];
+                    }
+                    else
+                    {
+                        cardSlots[i].transform.GetChild(3).transform.GetChild(0).transform.GetChild(j).gameObject.SetActive(false);
+
+                    }
+                }
+
+                //button stuff
+                cardSlots[i].transform.GetChild(8).transform.GetChild(4).GetComponent<Text>().text = origPos[i + loopCounter].ToString();
+            }
+
+            for (int i = 0; i <= 9; i++)
+            {
+                if ((i + loopCounter) >= tempBinder.Count)
+                {
+                    cardSlots[i].gameObject.SetActive(false);
+                }
+                else
+                {
+                    cardSlots[i].gameObject.SetActive(true);
+                }
             }
         }
     }

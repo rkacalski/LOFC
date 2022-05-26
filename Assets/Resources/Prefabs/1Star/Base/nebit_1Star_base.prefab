@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6821027916288940432}
   - component: {fileID: 977279911030319852}
   m_Layer: 0
-  m_Name: nebit_1Star_base
+  m_Name: nebit_1star_base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ea2ebc309dbe94da7ca1cc002f4390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardName: nebit_1Star_base
+  cardName: nebit_1star_base
   displayName: Nebit
   cardArt: {fileID: 21300000, guid: da6d77d1b0639894c88abe7d0619ab6d, type: 3}
   rarity: 1
@@ -115,6 +115,7 @@ MonoBehaviour:
   skill: None
   skillLevel: 0
   baseSkillLevel: 0
+  skillDescript: 
   skillLevMult: 0
   cardDescript: Nebit is a Jawa chief. His tribe trades droids and once sold C-3PO
     and R2-D2 to Owen Lars, Luke Skywalker's Uncle.

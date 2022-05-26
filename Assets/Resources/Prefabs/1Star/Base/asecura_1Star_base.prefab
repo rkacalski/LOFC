@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 762645118621423347}
   - component: {fileID: 5463843527843874176}
   m_Layer: 0
-  m_Name: asecura_1Star_base
+  m_Name: asecura_1star_base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ea2ebc309dbe94da7ca1cc002f4390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardName: asecura_1Star_base
+  cardName: asecura_1star_base
   displayName: Aayla Secura
   cardArt: {fileID: 21300000, guid: 0a86add463def034e9382ff884d6d196, type: 3}
   rarity: 1
@@ -116,6 +116,7 @@ MonoBehaviour:
   skill: None
   skillLevel: 0
   baseSkillLevel: 0
+  skillDescript: 
   skillLevMult: 0
   cardDescript: A Twi'lek Jedi Knight who uses her impressive lightsaber skills to
     swiftly overcome her opponents.

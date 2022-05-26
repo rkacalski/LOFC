@@ -348,7 +348,6 @@ public class hangerManager : MonoBehaviour
 
     public void modifyVehicle()
     {
-        print(sellHanger);
         vehicleModHelper.selectedVehicle = playerCards.playerHanger[sellHanger];
         SceneManager.LoadScene("vehicleMod");
     }

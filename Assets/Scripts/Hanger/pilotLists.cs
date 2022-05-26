@@ -13,7 +13,8 @@ public class pilotLists : MonoBehaviour
         { "aKolar_2star", "C" },
         { "dVader[TA]_5star", "D" },
         //remove after testing
-        { "asecura_1Star", "D" },
-        { "stormtrooper_1Star", "SS" },
+        { "asecura_1star", "D" },
+        { "stormtrooper_1star", "SS" },
+        { "nebit_1star", "A" },
     };
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8266835423400529836}
   - component: {fileID: 9206951673595779465}
   m_Layer: 0
-  m_Name: malakili_1Star_base
+  m_Name: malakili_1star_base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ea2ebc309dbe94da7ca1cc002f4390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardName: malakili_1Star_base
+  cardName: malakili_1star_base
   displayName: Malakili
   cardArt: {fileID: 21300000, guid: 154a5acbc5599ce46a58eaeb7d0847bd, type: 3}
   rarity: 1
@@ -116,6 +116,7 @@ MonoBehaviour:
   skill: None
   skillLevel: 0
   baseSkillLevel: 0
+  skillDescript: 
   skillLevMult: 0
   cardDescript: Malakili is the keeper of the rancor monster beneath Jabba's palace.
   X: 1

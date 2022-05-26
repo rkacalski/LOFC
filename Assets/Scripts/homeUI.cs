@@ -133,7 +133,6 @@ public class homeUI : MonoBehaviour
     {
         addStarterCards();
         check = 1;
-        print(questProgress.tat1_1_complete_L_N);
     }
 
     // Update is called once per frame

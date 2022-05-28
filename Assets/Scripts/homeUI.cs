@@ -11,6 +11,7 @@ public class homeUI : MonoBehaviour
     public GameObject Image;
     public int check;
     public int playerInv;
+    public List<Card> newCardBinder = new List<Card>();
 
     public void questButton()
     {
@@ -50,47 +51,15 @@ public class homeUI : MonoBehaviour
 
     public void addStarterCards()
     {
-        Card tempCard;
-        List<Card> tempBinder = new List<Card>();
         playerInv = playerCards.userCards.Count;
 
         if (playerInv == 0)
         {
-            tempBinder = Resources.LoadAll<Card>("Prefabs/1Star/Base").ToList();
-
-            for(int i = 0; i < tempBinder.Count; i++)
+            for(int i = 0; i < newCardBinder.Count; i++)
             {
-                tempCard = GameObject.Instantiate(tempBinder[i]);
-                playerCards.userCards.Add(tempCard);
+                playerCards.userCards.Add(newCardBinder[i]);
             }
-
-            tempBinder = Resources.LoadAll<Card>("Prefabs/1Star/evomax").ToList();
-
-            for (int i = 0; i < tempBinder.Count; i++)
-            {
-                tempCard = GameObject.Instantiate(tempBinder[i]);
-                playerCards.userCards.Add(tempCard);
-                playerCards.userCards.Add(tempCard);
-            }
-
-            tempBinder = Resources.LoadAll<Card>("Prefabs/2 Star/Base").ToList();
-
-            for (int i = 0; i < tempBinder.Count; i++)
-            {
-                tempCard = GameObject.Instantiate(tempBinder[i]);
-                playerCards.userCards.Add(tempCard);
-            }
-
-            tempBinder = Resources.LoadAll<Card>("Prefabs/5 Star/Base").ToList();
-
-            for (int i = 0; i < tempBinder.Count; i++)
-            {
-                tempCard = GameObject.Instantiate(tempBinder[i]);
-                playerCards.userCards.Add(tempCard);
-                playerCards.userCards.Add(tempCard);
-            }
-
-            //print(playerCards.userCards.Count);
+            
             playerCards.userCards = playerCards.userCards.OrderBy(x => x.rarity).ToList();
             playerCards.userCards.Reverse();
         }

@@ -11,7 +11,7 @@ public class pilotUI : MonoBehaviour
     public List<Card> tempBinder = new List<Card>();
     public List<int> origPos = new List<int>();
 
-    vehicle selectedVehicle;
+    //vehicle selectedVehicle;
     public pilotLists pilotList;
 
     int newAtk;
@@ -24,8 +24,7 @@ public class pilotUI : MonoBehaviour
 
     void Start()
     {
-        selectedVehicle = vehicleModHelper.selectedVehicle;
-        initateTempBidner(selectedVehicle.displayName);
+        initateTempBidner(vehicleModHelper.selectedVehicle.displayName);
 
         pageNum = 1;
         pageMax = Mathf.Ceil(tempBinder.Count / 10f);
@@ -199,7 +198,7 @@ public class pilotUI : MonoBehaviour
                 cardSlots[i].transform.GetChild(1).GetComponent<Image>().sprite = tempBinder[i].cardArt;
 
                 //afinity
-                cardSlots[i].transform.GetChild(5).GetComponent<Text>().text = getKeyValue(selectedVehicle.displayName, tempBinder[i].cardName.Substring(0, tempBinder[i].cardName.LastIndexOf("_")));
+                cardSlots[i].transform.GetChild(5).GetComponent<Text>().text = getKeyValue(vehicleModHelper.selectedVehicle.displayName, tempBinder[i].cardName.Substring(0, tempBinder[i].cardName.LastIndexOf("_")));
 
 
                 //atk
@@ -292,7 +291,7 @@ public class pilotUI : MonoBehaviour
                 cardSlots[i].transform.GetChild(1).GetComponent<Image>().sprite = tempBinder[i + loopCounter].cardArt;
 
                 //afinity
-                cardSlots[i].transform.GetChild(5).GetComponent<Text>().text = getKeyValue(selectedVehicle.displayName, tempBinder[i + loopCounter].cardName.Substring(0, tempBinder[i + loopCounter].cardName.LastIndexOf("_")));
+                cardSlots[i].transform.GetChild(5).GetComponent<Text>().text = getKeyValue(vehicleModHelper.selectedVehicle.displayName, tempBinder[i + loopCounter].cardName.Substring(0, tempBinder[i + loopCounter].cardName.LastIndexOf("_")));
 
                 //atk
                 cardSlots[i].transform.GetChild(6).GetComponent<Text>().text = "ATK: +" + Math.Round(((getPilotMultAtk(cardSlots[i].transform.GetChild(5).GetComponent<Text>().text) / 100m) * tempBinder[i + loopCounter].attack), 0).ToString();

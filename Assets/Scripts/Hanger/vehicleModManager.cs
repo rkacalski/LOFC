@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,16 @@ public class vehicleModManager : MonoBehaviour
         vehicleImage.sprite = vehicleModHelper.selectedVehicle.art;
         setVehiclePioltPartsUI();
         labelsUI();
+
+        if(vehicleModHelper.selectedVehicle.pilot != null)
+        {
+            pilot.transform.GetChild(0).GetComponent<Image>().sprite = vehicleModHelper.selectedVehicle.pilot.cardArt;
+            print("Pilot i: " + vehicleModHelper.selectedVehicle.pilot.cardName);
+        }
+        if(vehicleModHelper.selectedVehicle.pilot == null)
+        {
+            print("Pilot not set");
+        }
     }
 
     // Update is called once per frame

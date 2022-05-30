@@ -110,6 +110,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ec59dc4c837cd7f4c9bf2d017d22d534, type: 3}
   - {fileID: 21300000, guid: 13862241b49b5614bbc83ec301bf3dd8, type: 3}
   inForm: 0
+  isPilot: 0
   accuracy: 110
   evasion: 20
   cost: 5

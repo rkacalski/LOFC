@@ -24,6 +24,7 @@ public class Card : MonoBehaviour
     public List<string> tags1;
     public List<Sprite> tags;
     public bool inForm;
+    public bool isPilot;
     public int accuracy;
     public int evasion;
     public int cost;

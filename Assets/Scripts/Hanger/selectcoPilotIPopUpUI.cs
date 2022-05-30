@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class selectPilotIPopUpUI : MonoBehaviour
+public class selectcoPilotIPopUpUI : MonoBehaviour
 {
     public GameObject selectedPopUpmenu;
     public Image popUpImage;
@@ -42,8 +42,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         tempCard = playerCards.userCards[int.Parse(pos1.text)];
         playerCards.userCards[int.Parse(pos1.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
+        vehicleModHelper.selectedVehicle.coPilots.Insert(0, tempCard);
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -52,8 +51,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         tempCard = playerCards.userCards[int.Parse(pos2.text)];
         playerCards.userCards[int.Parse(pos2.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
+        vehicleModHelper.selectedVehicle.coPilots.Insert(0, tempCard);
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -62,8 +60,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         tempCard = playerCards.userCards[int.Parse(pos3.text)];
         playerCards.userCards[int.Parse(pos3.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
+        vehicleModHelper.selectedVehicle.coPilots.Insert(0, tempCard);
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -72,8 +69,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         tempCard = playerCards.userCards[int.Parse(pos4.text)];
         playerCards.userCards[int.Parse(pos4.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
+        vehicleModHelper.selectedVehicle.coPilots.Insert(0, tempCard);
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -82,8 +78,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         tempCard = playerCards.userCards[int.Parse(pos5.text)];
         playerCards.userCards[int.Parse(pos5.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
+        vehicleModHelper.selectedVehicle.coPilots.Insert(0, tempCard);
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -92,8 +87,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         tempCard = playerCards.userCards[int.Parse(pos6.text)];
         playerCards.userCards[int.Parse(pos6.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
+        vehicleModHelper.selectedVehicle.coPilots.Insert(0, tempCard);
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -102,8 +96,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         tempCard = playerCards.userCards[int.Parse(pos7.text)];
         playerCards.userCards[int.Parse(pos7.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
+        vehicleModHelper.selectedVehicle.coPilots.Insert(0, tempCard);
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -112,8 +105,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         tempCard = playerCards.userCards[int.Parse(pos8.text)];
         playerCards.userCards[int.Parse(pos8.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
+        vehicleModHelper.selectedVehicle.coPilots.Insert(0, tempCard);
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -122,8 +114,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         tempCard = playerCards.userCards[int.Parse(pos9.text)];
         playerCards.userCards[int.Parse(pos9.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
+        vehicleModHelper.selectedVehicle.coPilots.Insert(0, tempCard);
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -132,8 +123,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         tempCard = playerCards.userCards[int.Parse(pos10.text)];
         playerCards.userCards[int.Parse(pos10.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
+        vehicleModHelper.selectedVehicle.coPilots.Insert(0, tempCard);
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }

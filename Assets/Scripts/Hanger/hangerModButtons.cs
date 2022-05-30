@@ -10,4 +10,9 @@ public class hangerModButtons : MonoBehaviour
     {
         SceneManager.LoadScene("pilotSelect");
     }
+
+    public void copilot1Button()
+    {
+        SceneManager.LoadScene("copilot1Select");
+    }
 }

@@ -24,11 +24,20 @@ public class vehicleModManager : MonoBehaviour
         if(vehicleModHelper.selectedVehicle.pilot != null)
         {
             pilot.transform.GetChild(0).GetComponent<Image>().sprite = vehicleModHelper.selectedVehicle.pilot.cardArt;
-            print("Pilot i: " + vehicleModHelper.selectedVehicle.pilot.cardName);
+            print("Pilot is: " + vehicleModHelper.selectedVehicle.pilot.cardName);
         }
         if(vehicleModHelper.selectedVehicle.pilot == null)
         {
             print("Pilot not set");
+        }
+        if (vehicleModHelper.selectedVehicle.coPilots.Count != 0)
+        {
+            pilot.transform.GetChild(1).GetComponent<Image>().sprite = vehicleModHelper.selectedVehicle.coPilots[0].cardArt;
+            print("Co-Pilot is: " + vehicleModHelper.selectedVehicle.pilot.cardName);
+        }
+        if (vehicleModHelper.selectedVehicle.coPilots.Count == 0)
+        {
+            print("Co- Pilot not set");
         }
     }
 

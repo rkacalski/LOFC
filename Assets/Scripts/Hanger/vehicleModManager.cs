@@ -20,25 +20,7 @@ public class vehicleModManager : MonoBehaviour
         vehicleImage.sprite = vehicleModHelper.selectedVehicle.art;
         setVehiclePioltPartsUI();
         labelsUI();
-
-        if(vehicleModHelper.selectedVehicle.pilot != null)
-        {
-            pilot.transform.GetChild(0).GetComponent<Image>().sprite = vehicleModHelper.selectedVehicle.pilot.cardArt;
-            print("Pilot is: " + vehicleModHelper.selectedVehicle.pilot.cardName);
-        }
-        if(vehicleModHelper.selectedVehicle.pilot == null)
-        {
-            print("Pilot not set");
-        }
-        if (vehicleModHelper.selectedVehicle.coPilots.Count != 0)
-        {
-            pilot.transform.GetChild(1).GetComponent<Image>().sprite = vehicleModHelper.selectedVehicle.coPilots[0].cardArt;
-            print("Co-Pilot is: " + vehicleModHelper.selectedVehicle.pilot.cardName);
-        }
-        if (vehicleModHelper.selectedVehicle.coPilots.Count == 0)
-        {
-            print("Co- Pilot not set");
-        }
+        displayPilots();
     }
 
     // Update is called once per frame
@@ -47,9 +29,36 @@ public class vehicleModManager : MonoBehaviour
 
     }
 
+    void displayPilots()
+    {
+        //pilot
+        if (vehicleModHelper.selectedVehicle.pilot != null)
+        {
+            pilot.transform.GetChild(0).GetComponent<Image>().sprite = vehicleModHelper.selectedVehicle.pilot.cardArt;
+        }
+
+        //co1
+        if (vehicleModHelper.selectedVehicle.coPilots.Count > 0)
+        {
+            pilot.transform.GetChild(1).GetComponent<Image>().sprite = vehicleModHelper.selectedVehicle.coPilots[0].cardArt;
+        }
+
+        //co2
+        if (vehicleModHelper.selectedVehicle.coPilots.Count > 1)
+        {
+            pilot.transform.GetChild(2).GetComponent<Image>().sprite = vehicleModHelper.selectedVehicle.coPilots[1].cardArt;
+        }
+
+        //co3
+        if (vehicleModHelper.selectedVehicle.coPilots.Count > 2)
+        {
+            pilot.transform.GetChild(3).GetComponent<Image>().sprite = vehicleModHelper.selectedVehicle.coPilots[2].cardArt;
+        }
+    }
+
     void setVehiclePioltPartsUI()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 4; i++)
         {
             if (i < vehicleModHelper.selectedVehicle.numCoPilots)
             {

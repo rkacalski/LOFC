@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Hanger/copilot1Select.unity
     guid: 80f34eefc9bc57b449d56ca293dc762c
   - enabled: 1
+    path: Assets/Scenes/Hanger/copilot2Select.unity
+    guid: dab25c3d8bee256429c5853b97f58fad
+  - enabled: 1
     path: Assets/Scenes/Card Binder.unity
     guid: e8226d8f7f81fbe4389881f32e72a2e8
   - enabled: 1

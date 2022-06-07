@@ -57,7 +57,7 @@ public class homeUI : MonoBehaviour
         {
             for(int i = 0; i < newCardBinder.Count; i++)
             {
-                playerCards.userCards.Add(newCardBinder[i]);
+                playerCards.userCards.Add(Instantiate(newCardBinder[i]));
             }
             
             playerCards.userCards = playerCards.userCards.OrderBy(x => x.rarity).ToList();

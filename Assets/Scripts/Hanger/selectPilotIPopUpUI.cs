@@ -8,7 +8,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
 {
     public GameObject selectedPopUpmenu;
     public Image popUpImage;
-    public Card tempCard;
+    Card tempCard;
 
     int selectedCard;
 
@@ -50,6 +50,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
     void Start()
     {
         selectedPopUpmenu.transform.localScale = Vector2.zero;
+        print(vehicleModHelper.selectedVehicle.pilot);
     }
 
     public void selectCardClose()
@@ -59,6 +60,11 @@ public class selectPilotIPopUpUI : MonoBehaviour
 
     public void selectButton()
     {
+        updateStats();
+        print("Selected Card: " + pilotHelper.pilot.cardName);
+        vehicleModHelper.selectedVehicle.pilot = pilotHelper.pilot;
+        print("Update sleected Card is: " + vehicleModHelper.selectedVehicle.pilot.cardName);
+        vehicleModHelper.selectedVehicle.coPilots.Add(pilotHelper.pilot);
         SceneManager.LoadSceneAsync("vehicleMod");
     }
 
@@ -67,8 +73,10 @@ public class selectPilotIPopUpUI : MonoBehaviour
         selectedCard = 1;
         tempCard = playerCards.userCards[int.Parse(pos1.text)];
         playerCards.userCards[int.Parse(pos1.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
+        pilotHelper.pilot = tempCard;
+        print("temp Card: " + tempCard.cardName);
+        //vehicleModHelper.selectedVehicle.pilot = playerCards.userCards[int.Parse(pos1.text)];
+        print("Set 1 Pilot: " + vehicleModHelper.selectedVehicle.pilot);
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -184,7 +192,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
 
         if (selectedCard.Equals(2))
         {
-            string atk2New = atk1.text;
+            string atk2New = atk2.text;
             atk2New = atk2New.Substring(atk2New.LastIndexOf("+") + 1);
             int updatedATK = int.Parse(atk2New);
             vehicleModHelper.updatedATKPilot += updatedATK;

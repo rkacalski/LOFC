@@ -5594,7 +5594,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedPopUpmenu: {fileID: 1784698840}
   popUpImage: {fileID: 194449844}
-  tempCard: {fileID: 0}
   pos1: {fileID: 2016455692}
   pos2: {fileID: 1187300807}
   pos3: {fileID: 1451829102}
@@ -5615,6 +5614,16 @@ MonoBehaviour:
   atk8: {fileID: 1015528120}
   atk9: {fileID: 1231631075}
   atk10: {fileID: 1517857218}
+  def1: {fileID: 0}
+  def2: {fileID: 0}
+  def3: {fileID: 0}
+  def4: {fileID: 0}
+  def5: {fileID: 0}
+  def6: {fileID: 0}
+  def7: {fileID: 0}
+  def8: {fileID: 0}
+  def9: {fileID: 0}
+  def10: {fileID: 0}
 --- !u!4 &1069123030
 Transform:
   m_ObjectHideFlags: 0

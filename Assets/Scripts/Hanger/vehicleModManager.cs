@@ -7,26 +7,19 @@ using UnityEngine.SceneManagement;
 
 public class vehicleModManager : MonoBehaviour
 {
-    //vehicle selectedVehicle;
     public Image vehicleImage;
     public Text vehicleName;
     public GameObject pilot;
     public GameObject parts;
     public GameObject labels;
 
-    // Start is called before the first frame update
     void Start()
     {
+        print("Main Mod Screen: " + vehicleModHelper.selectedVehicle.pilot);
         vehicleImage.sprite = vehicleModHelper.selectedVehicle.art;
         setVehiclePioltPartsUI();
         labelsUI();
         displayPilots();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     void displayPilots()

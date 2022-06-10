@@ -25,9 +25,9 @@ public class vehicleModManager : MonoBehaviour
     void displayPilots()
     {
         //pilot
-        if (vehicleModHelper.selectedVehicle.pilot != null)
+        if (vehicleModHelper.selectedVehicle.Pilot.Count > 0)
         {
-            pilot.transform.GetChild(0).GetComponent<Image>().sprite = vehicleModHelper.selectedVehicle.pilot.cardArt;
+            pilot.transform.GetChild(0).GetComponent<Image>().sprite = vehicleModHelper.selectedVehicle.Pilot[0].cardArt;
         }
 
         //co1

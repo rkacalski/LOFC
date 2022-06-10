@@ -64,7 +64,7 @@ public class selectPilotIPopUpUI : MonoBehaviour
         print("Selected Card: " + pilotHelper.pilot.cardName);
         vehicleModHelper.selectedVehicle.pilot = pilotHelper.pilot;
         print("Update sleected Card is: " + vehicleModHelper.selectedVehicle.pilot.cardName);
-        vehicleModHelper.selectedVehicle.coPilots.Add(pilotHelper.pilot);
+        vehicleModHelper.selectedVehicle.Pilot.Add(pilotHelper.pilot);
         SceneManager.LoadSceneAsync("vehicleMod");
     }
 

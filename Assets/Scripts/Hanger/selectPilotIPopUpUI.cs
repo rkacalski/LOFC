@@ -50,7 +50,6 @@ public class selectPilotIPopUpUI : MonoBehaviour
     void Start()
     {
         selectedPopUpmenu.transform.localScale = Vector2.zero;
-        print(vehicleModHelper.selectedVehicle.pilot);
     }
 
     public void selectCardClose()
@@ -61,10 +60,6 @@ public class selectPilotIPopUpUI : MonoBehaviour
     public void selectButton()
     {
         updateStats();
-        print("Selected Card: " + pilotHelper.pilot.cardName);
-        vehicleModHelper.selectedVehicle.pilot = pilotHelper.pilot;
-        print("Update sleected Card is: " + vehicleModHelper.selectedVehicle.pilot.cardName);
-        vehicleModHelper.selectedVehicle.Pilot.Add(pilotHelper.pilot);
         SceneManager.LoadSceneAsync("vehicleMod");
     }
 
@@ -72,11 +67,6 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         selectedCard = 1;
         tempCard = playerCards.userCards[int.Parse(pos1.text)];
-        playerCards.userCards[int.Parse(pos1.text)].isPilot = true;
-        pilotHelper.pilot = tempCard;
-        print("temp Card: " + tempCard.cardName);
-        //vehicleModHelper.selectedVehicle.pilot = playerCards.userCards[int.Parse(pos1.text)];
-        print("Set 1 Pilot: " + vehicleModHelper.selectedVehicle.pilot);
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -85,9 +75,6 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         selectedCard = 2;
         tempCard = playerCards.userCards[int.Parse(pos2.text)];
-        playerCards.userCards[int.Parse(pos2.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -96,9 +83,6 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         selectedCard = 3;
         tempCard = playerCards.userCards[int.Parse(pos3.text)];
-        playerCards.userCards[int.Parse(pos3.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -107,9 +91,6 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         selectedCard = 4;
         tempCard = playerCards.userCards[int.Parse(pos4.text)];
-        playerCards.userCards[int.Parse(pos4.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -118,9 +99,6 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         selectedCard = 5;
         tempCard = playerCards.userCards[int.Parse(pos5.text)];
-        playerCards.userCards[int.Parse(pos5.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -129,9 +107,6 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         selectedCard = 6;
         tempCard = playerCards.userCards[int.Parse(pos6.text)];
-        playerCards.userCards[int.Parse(pos6.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -140,9 +115,6 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         selectedCard = 7;
         tempCard = playerCards.userCards[int.Parse(pos7.text)];
-        playerCards.userCards[int.Parse(pos7.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -151,9 +123,6 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         selectedCard = 8;
         tempCard = playerCards.userCards[int.Parse(pos8.text)];
-        playerCards.userCards[int.Parse(pos8.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -162,9 +131,6 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         selectedCard = 9;
         tempCard = playerCards.userCards[int.Parse(pos9.text)];
-        playerCards.userCards[int.Parse(pos9.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -173,9 +139,6 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         selectedCard = 10;
         tempCard = playerCards.userCards[int.Parse(pos10.text)];
-        playerCards.userCards[int.Parse(pos10.text)].isPilot = true;
-        //vehicleModHelper.selectedVehicle.pilot = tempCard;
-        vehicleModHelper.selectedVehicle.pilot = tempCard;
         popUpImage.GetComponent<Image>().sprite = tempCard.cardArt;
         selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
     }
@@ -184,18 +147,182 @@ public class selectPilotIPopUpUI : MonoBehaviour
     {
         if(selectedCard.Equals(1))
         {
+            tempCard = playerCards.userCards[int.Parse(pos1.text)];
+            playerCards.userCards[int.Parse(pos1.text)].isPilot = true;
+            pilotHelper.pilot = tempCard;
+            vehicleModHelper.selectedVehicle.Pilot.Add(pilotHelper.pilot);
+
             string atk1New = atk1.text;
             atk1New = atk1New.Substring(atk1New.LastIndexOf("+") + 1);
             int updatedATK = int.Parse(atk1New);
+            string def1New = def1.text;
+            def1New = def1New.Substring(def1New.LastIndexOf("+") + 1);
+            int updatedDEF = int.Parse(def1New);
             vehicleModHelper.updatedATKPilot += updatedATK;
+            vehicleModHelper.updatedDEFPilot += updatedDEF;
+            vehicleModHelper.updatedCostPilot += tempCard.cost;
         }
 
         if (selectedCard.Equals(2))
         {
+            tempCard = playerCards.userCards[int.Parse(pos2.text)];
+            playerCards.userCards[int.Parse(pos2.text)].isPilot = true;
+            pilotHelper.pilot = tempCard;
+            vehicleModHelper.selectedVehicle.Pilot.Add(pilotHelper.pilot);
+
             string atk2New = atk2.text;
             atk2New = atk2New.Substring(atk2New.LastIndexOf("+") + 1);
             int updatedATK = int.Parse(atk2New);
+            string def2New = def2.text;
+            def2New = def2New.Substring(def2New.LastIndexOf("+") + 1);
+            int updatedDEF = int.Parse(def2New);
             vehicleModHelper.updatedATKPilot += updatedATK;
+            vehicleModHelper.updatedDEFPilot += updatedDEF;
+            vehicleModHelper.updatedCostPilot += tempCard.cost;
+        }
+
+        if (selectedCard.Equals(3))
+        {
+            tempCard = playerCards.userCards[int.Parse(pos3.text)];
+            playerCards.userCards[int.Parse(pos3.text)].isPilot = true;
+            pilotHelper.pilot = tempCard;
+            vehicleModHelper.selectedVehicle.Pilot.Add(pilotHelper.pilot);
+
+            string atk3New = atk3.text;
+            atk3New = atk3New.Substring(atk3New.LastIndexOf("+") + 1);
+            int updatedATK = int.Parse(atk3New);
+            string def3New = def3.text;
+            def3New = def3New.Substring(def3New.LastIndexOf("+") + 1);
+            int updatedDEF = int.Parse(def3New);
+            vehicleModHelper.updatedATKPilot += updatedATK;
+            vehicleModHelper.updatedDEFPilot += updatedDEF;
+            vehicleModHelper.updatedCostPilot += tempCard.cost;
+        }
+
+        if (selectedCard.Equals(4))
+        {
+            tempCard = playerCards.userCards[int.Parse(pos4.text)];
+            playerCards.userCards[int.Parse(pos4.text)].isPilot = true;
+            pilotHelper.pilot = tempCard;
+            vehicleModHelper.selectedVehicle.Pilot.Add(pilotHelper.pilot);
+
+            string atk4New = atk4.text;
+            atk4New = atk4New.Substring(atk4New.LastIndexOf("+") + 1);
+            int updatedATK = int.Parse(atk4New);
+            string def4New = def4.text;
+            def4New = def4New.Substring(def4New.LastIndexOf("+") + 1);
+            int updatedDEF = int.Parse(def4New);
+            vehicleModHelper.updatedATKPilot += updatedATK;
+            vehicleModHelper.updatedDEFPilot += updatedDEF;
+            vehicleModHelper.updatedCostPilot += tempCard.cost;
+        }
+
+        if (selectedCard.Equals(5))
+        {
+            tempCard = playerCards.userCards[int.Parse(pos5.text)];
+            playerCards.userCards[int.Parse(pos5.text)].isPilot = true;
+            pilotHelper.pilot = tempCard;
+            vehicleModHelper.selectedVehicle.Pilot.Add(pilotHelper.pilot);
+
+            string atk5New = atk5.text;
+            atk5New = atk5New.Substring(atk5New.LastIndexOf("+") + 1);
+            int updatedATK = int.Parse(atk5New);
+            string def5New = def5.text;
+            def5New = def5New.Substring(def5New.LastIndexOf("+") + 1);
+            int updatedDEF = int.Parse(def5New);
+            vehicleModHelper.updatedATKPilot += updatedATK;
+            vehicleModHelper.updatedDEFPilot += updatedDEF;
+            vehicleModHelper.updatedCostPilot += tempCard.cost;
+        }
+
+        if (selectedCard.Equals(6))
+        {
+            tempCard = playerCards.userCards[int.Parse(pos6.text)];
+            playerCards.userCards[int.Parse(pos6.text)].isPilot = true;
+            pilotHelper.pilot = tempCard;
+            vehicleModHelper.selectedVehicle.Pilot.Add(pilotHelper.pilot);
+
+            string atk6New = atk6.text;
+            atk6New = atk6New.Substring(atk6New.LastIndexOf("+") + 1);
+            int updatedATK = int.Parse(atk6New);
+            string def6New = def6.text;
+            def6New = def6New.Substring(def6New.LastIndexOf("+") + 1);
+            int updatedDEF = int.Parse(def6New);
+            vehicleModHelper.updatedATKPilot += updatedATK;
+            vehicleModHelper.updatedDEFPilot += updatedDEF;
+            vehicleModHelper.updatedCostPilot += tempCard.cost;
+        }
+
+        if (selectedCard.Equals(7))
+        {
+            tempCard = playerCards.userCards[int.Parse(pos7.text)];
+            playerCards.userCards[int.Parse(pos7.text)].isPilot = true;
+            pilotHelper.pilot = tempCard;
+            vehicleModHelper.selectedVehicle.Pilot.Add(pilotHelper.pilot);
+
+            string atk7New = atk7.text;
+            atk7New = atk7New.Substring(atk7New.LastIndexOf("+") + 1);
+            int updatedATK = int.Parse(atk7New);
+            string def7New = def7.text;
+            def7New = def7New.Substring(def7New.LastIndexOf("+") + 1);
+            int updatedDEF = int.Parse(def7New);
+            vehicleModHelper.updatedATKPilot += updatedATK;
+            vehicleModHelper.updatedDEFPilot += updatedDEF;
+            vehicleModHelper.updatedCostPilot += tempCard.cost;
+        }
+
+        if (selectedCard.Equals(8))
+        {
+            tempCard = playerCards.userCards[int.Parse(pos8.text)];
+            playerCards.userCards[int.Parse(pos8.text)].isPilot = true;
+            pilotHelper.pilot = tempCard;
+            vehicleModHelper.selectedVehicle.Pilot.Add(pilotHelper.pilot);
+
+            string atk8New = atk8.text;
+            atk8New = atk8New.Substring(atk8New.LastIndexOf("+") + 1);
+            int updatedATK = int.Parse(atk8New);
+            string def8New = def8.text;
+            def8New = def8New.Substring(def8New.LastIndexOf("+") + 1);
+            int updatedDEF = int.Parse(def8New);
+            vehicleModHelper.updatedATKPilot += updatedATK;
+            vehicleModHelper.updatedDEFPilot += updatedDEF;
+            vehicleModHelper.updatedCostPilot += tempCard.cost;
+        }
+
+        if (selectedCard.Equals(9))
+        {
+            tempCard = playerCards.userCards[int.Parse(pos9.text)];
+            playerCards.userCards[int.Parse(pos9.text)].isPilot = true;
+            pilotHelper.pilot = tempCard;
+            vehicleModHelper.selectedVehicle.Pilot.Add(pilotHelper.pilot);
+
+            string atk9New = atk9.text;
+            atk9New = atk9New.Substring(atk9New.LastIndexOf("+") + 1);
+            int updatedATK = int.Parse(atk9New);
+            string def9New = def9.text;
+            def9New = def9New.Substring(def9New.LastIndexOf("+") + 1);
+            int updatedDEF = int.Parse(def9New);
+            vehicleModHelper.updatedATKPilot += updatedATK;
+            vehicleModHelper.updatedDEFPilot += updatedDEF;
+            vehicleModHelper.updatedCostPilot += tempCard.cost;
+        }
+
+        if (selectedCard.Equals(10))
+        {
+            tempCard = playerCards.userCards[int.Parse(pos10.text)];
+            playerCards.userCards[int.Parse(pos10.text)].isPilot = true;
+            pilotHelper.pilot = tempCard;
+            vehicleModHelper.selectedVehicle.Pilot.Add(pilotHelper.pilot);
+
+            string atk10New = atk10.text;
+            atk10New = atk10New.Substring(atk10New.LastIndexOf("+") + 1);
+            int updatedATK = int.Parse(atk10New);
+            string def10New = def10.text;
+            def10New = def10New.Substring(def10New.LastIndexOf("+") + 1);
+            int updatedDEF = int.Parse(def10New);
+            vehicleModHelper.updatedATKPilot += updatedATK;
+            vehicleModHelper.updatedDEFPilot += updatedDEF;
+            vehicleModHelper.updatedCostPilot += tempCard.cost;
         }
     }
 }

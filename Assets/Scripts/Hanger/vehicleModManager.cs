@@ -15,9 +15,6 @@ public class vehicleModManager : MonoBehaviour
 
     void Start()
     {
-        print("Main Mod Screen: " + vehicleModHelper.selectedVehicle.pilot);
-        print("updatred attackL piolt " + vehicleModHelper.updatedATKPilot);
-        print("updatred attack CO1 " + vehicleModHelper.updatedATKcoPilot1);
         vehicleImage.sprite = vehicleModHelper.selectedVehicle.art;
         setVehiclePioltPartsUI();
         labelsUI();

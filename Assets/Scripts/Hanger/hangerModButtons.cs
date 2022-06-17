@@ -12,7 +12,6 @@ public class hangerModButtons : MonoBehaviour
 
     void Start()
     {
-        print(vehicleModHelper.selectedVehicle.pilot);
         selectedPopUpmenu.transform.localScale = Vector2.zero;
     }
 
@@ -111,6 +110,15 @@ public class hangerModButtons : MonoBehaviour
             popUpImage.GetComponent<Image>().sprite = vehicleModHelper.selectedVehicle.coPilots[2].cardArt;
             selectedPopUpmenu.transform.LeanScale(Vector2.one, 0.6f).setEaseOutQuart();
         }
+    }
+
+    public void modButton()
+    {
+        //do stat updates
+        vehicleModHelper.selectedVehicleList.Add(vehicleModHelper.selectedVehicle);
+        print(vehicleModHelper.selectedVehicleList[0]);
+        print(vehicleModHelper.selectedVehicleList[0].displayName);
+        SceneManager.LoadScene("Hanger");
     }
 
     void transferStats(int num)

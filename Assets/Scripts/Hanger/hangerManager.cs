@@ -57,8 +57,7 @@ public class hangerManager : MonoBehaviour
                 numSlotsUsed += 1;
             }
         }
-
-        //getTimer3();
+        print("Count: " + playerCards.playerHanger.Count);
         hangerPannelUI();
         slotsUsedLabel.text = "Slots Used: " + numSlotsUsed + "/4";
     }
@@ -73,8 +72,9 @@ public class hangerManager : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             //Set Art, Name, Level
-            if (i < playerCards.playerHanger.Count && playerCards.playerHanger[i] != null)
+            if (i < playerCards.playerHanger.Count && !playerCards.playerHanger[i].displayName.Equals(""))
             {
+                print("In Loop" + i);
                 hangerSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = playerCards.playerHanger[i].art;
                 hangerSlots[i].transform.GetChild(2).GetComponent<Text>().text = playerCards.playerHanger[i].displayName;
                 hangerSlots[i].transform.GetChild(3).GetComponent<Text>().text = "Level " + playerCards.playerHanger[i].level.ToString();
@@ -99,7 +99,7 @@ public class hangerManager : MonoBehaviour
         //Set slots to true
         for (int i = 0; i < playerCards.playerHanger.Count; i++)
         {
-            if (playerCards.playerHanger[i] != null)
+            if (!playerCards.playerHanger[i].displayName.Equals(""))
             {
                 if(i.Equals(0))
                 {
@@ -157,11 +157,24 @@ public class hangerManager : MonoBehaviour
     {
         if (vehicleSelect.selectedVehicle != null)
         {
-            playerCards.playerHanger.Insert(selectedHanger, vehicleSelect.selectedVehicle);
+            playerCards.playerHanger.Insert(selectedHanger, Instantiate(vehicleSelect.selectedVehicle));
 
+        }
+        if(vehicleModHelper.selectedVehicleList.Count > 0)
+        {
+            print("is destroyed in hanger" + (object)vehicleModHelper.selectedVehicle == null);
+            print("Count: " + vehicleModHelper.selectedVehicleList.Count);
+            print("Chosen: " + vehicleModHelper.selectedVehicleList[0]);
+            playerCards.playerHanger.RemoveAt(0);
+            playerCards.playerHanger.Insert(0, vehicleModHelper.selectedVehicleList[0]);
+            print((object)vehicleModHelper.selectedVehicleList[0] == null);
+            print("Pilot: " + playerCards.playerHanger[0].Pilot[0].displayName);
+            print("Working: " + playerCards.playerHanger[0]);
         }
 
         vehicleSelect.selectedVehicle = null;
+        vehicleModHelper.selectedVehicleList.Clear();
+        vehicleModHelper.selectedVehicle = null;
         selectedHanger = -1;
     }
 
@@ -207,6 +220,7 @@ public class hangerManager : MonoBehaviour
         if (slot1Full == true)
         {
             sellHanger = 0;
+            selectedHanger = 0;
             displayVehicle(0);
         }
     }
@@ -259,9 +273,9 @@ public class hangerManager : MonoBehaviour
 
         //Set art, pilots, copilots
         selectedPopUpmenu.transform.GetChild(2).transform.GetChild(0).GetComponent<Image>().sprite = vehicle.art;
-        if (vehicle.pilot != null)
+        if (vehicle.Pilot.Count > 0)
         {
-            selectedPopUpmenu.transform.GetChild(6).transform.GetChild(0).GetComponent<Image>().sprite = vehicle.pilot.cardArt;
+            selectedPopUpmenu.transform.GetChild(6).transform.GetChild(0).GetComponent<Image>().sprite = vehicle.Pilot[0].cardArt;
         }
 
         for(int i = 0; i < vehicle.coPilots.Count; i++)

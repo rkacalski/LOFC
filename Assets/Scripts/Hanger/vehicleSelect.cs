@@ -31,6 +31,7 @@ public class vehicleSelect : MonoBehaviour
 
     public void closeVehicle()
     {
+        //selectedVehicle = null;
         popupPanel.transform.LeanScale(Vector2.zero, 0.7f).setEaseOutQuart();
     }
 
@@ -104,7 +105,7 @@ public class vehicleSelect : MonoBehaviour
         if (level.Equals(1))
         {
             print("Level 1");
-            selectedVehicle = Level1[0];
+            selectedVehicle = (Level1[0]);
         }
         if(level.Equals(0))
         {

@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class vehicleModHelper : MonoBehaviour
+public class vehicleModHelper
 {
     public static vehicle selectedVehicle;
+    public static List<vehicle> selectedVehicleList = new List<vehicle>();
 
     public static int updatedATK;
     public static int updatedDEF;
